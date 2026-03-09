@@ -1,0 +1,190 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block title %}Blog - Molla Sport Store{% endblock %}
+
+{% block nav_blog %}active{% endblock %}
+
+{% block content %}
+    <main class="main">
+    <div class="page-header text-center" style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
+        <div class="container">
+            <h1 class="page-title">Blog<span>Latest News</span></h1>
+        </div>
+    </div>
+
+    <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+            </ol>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Posts -->
+                <div class="col-lg-9">
+                    {% for blog in blogs %}
+                    <article class="entry">
+                        {% if blog.image %}
+                        <figure class="entry-media">
+                            <a href="{% url 'blogs:detail' blog.pk %}">
+                                <img src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                            </a>
+                        </figure>
+                        {% endif %}
+
+                        <div class="entry-body">
+                            <div class="entry-meta">
+                                {% for author in blog.authors.all %}
+                                <span class="entry-author">by <a href="#">{{ author.full_name }}</a></span>
+                                <span class="meta-separator">|</span>
+                                {% endfor %}
+                                <a href="#">{{ blog.created_at|date:"M d, Y" }}</a>
+                                {% if blog.categories.exists %}
+                                <span class="meta-separator">|</span>
+                                {% for cat in blog.categories.all %}
+                                    <a href="#">{{ cat.title }}</a>{% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                                {% endif %}
+                            </div>
+
+                            <h2 class="entry-title">
+                                <a href="{% url 'blogs:detail' blog.pk %}">{{ blog.title }}</a>
+                            </h2>
+
+                            {% if blog.tags.exists %}
+                            <div class="entry-cats">
+                                in
+                                {% for tag in blog.tags.all %}
+                                    <a href="#">{{ tag.title }}</a>{% if not forloop.last %}, {% endif %}
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+                            <div class="entry-content">
+                                <p>{{ blog.short_description }}</p>
+                                <a href="{% url 'blogs:detail' blog.pk %}" class="read-more">Continue Reading</a>
+                            </div>
+                        </div>
+                    </article>
+                    {% empty %}
+                    <div class="text-center py-5">
+                        <p>No blog posts published yet.</p>
+                    </div>
+                    {% endfor %}
+
+                    <!-- Pagination -->
+                    {% if blogs.has_other_pages %}
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item {% if not blogs.has_previous %}disabled{% endif %}">
+                                <a class="page-link page-link-prev" href="?page={{ blogs.previous_page_number }}" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
+                                </a>
+                            </li>
+                            {% for num in blogs.paginator.page_range %}
+                            <li class="page-item {% if blogs.number == num %}active{% endif %}">
+                                <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                            </li>
+                            {% endfor %}
+                            <li class="page-item {% if not blogs.has_next %}disabled{% endif %}">
+                                <a class="page-link page-link-next" href="?page={{ blogs.next_page_number }}" aria-label="Next">
+                                    Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    {% endif %}
+                </div><!-- End .col-lg-9 -->
+
+                <!-- Sidebar -->
+                <aside class="col-lg-3">
+                    <div class="sidebar">
+                        <!-- Search -->
+                        <div class="widget widget-search">
+                            <h3 class="widget-title">Search</h3>
+                            <form action="{% url 'blogs:list' %}" method="get">
+                                <label for="ws" class="sr-only">Search in blog</label>
+                                <input type="search" class="form-control" name="q" id="ws"
+                                       placeholder="Search in blog"
+                                       value="{{ request.GET.q }}" required>
+                                <button type="submit" class="btn">
+                                    <i class="icon-search"></i><span class="sr-only">Search</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="widget widget-cats">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul>
+                                {% for cat in blog_categories %}
+                                <li>
+                                    <a href="{% url 'blogs:list' %}?category={{ cat.pk }}">
+                                        {{ cat.title }}<span>{{ cat.blog_set.count }}</span>
+                                    </a>
+                                </li>
+                                {% empty %}
+                                <li><a href="#">All Posts</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- Popular Posts -->
+                        <div class="widget">
+                            <h3 class="widget-title">Popular Posts</h3>
+                            <ul class="posts-list">
+                                {% for post in popular_posts %}
+                                <li>
+                                    <figure>
+                                        <a href="{% url 'blogs:detail' post.pk %}">
+                                            {% if post.image %}
+                                                <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                            {% else %}
+                                                <img src="{% static 'images/blog/sidebar/post-1.jpg' %}" alt="{{ post.title }}">
+                                            {% endif %}
+                                        </a>
+                                    </figure>
+                                    <div>
+                                        <span>{{ post.created_at|date:"M d, Y" }}</span>
+                                        <h4><a href="{% url 'blogs:detail' post.pk %}">{{ post.title }}</a></h4>
+                                    </div>
+                                </li>
+                                {% empty %}
+                                <li><p>No posts yet.</p></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="widget">
+                            <h3 class="widget-title">Browse Tags</h3>
+                            <div class="tagcloud">
+                                {% for tag in blog_tags %}
+                                <a href="{% url 'blogs:list' %}?tag={{ tag.pk }}">{{ tag.title }}</a>
+                                {% empty %}
+                                <a href="#">sport</a>
+                                <a href="#">outdoor</a>
+                                <a href="#">gear</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!-- About Blog -->
+                        <div class="widget widget-text">
+                            <h3 class="widget-title">About Blog</h3>
+                            <div class="widget-text-content">
+                                <p>Stay up to date with the latest news, gear reviews, and tips from the world of extreme sports.</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

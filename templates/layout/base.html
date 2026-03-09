@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Molla Sport Store{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Molla - Bootstrap eCommerce Template">
+    <meta name="author" content="p-themes">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/jquery.countdown.css' %}">
+    <link rel="stylesheet" href="{% static 'css/plugins/magnific-popup/magnific-popup.css' %}">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skins/skin-demo-24.css' %}">
+    <link rel="stylesheet" href="{% static 'css/demos/demo-24.css' %}">
+
+    {% block extra_css %}{% endblock %}
+
+    <style>
+    body {
+        color: black !important;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    .header, .header * {
+        color: black !important;
+    }
+
+    .main-nav .menu li a {
+        color: black !important;
+    }
+
+    .footer, .footer * {
+        color: white !important;
+    }
+    </style>
+
+</head>
+<body>
+<div class="page-wrapper">
+
+    {% block page_top %}{% endblock %}
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-left">
+                <div class="header-dropdown">
+                    <a href="#">Usd</a>
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="#">Eur</a></li>
+                            <li><a href="#">Usd</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-dropdown">
+                    <a href="#">Eng</a>
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Spanish</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul class="top-menu">
+                    <li>
+                        <a href="#">Links</a>
+                        <ul>
+                            <li><a href="tel:#"><i class="icon-phone"></i>Call: +0123 456 789</a></li>
+                            <li><a href="{% url 'shared:about' %}">About Us</a></li>
+                            <li><a href="{% url 'shared:contact' %}">Contact Us</a></li>
+                            {% if user.is_authenticated %}
+                                <li><a href="{% url 'users:account' %}"><i class="icon-user"></i>My Account</a></li>
+                                <li><a href="{% url 'users:logout' %}"><i class="icon-user"></i>Logout</a></li>
+                            {% else %}
+                                <li><a href="{% url 'users:login' %}"><i class="icon-user"></i>Login</a></li>
+                            {% endif %}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-middle sticky-header">
+            <div class="header-left">
+                <button class="mobile-menu-toggler">
+                    <span class="sr-only">Toggle mobile menu</span>
+                    <i class="icon-bars"></i>
+                </button>
+                <a href="{% url 'shared:home' %}" class="logo">
+                    <img src="{% static 'images/demos/demo-24/logo.png' %}" alt="Molla Logo" width="110" height="25">
+                </a>
+            </div>
+
+            <div class="header-center">
+                <nav class="main-nav">
+                    <ul class="menu sf-arrows">
+                        <li class="{% block nav_home %}{% endblock %}">
+                            <a href="{% url 'shared:home' %}">Home</a>
+                        </li>
+                        <li class="{% block nav_shop %}{% endblock %}">
+                            <a href="{% url 'products:list' %}" class="sf-with-ul">Shop</a>
+                            <div class="megamenu megamenu-md">
+                                <div class="row no-gutters">
+                                    <div class="col-md-8">
+                                        <div class="menu-col">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="menu-title">Shop Pages</div>
+                                                    <ul>
+                                                        <li><a href="{% url 'products:cart' %}">Cart</a></li>
+                                                        <li><a href="{% url 'products:checkout' %}">Checkout</a></li>
+                                                        <li><a href="{% url 'products:wishlist' %}">Wishlist</a></li>
+                                                        <li><a href="{% url 'users:account' %}">My Account</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="{% block nav_blog %}{% endblock %}">
+                            <a href="{% url 'blogs:list' %}" class="sf-with-ul">Blog</a>
+                            <ul>
+                                <li><a href="{% url 'blogs:list' %}">Blog Posts</a></li>
+                            </ul>
+                        </li>
+                        <li class="{% block nav_pages %}{% endblock %}">
+                            <a href="#" class="sf-with-ul">Pages</a>
+                            <ul>
+                                <li><a href="{% url 'shared:about' %}">About Us</a></li>
+                                <li><a href="{% url 'shared:contact' %}">Contact Us</a></li>
+                                <li><a href="{% url 'users:login' %}">Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <div class="header-search">
+                    <a href="#" class="search-toggle" role="button" title="Search"><i class="icon-search"></i></a>
+                    <form action="{% url 'products:list' %}" method="get">
+                        <div class="header-search-wrapper">
+                            <label for="q" class="sr-only">Search</label>
+                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..." required>
+                        </div>
+                    </form>
+                </div>
+                <div class="wishlist">
+                    <a href="{% url 'products:wishlist' %}" title="Wishlist">
+                        <i class="icon-heart-o"></i>
+                    </a>
+                </div>
+                <div class="dropdown cart-dropdown">
+                    <a href="{% url 'products:cart' %}" class="dropdown-toggle" role="button">
+                        <i class="icon-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="footer mt-3">
+        <div class="container service">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon"><i class="icon-rocket"></i></span>
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">Free Shipping</h3>
+                            <p>Orders $50 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon"><i class="icon-rotate-left"></i></span>
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">Free Returns</h3>
+                            <p>Within 30 days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon"><i class="icon-info-circle"></i></span>
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">Get 20% Off 1 Item</h3>
+                            <p>When you sign up</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="icon-box icon-box-side">
+                        <span class="icon-box-icon"><i class="icon-life-ring"></i></span>
+                        <div class="icon-box-content">
+                            <h3 class="icon-box-title">We Support</h3>
+                            <p>24/7 amazing services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="widget widget-about">
+                            <img src="{% static 'images/demos/demo-24/logo.png' %}" class="footer-logo" alt="Footer Logo" width="110" height="25">
+                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
+                                <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
+                                <a href="#" class="social-icon" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
+                                <a href="#" class="social-icon" title="Youtube" target="_blank"><i class="icon-youtube"></i></a>
+                                <a href="#" class="social-icon" title="Pinterest" target="_blank"><i class="icon-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-md-4">
+                        <div class="widget">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <ul class="widget-list">
+                                <li><a href="{% url 'shared:about' %}">About Us</a></li>
+                                <li><a href="{% url 'shared:contact' %}">Contact Us</a></li>
+                                <li><a href="{% url 'users:login' %}">Log In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-md-4">
+                        <div class="widget">
+                            <h4 class="widget-title">Customer Service</h4>
+                            <ul class="widget-list">
+                                <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Money-back guarantee!</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-md-4">
+                        <div class="widget">
+                            <h4 class="widget-title">My Account</h4>
+                            <ul class="widget-list">
+                                <li><a href="{% url 'users:login' %}">Sign In</a></li>
+                                <li><a href="{% url 'products:cart' %}">View Cart</a></li>
+                                <li><a href="{% url 'products:wishlist' %}">My Wishlist</a></li>
+                                <li><a href="{% url 'users:account' %}">My Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-copyright">Copyright © 2024 Molla Sport Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div><!-- End .page-wrapper -->
+
+<button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-menu-container mobile-menu-light">
+    <div class="mobile-menu-wrapper">
+        <span class="mobile-menu-close"><i class="icon-close"></i></span>
+        <form action="{% url 'products:list' %}" method="get" class="mobile-search">
+            <label for="mobile-search" class="sr-only">Search</label>
+            <input type="search" class="form-control" name="q" id="mobile-search" placeholder="Search in..." required>
+            <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
+        </form>
+        <nav class="mobile-nav">
+            <ul class="mobile-menu">
+                <li><a href="{% url 'shared:home' %}">HOME</a></li>
+                <li><a href="{% url 'products:list' %}">SHOP</a></li>
+                <li><a href="{% url 'blogs:list' %}">BLOG</a></li>
+                <li><a href="{% url 'shared:about' %}">ABOUT US</a></li>
+                <li><a href="{% url 'shared:contact' %}">CONTACT</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'users:account' %}">MY ACCOUNT</a></li>
+                    <li><a href="{% url 'users:logout' %}">LOGOUT</a></li>
+                {% else %}
+                    <li><a href="{% url 'users:login' %}">LOGIN</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#" class="social-icon" target="_blank" title="Facebook"><i class="icon-facebook-f"></i></a>
+            <a href="#" class="social-icon" target="_blank" title="Twitter"><i class="icon-twitter"></i></a>
+            <a href="#" class="social-icon" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
+            <a href="#" class="social-icon" target="_blank" title="Youtube"><i class="icon-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- JS Files -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery.hoverIntent.min.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/superfish.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-input-spinner.js' %}"></script>
+<script src="{% static 'js/jquery.plugin.min.js' %}"></script>
+<script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/demos/demo-24.js' %}"></script>
+
+{% block extra_js %}{% endblock %}
+
+</body>
+</html>
