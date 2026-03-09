@@ -1,29 +1,29 @@
 {% extends 'layout/base.html' %}
 {% load static %}
 
-{% block title %}404 page not found - Molla Sport Store{% endblock %}
+{% block title %}404 - Page Not Found - Molla Sport Store{% endblock %}
 
 {% block content %}
-    <main class="main">
-            <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
-                <div class="container">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{% url 'shared:home' %}    ">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">404</li>
-                    </ol>
-                </div><!-- End .container -->
-            </nav><!-- End .breadcrumb-nav -->
+<main class="main">
+    <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">404</li>
+            </ol>
+        </div>
+    </nav>
 
-        	<div class="error-content text-center" style="background-image: url(assets/images/backgrounds/error-bg.jpg)">
-            	<div class="container">
-            		<h1 class="error-title">Error 404</h1><!-- End .error-title -->
-            		<p>We are sorry, the page you've requested is not available.</p>
-            		<a href="{% url 'shared:home' %}" class="btn btn-outline-primary-2 btn-minwidth-lg">
-            			<span>BACK TO HOMEPAGE</span>
-            			<i class="icon-long-arrow-right"></i>
-            		</a>
-            	</div><!-- End .container -->
-        	</div><!-- End .error-content text-center -->
-        </main><!-- End .main -->
+    <div class="error-content text-center"
+         style="background-image: url('{% static 'images/backgrounds/error-bg.jpg' %}')">
+        <div class="container">
+            <h1 class="error-title">Error 404</h1>
+            <p>We are sorry, the page you've requested is not available.</p>
+            <a href="{% url 'shared:home' %}" class="btn btn-outline-primary-2 btn-minwidth-lg">
+                <span>BACK TO HOMEPAGE</span>
+                <i class="icon-long-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</main>
 {% endblock %}

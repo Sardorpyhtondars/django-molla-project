@@ -3,75 +3,69 @@ from shared.models import BaseModel
 
 
 class Author(BaseModel):
-    full_name = models.CharField(max_length=128)
-    image = models.ImageField(upload_to='authors/', default='authors/default-user.jpg')
-    about = models.CharField(max_length=255)
-    professions = models.CharField(max_length=128)
+    full_name = models.CharField(max_length=200)
+    image = models.ImageField(upload_to='authors/', null=True, blank=True)
+    about = models.TextField(blank=True)
+    professions = models.CharField(max_length=200, blank=True)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
         return self.full_name
 
     class Meta:
-        db_table = 'authors'
         verbose_name = 'Author'
         verbose_name_plural = 'Authors'
 
 
 class Category(BaseModel):
-    title = models.CharField(max_length=128)
+    title = models.CharField(max_length=200)
     parent = models.ForeignKey(
-        'self',
-        on_delete=models.PROTECT,
-        related_name='children',
-        null=True, blank=True
+        'self', null=True, blank=True,
+        on_delete=models.SET_NULL,
+        related_name='children'
     )
 
     def __str__(self):
         return self.title
 
     class Meta:
-        db_table = 'blog_categories'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
 
 class Tag(BaseModel):
-    title = models.CharField(max_length=128)
+    title = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title
 
     class Meta:
-        db_table = 'tags'
         verbose_name = 'Tag'
         verbose_name_plural = 'Tags'
 
 
-class BlogStatus(models.TextChoices):
-    PUBLISHED = "PUBLISHED", "Published"
-    DRAFT = "DRAFT", "Draft"
-    DELETED = "DELETED", "Deleted"
-
-
 class Blog(BaseModel):
-    title = models.CharField(max_length=128)
-    short_description = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='blogs/', default='blogs/default-blog.jpg')
-    long_description = models.TextField()
+    class Status(models.TextChoices):
+        PUBLISHED = 'published', 'Published'
+        DRAFT = 'draft', 'Draft'
+
+    title = models.CharField(max_length=300)
+    short_description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='blogs/', null=True, blank=True)
+    long_description = models.TextField(blank=True)
     status = models.CharField(
-        max_length=24,
-        choices=BlogStatus.choices,
-        default=BlogStatus.DRAFT
+        max_length=20,
+        choices=Status.choices,
+        default=Status.DRAFT
     )
-    categories = models.ManyToManyField(Category, related_name='blogs')
-    tags = models.ManyToManyField(Tag, related_name='blogs')
-    authors = models.ManyToManyField(Author, related_name='blogs')
+    categories = models.ManyToManyField(Category, blank=True)
+    tags = models.ManyToManyField(Tag, blank=True)
+    authors = models.ManyToManyField(Author, blank=True)
 
     def __str__(self):
         return self.title
 
     class Meta:
-        db_table = 'blogs'
+        ordering = ['-created_at']
         verbose_name = 'Blog'
         verbose_name_plural = 'Blogs'

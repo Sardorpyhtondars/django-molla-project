@@ -9,12 +9,10 @@ def product_list_view(request):
     products = Product.objects.filter(is_active=True)
     categories = Category.objects.filter(parent=None).prefetch_related('children')
 
-    # Filter by category
     category_id = request.GET.get('category')
     if category_id:
         products = products.filter(category_id=category_id)
 
-    # Search
     query = request.GET.get('q')
     if query:
         products = products.filter(title__icontains=query)
@@ -56,15 +54,10 @@ def product_detail_view(request, pk):
     context = {
         'product': product,
         'related_products': related_products,
-        'reviews': product.reviews.all().order_by('-created_at'),
+        'reviews': product.reviews.all(),
         'images': product.images.all(),
     }
     return render(request, 'products/product.html', context)
-
-
-@login_required
-def wishlist_view(request):
-    return render(request, 'cart/wishlist.html')
 
 
 @login_required
@@ -75,3 +68,8 @@ def cart_view(request):
 @login_required
 def checkout_view(request):
     return render(request, 'cart/checkout.html')
+
+
+@login_required
+def wishlist_view(request):
+    return render(request, 'cart/wishlist.html')
