@@ -1,12 +1,11 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 
 from products.models import Product, Category, Review
 
 
 def product_list_view(request):
-    products = Product.objects.filter(is_active=True)
+    products = Product.objects.all()
     categories = Category.objects.filter(parent=None).prefetch_related('children')
 
     category_id = request.GET.get('category')
@@ -27,9 +26,9 @@ def product_list_view(request):
 
 
 def product_detail_view(request, pk):
-    product = get_object_or_404(Product, pk=pk, is_active=True)
+    product = get_object_or_404(Product, pk=pk)
     related_products = Product.objects.filter(
-        category=product.category, is_active=True
+        category=product.category
     ).exclude(pk=pk)[:4]
 
     if request.method == 'POST':
@@ -60,16 +59,13 @@ def product_detail_view(request, pk):
     return render(request, 'products/product.html', context)
 
 
-@login_required
 def cart_view(request):
     return render(request, 'cart/cart.html')
 
 
-@login_required
 def checkout_view(request):
     return render(request, 'cart/checkout.html')
 
 
-@login_required
 def wishlist_view(request):
     return render(request, 'cart/wishlist.html')

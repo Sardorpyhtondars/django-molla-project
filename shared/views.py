@@ -1,7 +1,7 @@
 from django.contrib import messages
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 
-from blogs.models import Blog, BlogStatus
+from blogs.models import Blog
 from products.models import Product, Category as ProductCategory
 from shared.forms import ContactForm
 
@@ -10,7 +10,7 @@ def home_page_view(request):
     context = {
         'featured_products': Product.objects.filter(is_featured=True)[:8],
         'categories': ProductCategory.objects.filter(parent=None)[:6],
-        'recent_blogs': Blog.objects.filter(status=BlogStatus.PUBLISHED).order_by('-created_at')[:3],
+        'recent_blogs': Blog.objects.filter(status=Blog.Status.PUBLISHED).order_by('-created_at')[:3],
     }
     return render(request, 'shared/home.html', context)
 

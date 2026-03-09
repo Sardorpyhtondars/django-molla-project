@@ -2,7 +2,6 @@ from django.db import models
 from shared.models import BaseModel
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-
 class Category(BaseModel):
     title = models.CharField(max_length=200)
     parent = models.ForeignKey(
@@ -15,6 +14,7 @@ class Category(BaseModel):
         return self.title
 
     class Meta:
+        db_table = 'category'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
@@ -24,7 +24,7 @@ class Product(BaseModel):
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     old_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    image = models.ImageField(upload_to='products/')
+    image = models.ImageField(upload_to='products/', null=True, blank=True)
     category = models.ForeignKey(
         Category, null=True, blank=True,
         on_delete=models.SET_NULL,

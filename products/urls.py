@@ -1,12 +1,12 @@
 from django.urls import path
-from products import views
+from products.views import product_list_view, product_detail_view, cart_view, checkout_view, wishlist_view
 
 app_name = 'products'
 
 urlpatterns = [
-    path('', views.product_list_view, name='list'),
-    path('<int:pk>/', views.product_detail_view, name='detail'),
-    path('cart/', views.cart_view, name='cart'),
-    path('checkout/', views.checkout_view, name='checkout'),
-    path('wishlist/', views.wishlist_view, name='wishlist'),
+    path('', product_list_view, name='list'),
+    path('<int:pk>/', product_detail_view, name='detail'),
+    path('cart/', cart_view, name='cart'),
+    path('checkout/', checkout_view, name='checkout'),
+    path('wishlist/', wishlist_view, name='wishlist'),
 ]

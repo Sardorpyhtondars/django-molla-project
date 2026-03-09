@@ -13,6 +13,7 @@ class Author(BaseModel):
         return self.full_name
 
     class Meta:
+        db_table = 'author'
         verbose_name = 'Author'
         verbose_name_plural = 'Authors'
 
@@ -29,6 +30,7 @@ class Category(BaseModel):
         return self.title
 
     class Meta:
+        db_table = 'category'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
@@ -40,6 +42,7 @@ class Tag(BaseModel):
         return self.title
 
     class Meta:
+        db_table = 'tag'
         verbose_name = 'Tag'
         verbose_name_plural = 'Tags'
 
@@ -66,6 +69,6 @@ class Blog(BaseModel):
         return self.title
 
     class Meta:
-        ordering = ['-created_at']
+        db_table = 'blog'
         verbose_name = 'Blog'
         verbose_name_plural = 'Blogs'
