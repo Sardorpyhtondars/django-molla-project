@@ -1,7 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Uzbek translations for Molla Sport Store
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
@@ -9,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-10 13:25+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-03-10 13:25+0500\n"
+"Last-Translator: Translator <translator@example.com>\n"
+"Language-Team: Uzbek <uz@li.org>\n"
+"Language: uz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +21,7 @@ msgstr ""
 #: .\templates\blogs\blog.html:20 .\templates\blogs\single.html:20
 #: .\templates\layout\base.html:121
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: .\templates\blogs\blog.html:4 .\templates\blogs\single.html:4
 #: .\templates\cart\cart.html:4 .\templates\cart\checkout.html:4
@@ -32,11 +31,11 @@ msgstr ""
 #: .\templates\shared\contact.html:4 .\templates\users\dashboard.html:4
 #: .\templates\users\login.html:4
 msgid "Molla Sport Store"
-msgstr ""
+msgstr "Molla Sport Do'koni"
 
 #: .\templates\blogs\blog.html:12
 msgid "Latest News"
-msgstr ""
+msgstr "So'nggi Yangiliklar"
 
 #: .\templates\blogs\blog.html:19 .\templates\blogs\single.html:19
 #: .\templates\cart\cart.html:20 .\templates\cart\checkout.html:20
@@ -46,153 +45,155 @@ msgstr ""
 #: .\templates\shared\contact.html:11 .\templates\users\dashboard.html:17
 #: .\templates\users\login.html:11
 msgid "Home"
-msgstr ""
+msgstr "Bosh Sahifa"
 
 #: .\templates\blogs\blog.html:43 .\templates\blogs\single.html:41
 msgid "by"
-msgstr ""
+msgstr "muallif"
 
 #: .\templates\blogs\blog.html:61 .\templates\blogs\single.html:57
 #: .\templates\blogs\single.html:174
 msgid "in"
-msgstr ""
+msgstr "kategoriya"
 
 #: .\templates\blogs\blog.html:70
 msgid "Continue Reading"
-msgstr ""
+msgstr "O'qishni Davom Ettirish"
 
 #: .\templates\blogs\blog.html:76
 msgid "No blog posts published yet."
-msgstr ""
+msgstr "Hozircha blog postlar nashr etilmagan."
 
 #: .\templates\blogs\blog.html:86 .\templates\products\category.html:130
 msgid "Prev"
-msgstr ""
+msgstr "Oldingi"
 
 #: .\templates\blogs\blog.html:96 .\templates\products\category.html:145
 msgid "Next"
-msgstr ""
+msgstr "Keyingi"
 
 #: .\templates\blogs\blog.html:108 .\templates\blogs\blog.html:115
 #: .\templates\blogs\single.html:219 .\templates\blogs\single.html:225
 #: .\templates\layout\base.html:140 .\templates\layout\base.html:143
 #: .\templates\layout\base.html:275
 msgid "Search"
-msgstr ""
+msgstr "Qidirish"
 
 #: .\templates\blogs\blog.html:110 .\templates\blogs\blog.html:112
 #: .\templates\blogs\single.html:221 .\templates\blogs\single.html:223
 msgid "Search in blog"
-msgstr ""
+msgstr "Blogda qidirish"
 
 #: .\templates\blogs\blog.html:121 .\templates\blogs\single.html:231
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriyalar"
 
 #: .\templates\blogs\blog.html:130 .\templates\blogs\single.html:240
 msgid "All Posts"
-msgstr ""
+msgstr "Barcha Postlar"
 
 #: .\templates\blogs\blog.html:136 .\templates\blogs\single.html:246
 msgid "Popular Posts"
-msgstr ""
+msgstr "Mashhur Postlar"
 
 #: .\templates\blogs\blog.html:155
 msgid "No posts yet."
-msgstr ""
+msgstr "Hozircha postlar yo'q."
 
 #: .\templates\blogs\blog.html:161 .\templates\blogs\single.html:269
 msgid "Browse Tags"
-msgstr ""
+msgstr "Teglarni Ko'rish"
 
 #: .\templates\blogs\blog.html:166 .\templates\blogs\single.html:274
 msgid "sport"
-msgstr ""
+msgstr "sport"
 
 #: .\templates\blogs\blog.html:167 .\templates\blogs\single.html:275
 msgid "outdoor"
-msgstr ""
+msgstr "ochiq havo"
 
 #: .\templates\blogs\blog.html:168 .\templates\blogs\single.html:276
 msgid "gear"
-msgstr ""
+msgstr "jihozlar"
 
 #: .\templates\blogs\blog.html:174 .\templates\blogs\single.html:282
 msgid "About Blog"
-msgstr ""
+msgstr "Blog Haqida"
 
 #: .\templates\blogs\blog.html:176 .\templates\blogs\single.html:284
 msgid ""
 "Stay up to date with the latest news, gear reviews, and tips from the world "
 "of extreme sports."
 msgstr ""
+"Ekstremal sport dunyosidan so'nggi yangiliklar, jihozlar sharhlari va "
+"maslahatlar bilan yangilanib turing."
 
 #: .\templates\blogs\single.html:12
 msgid "Single Post"
-msgstr ""
+msgstr "Alohida Post"
 
 #: .\templates\blogs\single.html:72
 msgid "Tags:"
-msgstr ""
+msgstr "Teglar:"
 
 #: .\templates\blogs\single.html:81
 msgid "Share this post:"
-msgstr ""
+msgstr "Bu postni ulashing:"
 
 #: .\templates\blogs\single.html:128
 msgid "Previous Post"
-msgstr ""
+msgstr "Oldingi Post"
 
 #: .\templates\blogs\single.html:134
 msgid "Next Post"
-msgstr ""
+msgstr "Keyingi Post"
 
 #: .\templates\blogs\single.html:143
 msgid "Related Posts"
-msgstr ""
+msgstr "O'xshash Postlar"
 
 #: .\templates\blogs\single.html:190
 msgid "Leave A Reply"
-msgstr ""
+msgstr "Javob Qoldiring"
 
 #: .\templates\blogs\single.html:191
 msgid "Your email address will not be published. Required fields are marked *"
-msgstr ""
+msgstr "Elektron pochta manzilingiz chop etilmaydi. Majburiy maydonlar * bilan belgilangan"
 
 #: .\templates\blogs\single.html:195
 msgid "Comment"
-msgstr ""
+msgstr "Izoh"
 
 #: .\templates\blogs\single.html:196
 msgid "Comment *"
-msgstr ""
+msgstr "Izoh *"
 
 #: .\templates\blogs\single.html:199 .\templates\shared\contact.html:83
 msgid "Name"
-msgstr ""
+msgstr "Ism"
 
 #: .\templates\blogs\single.html:200 .\templates\products\product.html:215
 #: .\templates\shared\contact.html:85
 msgid "Name *"
-msgstr ""
+msgstr "Ism *"
 
 #: .\templates\blogs\single.html:203 .\templates\shared\contact.html:88
 msgid "Email"
-msgstr ""
+msgstr "Elektron pochta"
 
 #: .\templates\blogs\single.html:204 .\templates\products\product.html:219
 #: .\templates\shared\contact.html:90
 msgid "Email *"
-msgstr ""
+msgstr "Elektron pochta *"
 
 #: .\templates\blogs\single.html:208
 msgid "POST COMMENT"
-msgstr ""
+msgstr "IZOH YUBORISH"
 
 #: .\templates\cart\cart.html:4 .\templates\cart\cart.html:13
 #: .\templates\cart\cart.html:22
 msgid "Shopping Cart"
-msgstr ""
+msgstr "Savat"
 
 #: .\templates\cart\cart.html:13 .\templates\cart\cart.html:21
 #: .\templates\cart\checkout.html:13 .\templates\cart\checkout.html:21
@@ -202,593 +203,599 @@ msgstr ""
 #: .\templates\products\product.html:18 .\templates\users\dashboard.html:10
 #: .\templates\users\dashboard.html:18
 msgid "Shop"
-msgstr ""
+msgstr "Do'kon"
 
 #: .\templates\cart\cart.html:35 .\templates\cart\checkout.html:115
 #: .\templates\cart\wishlist.html:32
 msgid "Product"
-msgstr ""
+msgstr "Mahsulot"
 
 #: .\templates\cart\cart.html:36 .\templates\cart\wishlist.html:33
 #: .\templates\products\category.html:189
 msgid "Price"
-msgstr ""
+msgstr "Narx"
 
 #: .\templates\cart\cart.html:37
 msgid "Quantity"
-msgstr ""
+msgstr "Miqdor"
 
 #: .\templates\cart\cart.html:38 .\templates\cart\checkout.html:116
 msgid "Total"
-msgstr ""
+msgstr "Jami"
 
 #: .\templates\cart\cart.html:45
 msgid "Your cart is empty."
-msgstr ""
+msgstr "Savatingiz bo'sh."
 
 #: .\templates\cart\cart.html:46
 msgid "Continue Shopping"
-msgstr ""
+msgstr "Xarid Qilishni Davom Ettirish"
 
 #: .\templates\cart\cart.html:58
 msgid "coupon code"
-msgstr ""
+msgstr "kupon kodi"
 
 #: .\templates\cart\cart.html:68
 msgid "UPDATE CART"
-msgstr ""
+msgstr "SAVATNI YANGILASH"
 
 #: .\templates\cart\cart.html:75
 msgid "Cart Total"
-msgstr ""
+msgstr "Savat Jami"
 
 #: .\templates\cart\cart.html:79 .\templates\cart\checkout.html:121
 msgid "Subtotal:"
-msgstr ""
+msgstr "Oraliq jami:"
 
 #: .\templates\cart\cart.html:83 .\templates\cart\checkout.html:125
 msgid "Shipping:"
-msgstr ""
+msgstr "Yetkazib berish:"
 
 #: .\templates\cart\cart.html:90 .\templates\layout\base.html:171
 msgid "Free Shipping"
-msgstr ""
+msgstr "Bepul Yetkazib Berish"
 
 #: .\templates\cart\cart.html:99
 msgid "Standard:"
-msgstr ""
+msgstr "Standart:"
 
 #: .\templates\cart\cart.html:108
 msgid "Express:"
-msgstr ""
+msgstr "Tezkor:"
 
 #: .\templates\cart\cart.html:114
 msgid "Estimate for Your Country"
-msgstr ""
+msgstr "Mamlakatingiz uchun Hisob-Kitob"
 
 #: .\templates\cart\cart.html:115
 msgid "Change address"
-msgstr ""
+msgstr "Manzilni o'zgartirish"
 
 #: .\templates\cart\cart.html:120 .\templates\cart\checkout.html:129
 msgid "Total:"
-msgstr ""
+msgstr "Jami:"
 
 #: .\templates\cart\cart.html:126
 msgid "PROCEED TO CHECKOUT"
-msgstr ""
+msgstr "TO'LOVGA O'TISH"
 
 #: .\templates\cart\cart.html:130
 msgid "CONTINUE SHOPPING"
-msgstr ""
+msgstr "XARID QILISHNI DAVOM ETTIRISH"
 
 #: .\templates\cart\checkout.html:4 .\templates\cart\checkout.html:13
 #: .\templates\cart\checkout.html:22 .\templates\layout\base.html:109
 msgid "Checkout"
-msgstr ""
+msgstr "To'lov"
 
 #: .\templates\cart\checkout.html:36
 msgid "Have a coupon?"
-msgstr ""
+msgstr "Kuponingiz bormi?"
 
 #: .\templates\cart\checkout.html:36
 msgid "Click here to enter your code"
-msgstr ""
+msgstr "Kodingizni kiritish uchun shu yerga bosing"
 
 #: .\templates\cart\checkout.html:46
 msgid "Billing Details"
-msgstr ""
+msgstr "To'lov Tafsilotlari"
 
 #: .\templates\cart\checkout.html:50
 msgid "First Name *"
-msgstr ""
+msgstr "Ism *"
 
 #: .\templates\cart\checkout.html:55
 msgid "Last Name *"
-msgstr ""
+msgstr "Familiya *"
 
 #: .\templates\cart\checkout.html:60
 msgid "Company Name (Optional)"
-msgstr ""
+msgstr "Kompaniya Nomi (Ixtiyoriy)"
 
 #: .\templates\cart\checkout.html:63
 msgid "Country *"
-msgstr ""
+msgstr "Mamlakat *"
 
 #: .\templates\cart\checkout.html:66
 msgid "Street address *"
-msgstr ""
+msgstr "Ko'cha manzili *"
 
 #: .\templates\cart\checkout.html:68
 msgid "House number and Street name"
-msgstr ""
+msgstr "Uy raqami va ko'cha nomi"
 
 #: .\templates\cart\checkout.html:70
 msgid "Apartment, suite, unit etc."
-msgstr ""
+msgstr "Kvartira, xona, blok va h.k."
 
 #: .\templates\cart\checkout.html:74
 msgid "Town / City *"
-msgstr ""
+msgstr "Tuman / Shahar *"
 
 #: .\templates\cart\checkout.html:78
 msgid "State / County *"
-msgstr ""
+msgstr "Viloyat / Tuman *"
 
 #: .\templates\cart\checkout.html:85
 msgid "Postcode / ZIP *"
-msgstr ""
+msgstr "Pochta indeksi *"
 
 #: .\templates\cart\checkout.html:89
 msgid "Phone *"
-msgstr ""
+msgstr "Telefon *"
 
 #: .\templates\cart\checkout.html:95 .\templates\users\dashboard.html:167
 msgid "Email address *"
-msgstr ""
+msgstr "Elektron pochta manzili *"
 
 #: .\templates\cart\checkout.html:101
 msgid "Ship to a different address?"
-msgstr ""
+msgstr "Boshqa manzilga yetkazib berishmi?"
 
 #: .\templates\cart\checkout.html:104
 msgid "Order notes (optional)"
-msgstr ""
+msgstr "Buyurtma izohlari (ixtiyoriy)"
 
 #: .\templates\cart\checkout.html:106
 msgid "Notes about your order, e.g. special notes for delivery"
-msgstr ""
+msgstr "Buyurtmangiz haqida izohlar, masalan yetkazib berish uchun maxsus izohlar"
 
 #: .\templates\cart\checkout.html:111
 msgid "Your Order"
-msgstr ""
+msgstr "Buyurtmangiz"
 
 #: .\templates\cart\checkout.html:126
 msgid "Free shipping"
-msgstr ""
+msgstr "Bepul yetkazib berish"
 
 #: .\templates\cart\checkout.html:140
 msgid "Direct bank transfer"
-msgstr ""
+msgstr "To'g'ridan-to'g'ri bank o'tkazmasi"
 
 #: .\templates\cart\checkout.html:145
 msgid ""
 "Make your payment directly into our bank account. Please use your Order ID "
 "as the payment reference."
 msgstr ""
+"To'lovni to'g'ridan-to'g'ri bank hisobimizga amalga oshiring. Iltimos, "
+"to'lov uchun buyurtma raqamingizdan foydalaning."
 
 #: .\templates\cart\checkout.html:152
 msgid "Check payments"
-msgstr ""
+msgstr "Chek orqali to'lov"
 
 #: .\templates\cart\checkout.html:157
 msgid "Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio."
-msgstr ""
+msgstr "To'lov haqida qo'shimcha ma'lumot."
 
 #: .\templates\cart\checkout.html:164
 msgid "Cash on delivery"
-msgstr ""
+msgstr "Yetkazib berishda naqd to'lov"
 
 #: .\templates\cart\checkout.html:169
 msgid "Quisque volutpat mattis eros. Lorem ipsum dolor sit amet."
-msgstr ""
+msgstr "Naqd to'lov haqida qo'shimcha ma'lumot."
 
 #: .\templates\cart\checkout.html:176
 msgid "What is PayPal?"
-msgstr ""
+msgstr "PayPal nima?"
 
 #: .\templates\cart\checkout.html:181
 msgid ""
 "Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper "
 "suscipit."
-msgstr ""
+msgstr "PayPal orqali xavfsiz to'lov amalga oshiring."
 
 #: .\templates\cart\checkout.html:188
 msgid "Credit Card (Stripe)"
-msgstr ""
+msgstr "Kredit Karta (Stripe)"
 
 #: .\templates\cart\checkout.html:189
 msgid "payments cards"
-msgstr ""
+msgstr "to'lov kartalari"
 
 #: .\templates\cart\checkout.html:194
 msgid ""
 "Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet."
-msgstr ""
+msgstr "Karta orqali xavfsiz to'lov amalga oshiring."
 
 #: .\templates\cart\checkout.html:200
 msgid "Place Order"
-msgstr ""
+msgstr "Buyurtma Berish"
 
 #: .\templates\cart\checkout.html:201
 msgid "Proceed to Checkout"
-msgstr ""
+msgstr "To'lovga O'tish"
 
 #: .\templates\cart\wishlist.html:4 .\templates\cart\wishlist.html:13
 #: .\templates\cart\wishlist.html:22 .\templates\layout\base.html:110
 #: .\templates\layout\base.html:149 .\templates\products\product.html:110
 msgid "Wishlist"
-msgstr ""
+msgstr "Istaklar Ro'yxati"
 
 #: .\templates\cart\wishlist.html:34
 msgid "Stock Status"
-msgstr ""
+msgstr "Ombor Holati"
 
 #: .\templates\cart\wishlist.html:42
 msgid "Your wishlist is empty."
-msgstr ""
+msgstr "Istaklar ro'yxatingiz bo'sh."
 
 #: .\templates\cart\wishlist.html:43
 msgid "Browse Products"
-msgstr ""
+msgstr "Mahsulotlarni Ko'rish"
 
 #: .\templates\cart\wishlist.html:52
 msgid "Share on:"
-msgstr ""
+msgstr "Ulashish:"
 
 #: .\templates\layout\base.html:42 .\templates\layout\base.html:46
 msgid "Usd"
-msgstr ""
+msgstr "USD"
 
 #: .\templates\layout\base.html:45
 msgid "Eur"
-msgstr ""
+msgstr "EUR"
 
 #: .\templates\layout\base.html:54
 msgid "English"
-msgstr ""
+msgstr "Inglizcha"
 
 #: .\templates\layout\base.html:55
 msgid "Uzbek"
-msgstr ""
+msgstr "O'zbekcha"
 
 #: .\templates\layout\base.html:56
 msgid "Russian"
-msgstr ""
+msgstr "Ruscha"
 
 #: .\templates\layout\base.html:64
 msgid "Links"
-msgstr ""
+msgstr "Havolalar"
 
 #: .\templates\layout\base.html:66
 msgid "Call: +0123 456 789"
-msgstr ""
+msgstr "Qo'ng'iroq: +0123 456 789"
 
 #: .\templates\layout\base.html:67 .\templates\layout\base.html:129
 #: .\templates\layout\base.html:226 .\templates\shared\about.html:4
 #: .\templates\shared\about.html:12 .\templates\shared\about.html:20
 msgid "About Us"
-msgstr ""
+msgstr "Biz Haqimizda"
 
 #: .\templates\layout\base.html:68 .\templates\layout\base.html:130
 #: .\templates\layout\base.html:227 .\templates\shared\contact.html:4
 #: .\templates\shared\contact.html:12 .\templates\shared\contact.html:20
 msgid "Contact Us"
-msgstr ""
+msgstr "Biz Bilan Bog'laning"
 
 #: .\templates\layout\base.html:70 .\templates\layout\base.html:111
 #: .\templates\layout\base.html:247 .\templates\layout\base.html:252
 #: .\templates\users\dashboard.html:4 .\templates\users\dashboard.html:10
 #: .\templates\users\dashboard.html:19
 msgid "My Account"
-msgstr ""
+msgstr "Mening Hisobim"
 
 #: .\templates\layout\base.html:71
 msgid "Logout"
-msgstr ""
+msgstr "Chiqish"
 
 #: .\templates\layout\base.html:73 .\templates\layout\base.html:131
 #: .\templates\users\login.html:12
 msgid "Login"
-msgstr ""
+msgstr "Kirish"
 
 #: .\templates\layout\base.html:84
 msgid "Toggle mobile menu"
-msgstr ""
+msgstr "Mobil menyuni ochish/yopish"
 
 #: .\templates\layout\base.html:106
 msgid "Shop Pages"
-msgstr ""
+msgstr "Do'kon Sahifalari"
 
 #: .\templates\layout\base.html:108
 msgid "Cart"
-msgstr ""
+msgstr "Savat"
 
 #: .\templates\layout\base.html:123
 msgid "Blog Posts"
-msgstr ""
+msgstr "Blog Postlari"
 
 #: .\templates\layout\base.html:127
 msgid "Pages"
-msgstr ""
+msgstr "Sahifalar"
 
 #: .\templates\layout\base.html:144 .\templates\layout\base.html:276
 msgid "Search in..."
-msgstr ""
+msgstr "Qidirish..."
 
 #: .\templates\layout\base.html:172
 msgid "Orders $50 or more"
-msgstr ""
+msgstr "$50 va undan ko'p buyurtmalar uchun"
 
 #: .\templates\layout\base.html:180
 msgid "Free Returns"
-msgstr ""
+msgstr "Bepul Qaytarish"
 
 #: .\templates\layout\base.html:181
 msgid "Within 30 days"
-msgstr ""
+msgstr "30 kun ichida"
 
 #: .\templates\layout\base.html:189
 #, python-format
 msgid "Get 20%% Off 1 Item"
-msgstr ""
+msgstr "1 ta mahsulotga 20%% chegirma oling"
 
 #: .\templates\layout\base.html:190
 msgid "When you sign up"
-msgstr ""
+msgstr "Ro'yxatdan o'tganingizda"
 
 #: .\templates\layout\base.html:198
 msgid "We Support"
-msgstr ""
+msgstr "Biz Qo'llab-Quvvatlaymiz"
 
 #: .\templates\layout\base.html:199
 msgid "24/7 amazing services"
-msgstr ""
+msgstr "24/7 ajoyib xizmatlar"
 
 #: .\templates\layout\base.html:212
 msgid ""
 "Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu "
 "vulputate magna eros eu erat."
 msgstr ""
+"Biz sizga eng yaxshi sport mahsulotlari va xizmatlarni taqdim etamiz. "
+"Har doim yoningizda."
 
 #: .\templates\layout\base.html:224
 msgid "Useful Links"
-msgstr ""
+msgstr "Foydali Havolalar"
 
 #: .\templates\layout\base.html:228
 msgid "Log In"
-msgstr ""
+msgstr "Kirish"
 
 #: .\templates\layout\base.html:234
 msgid "Customer Service"
-msgstr ""
+msgstr "Mijozlarga Xizmat"
 
 #: .\templates\layout\base.html:236
 msgid "Payment Methods"
-msgstr ""
+msgstr "To'lov Usullari"
 
 #: .\templates\layout\base.html:237
 msgid "Money-back guarantee!"
-msgstr ""
+msgstr "Pul qaytarish kafolati!"
 
 #: .\templates\layout\base.html:238
 msgid "Returns"
-msgstr ""
+msgstr "Qaytarish"
 
 #: .\templates\layout\base.html:239
 msgid "Shipping"
-msgstr ""
+msgstr "Yetkazib Berish"
 
 #: .\templates\layout\base.html:240
 msgid "Terms and conditions"
-msgstr ""
+msgstr "Foydalanish Shartlari"
 
 #: .\templates\layout\base.html:241
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Maxfiylik Siyosati"
 
 #: .\templates\layout\base.html:249 .\templates\users\login.html:27
 msgid "Sign In"
-msgstr ""
+msgstr "Kirish"
 
 #: .\templates\layout\base.html:250
 msgid "View Cart"
-msgstr ""
+msgstr "Savatni Ko'rish"
 
 #: .\templates\layout\base.html:251
 msgid "My Wishlist"
-msgstr ""
+msgstr "Mening Istaklar Ro'yxatim"
 
 #: .\templates\layout\base.html:262
 msgid "Copyright © 2024 Molla Sport Store. All Rights Reserved."
-msgstr ""
+msgstr "Mualliflik huquqi © 2024 Molla Sport Do'koni. Barcha huquqlar himoyalangan."
 
 #: .\templates\layout\base.html:268
 msgid "Back to Top"
-msgstr ""
+msgstr "Yuqoriga Qaytish"
 
 #: .\templates\layout\base.html:281
 msgid "HOME"
-msgstr ""
+msgstr "BOSH SAHIFA"
 
 #: .\templates\layout\base.html:282
 msgid "SHOP"
-msgstr ""
+msgstr "DO'KON"
 
 #: .\templates\layout\base.html:283
 msgid "BLOG"
-msgstr ""
+msgstr "BLOG"
 
 #: .\templates\layout\base.html:284
 msgid "ABOUT US"
-msgstr ""
+msgstr "BIZ HAQIMIZDA"
 
 #: .\templates\layout\base.html:285
 msgid "CONTACT"
-msgstr ""
+msgstr "ALOQA"
 
 #: .\templates\layout\base.html:287
 msgid "MY ACCOUNT"
-msgstr ""
+msgstr "MENING HISOBIM"
 
 #: .\templates\layout\base.html:288
 msgid "LOGOUT"
-msgstr ""
+msgstr "CHIQISH"
 
 #: .\templates\layout\base.html:290
 msgid "LOGIN"
-msgstr ""
+msgstr "KIRISH"
 
 #: .\templates\products\category.html:17 .\templates\products\category.html:28
 msgid "All Products"
-msgstr ""
+msgstr "Barcha Mahsulotlar"
 
 #: .\templates\products\category.html:42
 msgid "Showing"
-msgstr ""
+msgstr "Ko'rsatilmoqda"
 
 #: .\templates\products\category.html:42
 msgid "of"
-msgstr ""
+msgstr "/"
 
 #: .\templates\products\category.html:42
 msgid "Products"
-msgstr ""
+msgstr "Mahsulot"
 
 #: .\templates\products\category.html:47
 msgid "Sort by:"
-msgstr ""
+msgstr "Saralash:"
 
 #: .\templates\products\category.html:51
 msgid "Default"
-msgstr ""
+msgstr "Standart"
 
 #: .\templates\products\category.html:52
 msgid "Price: Low to High"
-msgstr ""
+msgstr "Narx: Pastdan Yuqoriga"
 
 #: .\templates\products\category.html:53
 msgid "Price: High to Low"
-msgstr ""
+msgstr "Narx: Yuqoridan Pastga"
 
 #: .\templates\products\category.html:54
 msgid "Newest"
-msgstr ""
+msgstr "Eng Yangi"
 
 #: .\templates\products\category.html:68 .\templates\products\product.html:259
 msgid "Out of Stock"
-msgstr ""
+msgstr "Omborda Yo'q"
 
 #: .\templates\products\category.html:70
 msgid "Sale"
-msgstr ""
+msgstr "Chegirma"
 
 #: .\templates\products\category.html:80 .\templates\products\product.html:268
 msgid "add to wishlist"
-msgstr ""
+msgstr "istaklar ro'yxatiga qo'shish"
 
 #: .\templates\products\category.html:83 .\templates\products\product.html:108
 #: .\templates\products\product.html:271 .\templates\shared\home.html:136
 msgid "add to cart"
-msgstr ""
+msgstr "savatga qo'shish"
 
 #: .\templates\products\category.html:98 .\templates\products\product.html:87
 #: .\templates\products\product.html:284 .\templates\shared\home.html:129
 msgid "Was"
-msgstr ""
+msgstr "Eski narx"
 
 #: .\templates\products\category.html:109 .\templates\products\product.html:145
 #: .\templates\products\product.html:174 .\templates\products\product.html:295
 msgid "Reviews"
-msgstr ""
+msgstr "Sharhlar"
 
 #: .\templates\products\category.html:116
 msgid "No products found"
-msgstr ""
+msgstr "Mahsulotlar topilmadi"
 
 #: .\templates\products\category.html:116
 msgid "for"
-msgstr ""
+msgstr "uchun"
 
 #: .\templates\products\category.html:117
 msgid "View All Products"
-msgstr ""
+msgstr "Barcha Mahsulotlarni Ko'rish"
 
 #: .\templates\products\category.html:157
 msgid "Filters:"
-msgstr ""
+msgstr "Filtrlar:"
 
 #: .\templates\products\category.html:158
 msgid "Clean All"
-msgstr ""
+msgstr "Hammasini Tozalash"
 
 #: .\templates\products\category.html:164
 msgid "Category"
-msgstr ""
+msgstr "Kategoriya"
 
 #: .\templates\products\category.html:196
 msgid "Price Range:"
-msgstr ""
+msgstr "Narx Oralig'i:"
 
 #: .\templates\products\product.html:80
 msgid "Review"
-msgstr ""
+msgstr "Sharh"
 
 #: .\templates\products\product.html:100
 msgid "Qty:"
-msgstr ""
+msgstr "Miqdor:"
 
 #: .\templates\products\product.html:110 .\templates\shared\home.html:137
 msgid "Add to Wishlist"
-msgstr ""
+msgstr "Istaklar Ro'yxatiga Qo'shish"
 
 #: .\templates\products\product.html:117
 msgid "Category:"
-msgstr ""
+msgstr "Kategoriya:"
 
 #: .\templates\products\product.html:122
 msgid "Share:"
-msgstr ""
+msgstr "Ulashish:"
 
 #: .\templates\products\product.html:138
 msgid "Description"
-msgstr ""
+msgstr "Tavsif"
 
 #: .\templates\products\product.html:141
 msgid "Shipping & Returns"
-msgstr ""
+msgstr "Yetkazib Berish va Qaytarish"
 
 #: .\templates\products\product.html:153
 msgid "Product Information"
-msgstr ""
+msgstr "Mahsulot Ma'lumotlari"
 
 #: .\templates\products\product.html:157
 msgid "No description available for this product."
-msgstr ""
+msgstr "Bu mahsulot uchun tavsif mavjud emas."
 
 #: .\templates\products\product.html:165
 msgid "Delivery & Returns"
-msgstr ""
+msgstr "Yetkazib Berish va Qaytarish"
 
 #: .\templates\products\product.html:166
 msgid ""
 "We deliver to over 100 countries around the world. For full details of the "
 "delivery options we offer, please view our"
 msgstr ""
+"Biz dunyoning 100 dan ortiq mamlakatiga yetkazib beramiz. Taklif etayotgan "
+"yetkazib berish variantlari haqida to'liq ma'lumot olish uchun ko'ring"
 
 #: .\templates\products\product.html:166
 msgid "Delivery information"
-msgstr ""
+msgstr "Yetkazib berish ma'lumotlari"
 
 #: .\templates\products\product.html:167
 msgid ""
@@ -796,78 +803,81 @@ msgid ""
 "you can do so within a month of receipt. For full details of how to make a "
 "return, please view our"
 msgstr ""
+"Har bir xaridingizdan mamnun bo'lishingizni umid qilamiz, lekin agar biror "
+"mahsulotni qaytarishingiz kerak bo'lsa, uni olganingizdan bir oy ichida "
+"amalga oshirishingiz mumkin. Qaytarish haqida to'liq ma'lumot olish uchun ko'ring"
 
 #: .\templates\products\product.html:167
 msgid "Returns information"
-msgstr ""
+msgstr "Qaytarish ma'lumotlari"
 
 #: .\templates\products\product.html:196
 msgid "No reviews yet. Be the first to review this product!"
-msgstr ""
+msgstr "Hali sharhlar yo'q. Ushbu mahsulotni birinchi bo'lib sharhlang!"
 
 #: .\templates\products\product.html:201
 msgid "Add a Review"
-msgstr ""
+msgstr "Sharh Qo'shish"
 
 #: .\templates\products\product.html:205
 msgid "Your rating:"
-msgstr ""
+msgstr "Sizning bahongiz:"
 
 #: .\templates\products\product.html:207
 msgid "1 Star"
-msgstr ""
+msgstr "1 Yulduz"
 
 #: .\templates\products\product.html:208
 msgid "2 Stars"
-msgstr ""
+msgstr "2 Yulduz"
 
 #: .\templates\products\product.html:209
 msgid "3 Stars"
-msgstr ""
+msgstr "3 Yulduz"
 
 #: .\templates\products\product.html:210
 msgid "4 Stars"
-msgstr ""
+msgstr "4 Yulduz"
 
 #: .\templates\products\product.html:211
 msgid "5 Stars"
-msgstr ""
+msgstr "5 Yulduz"
 
 #: .\templates\products\product.html:223
 msgid "Your Review *"
-msgstr ""
+msgstr "Sizning Sharh *"
 
 #: .\templates\products\product.html:228 .\templates\shared\contact.html:109
 msgid "SUBMIT"
-msgstr ""
+msgstr "YUBORISH"
 
 #: .\templates\products\product.html:241
 msgid "You May Also Like"
-msgstr ""
+msgstr "Sizga Yoqishi Mumkin"
 
 #: .\templates\shared\404.html:4
 msgid "404 - Page Not Found"
-msgstr ""
+msgstr "404 - Sahifa Topilmadi"
 
 #: .\templates\shared\404.html:20
 msgid "Error 404"
-msgstr ""
+msgstr "Xato 404"
 
 #: .\templates\shared\404.html:21
 msgid "We are sorry, the page you've requested is not available."
-msgstr ""
+msgstr "Kechirasiz, so'ragan sahifangiz mavjud emas."
 
 #: .\templates\shared\404.html:23
 msgid "BACK TO HOMEPAGE"
-msgstr ""
+msgstr "BOSH SAHIFAGA QAYTISH"
 
 #: .\templates\shared\about.html:20 .\templates\shared\about.html:44
 msgid "Who We Are"
-msgstr ""
+msgstr "Biz Kimiz"
 
 #: .\templates\shared\about.html:29
 msgid "Our Vision"
-msgstr ""
+msgstr "Bizning Maqsadimiz"
 
 #: .\templates\shared\about.html:30
 msgid ""
@@ -876,10 +886,13 @@ msgid ""
 "dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet "
 "viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh."
 msgstr ""
+"Biz sport inshootlari va jihozlari sohasida eng yaxshi mahsulotlarni "
+"taqdim etishni maqsad qilganmiz. Mijozlarimizning qoniqishi biz uchun "
+"eng muhim narsa bo'lib, har doim sifatli va ishonchli mahsulotlar taklif etamiz."
 
 #: .\templates\shared\about.html:33
 msgid "Our Mission"
-msgstr ""
+msgstr "Bizning Vazifamiz"
 
 #: .\templates\shared\about.html:34
 msgid ""
@@ -888,12 +901,17 @@ msgid ""
 "quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed "
 "semper lorem at felis."
 msgstr ""
+"Bizning vazifamiz - sport va faol hayot tarzi uchun eng yaxshi mahsulotlarni "
+"qulaylik bilan yetkazib berish. Biz mijozlarimizga eng yuqori sifatdagi "
+"sport jihozlarini hamkorlik asosida taqdim etamiz."
 
 #: .\templates\shared\about.html:45
 msgid ""
 "Pellentesque odio nisi, euismod pharetra a ultricies in diam. Sed arcu. Cras "
 "consequat"
 msgstr ""
+"Biz sport do'konlari orasida etakchi o'rinni egallash uchun doimo "
+"xizmatlarimizni takomillashtirib boramiz."
 
 #: .\templates\shared\about.html:46
 msgid ""
@@ -901,40 +919,44 @@ msgid ""
 "eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et "
 "vulputate volutpat, uctus metus libero eu augue."
 msgstr ""
+"Yuqori sifatli mahsulotlar va mukammal mijozlarga xizmat ko'rsatish orqali "
+"biz sport sohasida ishonchli hamkorga aylandik."
 
 #: .\templates\shared\about.html:48
 msgid "VIEW OUR NEWS"
-msgstr ""
+msgstr "YANGILIKLARIMIZNI KO'RING"
 
 #: .\templates\shared\about.html:66
 msgid "The world's premium design brands in one destination."
-msgstr ""
+msgstr "Dunyoning eng yaxshi dizayn brendlari bir joyda."
 
 #: .\templates\shared\about.html:67
 msgid ""
 "Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, "
 "aliquet vel, dapibus id, mattis vel, nis"
 msgstr ""
+"Eng mashhur sport brendlarining to'liq to'plami sizni kutmoqda. "
+"Yuqori sifat va zamonaviy dizayn bilan."
 
 #: .\templates\shared\about.html:76 .\templates\shared\home.html:51
 #: .\templates\shared\home.html:52 .\templates\shared\home.html:53
 #: .\templates\shared\home.html:54 .\templates\shared\home.html:55
 #: .\templates\shared\home.html:56
 msgid "Brand Name"
-msgstr ""
+msgstr "Brend Nomi"
 
 #: .\templates\shared\about.html:87
 msgid "Meet Our Team"
-msgstr ""
+msgstr "Jamoamiz bilan Tanishing"
 
 #: .\templates\shared\about.html:94 .\templates\shared\about.html:116
 #: .\templates\shared\about.html:138
 msgid "member photo"
-msgstr ""
+msgstr "a'zo rasmi"
 
 #: .\templates\shared\about.html:97 .\templates\shared\about.html:108
 msgid "Founder & CEO"
-msgstr ""
+msgstr "Asoschisi va Bosh Ijrochi Direktori"
 
 #: .\templates\shared\about.html:98 .\templates\shared\about.html:120
 #: .\templates\shared\about.html:142
@@ -942,18 +964,19 @@ msgid ""
 "Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget "
 "blandit nunc."
 msgstr ""
+"Bizning jamoamiz a'zosi bo'lib, sport sohasida keng tajribaga ega mutaxassis."
 
 #: .\templates\shared\about.html:119 .\templates\shared\about.html:130
 msgid "Sales & Marketing Manager"
-msgstr ""
+msgstr "Savdo va Marketing Menejeri"
 
 #: .\templates\shared\about.html:141 .\templates\shared\about.html:152
 msgid "Product Manager"
-msgstr ""
+msgstr "Mahsulot Menejeri"
 
 #: .\templates\shared\about.html:163
 msgid "What Customers Say About Us"
-msgstr ""
+msgstr "Mijozlar Biz Haqimizda"
 
 #: .\templates\shared\about.html:174
 msgid ""
@@ -961,24 +984,27 @@ msgid ""
 "aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, "
 "nisi."
 msgstr ""
+"Molla Sport Do'konidan xarid qilganimdan juda mamnunman. Sifatli mahsulotlar "
+"va tez yetkazib berish uchun katta rahmat!"
 
 #: .\templates\shared\about.html:175 .\templates\shared\about.html:180
 msgid "Customer"
-msgstr ""
+msgstr "Mijoz"
 
 #: .\templates\shared\about.html:179
 msgid ""
 "Impedit, ratione sequi, sunt incidunt magnam et. Delectus obcaecati optio "
 "eius error libero perferendis nesciunt."
 msgstr ""
+"Ajoyib xizmat va yuqori sifatli mahsulotlar. Bu do'konni hammaga tavsiya qilaman!"
 
 #: .\templates\shared\contact.html:20
 msgid "Keep in touch with us"
-msgstr ""
+msgstr "Biz Bilan Bog'lanib Turing"
 
 #: .\templates\shared\contact.html:35
 msgid "Contact Information"
-msgstr ""
+msgstr "Aloqa Ma'lumotlari"
 
 #: .\templates\shared\contact.html:36
 msgid ""
@@ -986,445 +1012,449 @@ msgid ""
 "pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum "
 "et, dapibus sed, urna."
 msgstr ""
+"Har qanday savol yoki muammo bo'lsa, biz bilan bog'laning. Jamoamiz "
+"sizga yordam berishga doim tayyor."
 
 #: .\templates\shared\contact.html:40
 msgid "The Office"
-msgstr ""
+msgstr "Ofis"
 
 #: .\templates\shared\contact.html:44
 msgid "70 Washington Square South New York, NY 10012, United States"
-msgstr ""
+msgstr "70 Washington Square South New York, NY 10012, AQSh"
 
 #: .\templates\shared\contact.html:59
 msgid "Store Hours"
-msgstr ""
+msgstr "Do'kon Ish Vaqti"
 
 #: .\templates\shared\contact.html:63
 msgid "Monday–Saturday"
-msgstr ""
+msgstr "Dushanba–Shanba"
 
 #: .\templates\shared\contact.html:63
 msgid "11am–7pm ET"
-msgstr ""
+msgstr "11:00–19:00 ET"
 
 #: .\templates\shared\contact.html:67
 #: .\venv\Lib\site-packages\django\utils\dates.py:13
 msgid "Sunday"
-msgstr ""
+msgstr "Yakshanba"
 
 #: .\templates\shared\contact.html:67
 msgid "11am–6pm ET"
-msgstr ""
+msgstr "11:00–18:00 ET"
 
 #: .\templates\shared\contact.html:76
 msgid "Got Any Questions?"
-msgstr ""
+msgstr "Savollaringiz Bormi?"
 
 #: .\templates\shared\contact.html:77
 msgid "Use the form below to get in touch with the sales team"
-msgstr ""
+msgstr "Savdo jamoasi bilan bog'lanish uchun quyidagi formadan foydalaning"
 
 #: .\templates\shared\contact.html:95 .\templates\shared\contact.html:97
 #: .\templates\users\dashboard.html:98
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: .\templates\shared\contact.html:100 .\templates\shared\contact.html:102
 msgid "Subject"
-msgstr ""
+msgstr "Mavzu"
 
 #: .\templates\shared\contact.html:105
 msgid "Message"
-msgstr ""
+msgstr "Xabar"
 
 #: .\templates\shared\contact.html:107
 msgid "Message *"
-msgstr ""
+msgstr "Xabar *"
 
 #: .\templates\shared\contact.html:119
 msgid "Our Stores"
-msgstr ""
+msgstr "Bizning Do'konlarimiz"
 
 #: .\templates\shared\contact.html:126 .\templates\shared\contact.html:148
 msgid "Store image"
-msgstr ""
+msgstr "Do'kon rasmi"
 
 #: .\templates\shared\contact.html:131
 msgid "Wall Street Plaza"
-msgstr ""
+msgstr "Wall Street Plaza"
 
 #: .\templates\shared\contact.html:132 .\templates\shared\contact.html:154
 msgid "88 Pine St, New York, NY 10005, USA"
-msgstr ""
+msgstr "88 Pine St, New York, NY 10005, AQSh"
 
 #: .\templates\shared\contact.html:134 .\templates\shared\contact.html:156
 msgid "Store Hours:"
-msgstr ""
+msgstr "Do'kon Ish Vaqti:"
 
 #: .\templates\shared\contact.html:135
 msgid "Monday – Saturday 11am to 7pm"
-msgstr ""
+msgstr "Dushanba – Shanba 11:00 dan 19:00 gacha"
 
 #: .\templates\shared\contact.html:136
 msgid "Sunday 11am to 6pm"
-msgstr ""
+msgstr "Yakshanba 11:00 dan 18:00 gacha"
 
 #: .\templates\shared\contact.html:137 .\templates\shared\contact.html:160
 msgid "View Map"
-msgstr ""
+msgstr "Xaritada Ko'rish"
 
 #: .\templates\shared\contact.html:153
 msgid "One New York Plaza"
-msgstr ""
+msgstr "One New York Plaza"
 
 #: .\templates\shared\contact.html:157
 msgid "Monday – Friday 9am to 8pm"
-msgstr ""
+msgstr "Dushanba – Juma 9:00 dan 20:00 gacha"
 
 #: .\templates\shared\contact.html:158
 msgid "Saturday – 9am to 2pm"
-msgstr ""
+msgstr "Shanba – 9:00 dan 14:00 gacha"
 
 #: .\templates\shared\contact.html:159
 msgid "Sunday – Closed"
-msgstr ""
+msgstr "Yakshanba – Yopiq"
 
 #: .\templates\shared\home.html:4
 msgid "Molla - Extreme Sport Store"
-msgstr ""
+msgstr "Molla - Ekstremal Sport Do'koni"
 
 #: .\templates\shared\home.html:13
 msgid "Premium Outdoor Gear & Clothing"
-msgstr ""
+msgstr "Premium Ochiq Havo Jihozlari va Kiyimlari"
 
 #: .\templates\shared\home.html:16
 msgid "Our New Collections 2019"
-msgstr ""
+msgstr "Bizning Yangi Kolleksiyalarimiz 2019"
 
 #: .\templates\shared\home.html:17
 msgid "Ski & Snowboard"
-msgstr ""
+msgstr "Chang'i va Snoubord"
 
 #: .\templates\shared\home.html:20
 msgid "discover now"
-msgstr ""
+msgstr "hozir kashf eting"
 
 #: .\templates\shared\home.html:35
 msgid "trending brands"
-msgstr ""
+msgstr "mashhur brendlar"
 
 #: .\templates\shared\home.html:67
 msgid "Online mega deal"
-msgstr ""
+msgstr "Onlayn mega taklif"
 
 #: .\templates\shared\home.html:68
 msgid "Camping Gear & Accessories"
-msgstr ""
+msgstr "Lager Jihozlari va Aksessuarlari"
 
 #: .\templates\shared\home.html:69 .\templates\shared\home.html:84
 msgid "Shop Now"
-msgstr ""
+msgstr "Hozir Xarid Qiling"
 
 #: .\templates\shared\home.html:75
 msgid "Summer"
-msgstr ""
+msgstr "Yoz"
 
 #: .\templates\shared\home.html:75
 msgid "Clearance"
-msgstr ""
+msgstr "Chegirma"
 
 #: .\templates\shared\home.html:76
 msgid "Discover Now"
-msgstr ""
+msgstr "Hozir Kashf Eting"
 
 #: .\templates\shared\home.html:82
 msgid "Lightning Deals"
-msgstr ""
+msgstr "Chaqmoq Takliflar"
 
 #: .\templates\shared\home.html:83
 msgid "Sports & Outdoors"
-msgstr ""
+msgstr "Sport va Ochiq Havo"
 
 #: .\templates\shared\home.html:94
 msgid "favourite from every category"
-msgstr ""
+msgstr "har bir kategoriyadan sevimlilar"
 
 #: .\templates\shared\home.html:95
 msgid "Best Sellers"
-msgstr ""
+msgstr "Eng Ko'p Sotiladigan"
 
 #: .\templates\shared\home.html:142
 msgid "No featured products yet. Add some from the admin panel!"
-msgstr ""
+msgstr "Hozircha tanlangan mahsulotlar yo'q. Admin panelidan qo'shing!"
 
 #: .\templates\shared\home.html:151
 msgid "Get The Latest News & Deals"
-msgstr ""
+msgstr "Eng So'nggi Yangiliklar va Takliflarni Oling"
 
 #: .\templates\shared\home.html:152
 msgid "Stay In The Know"
-msgstr ""
+msgstr "Xabardor Bo'lib Turing"
 
 #: .\templates\shared\home.html:157
 msgid "Enter your Email Address"
-msgstr ""
+msgstr "Elektron pochta manzilingizni kiriting"
 
 #: .\templates\shared\home.html:157
 msgid "Email Address"
-msgstr ""
+msgstr "Elektron Pochta Manzili"
 
 #: .\templates\shared\home.html:159
 msgid "Subscribe"
-msgstr ""
+msgstr "Obuna Bo'lish"
 
 #: .\templates\shared\home.html:170
 msgid "Our Fresh News"
-msgstr ""
+msgstr "Bizning Yangi Xabarlarimiz"
 
 #: .\templates\shared\home.html:171
 msgid "New Blog Posts"
-msgstr ""
+msgstr "Yangi Blog Postlari"
 
 #: .\templates\shared\home.html:205
 msgid "read more"
-msgstr ""
+msgstr "ko'proq o'qish"
 
 #: .\templates\shared\home.html:210
 msgid "No blog posts yet."
-msgstr ""
+msgstr "Hozircha blog postlar yo'q."
 
 #: .\templates\users\dashboard.html:34
 msgid "Dashboard"
-msgstr ""
+msgstr "Boshqaruv Paneli"
 
 #: .\templates\users\dashboard.html:39
 msgid "Orders"
-msgstr ""
+msgstr "Buyurtmalar"
 
 #: .\templates\users\dashboard.html:44
 msgid "Addresses"
-msgstr ""
+msgstr "Manzillar"
 
 #: .\templates\users\dashboard.html:49
 msgid "Account Details"
-msgstr ""
+msgstr "Hisob Ma'lumotlari"
 
 #: .\templates\users\dashboard.html:52
 msgid "Sign Out"
-msgstr ""
+msgstr "Chiqish"
 
 #: .\templates\users\dashboard.html:71
 msgid "Hello"
-msgstr ""
+msgstr "Salom"
 
 #: .\templates\users\dashboard.html:72
 msgid "not"
-msgstr ""
+msgstr "emas"
 
 #: .\templates\users\dashboard.html:73
 msgid "Log out"
-msgstr ""
+msgstr "Chiqish"
 
 #: .\templates\users\dashboard.html:75
 msgid "From your account dashboard you can view your"
-msgstr ""
+msgstr "Hisob boshqaruv panelingizdan quyidagilarni ko'rishingiz mumkin"
 
 #: .\templates\users\dashboard.html:76
 msgid "recent orders"
-msgstr ""
+msgstr "so'nggi buyurtmalar"
 
 #: .\templates\users\dashboard.html:77
 msgid "manage your"
-msgstr ""
+msgstr "boshqarish"
 
 #: .\templates\users\dashboard.html:78
 msgid "shipping and billing addresses"
-msgstr ""
+msgstr "yetkazib berish va to'lov manzillarini"
 
 #: .\templates\users\dashboard.html:79
 #: .\venv\Lib\site-packages\django\db\models\base.py:1600
 #: .\venv\Lib\site-packages\django\forms\models.py:908
 msgid "and"
-msgstr ""
+msgstr "va"
 
 #: .\templates\users\dashboard.html:80
 msgid "edit your password and account details"
-msgstr ""
+msgstr "parolingizni va hisob ma'lumotlarini tahrirlash"
 
 #: .\templates\users\dashboard.html:110
 msgid "No order has been made yet."
-msgstr ""
+msgstr "Hali hech qanday buyurtma berilmagan."
 
 #: .\templates\users\dashboard.html:112
 msgid "GO SHOP"
-msgstr ""
+msgstr "DO'KONGA O'TISH"
 
 #: .\templates\users\dashboard.html:119
 msgid "The following addresses will be used on the checkout page by default."
-msgstr ""
+msgstr "Quyidagi manzillar to'lov sahifasida standart holda ishlatiladi."
 
 #: .\templates\users\dashboard.html:124
 msgid "Billing Address"
-msgstr ""
+msgstr "To'lov Manzili"
 
 #: .\templates\users\dashboard.html:129 .\templates\users\dashboard.html:140
 msgid "Edit"
-msgstr ""
+msgstr "Tahrirlash"
 
 #: .\templates\users\dashboard.html:137
 msgid "Shipping Address"
-msgstr ""
+msgstr "Yetkazib Berish Manzili"
 
 #: .\templates\users\dashboard.html:139
 msgid "You have not set up this type of address yet."
-msgstr ""
+msgstr "Siz bu turdagi manzilni hali o'rnatmagansiz."
 
 #: .\templates\users\dashboard.html:156 .\templates\users\login.html:128
 msgid "Full Name *"
-msgstr ""
+msgstr "To'liq Ism *"
 
 #: .\templates\users\dashboard.html:161 .\templates\users\login.html:117
 msgid "Username *"
-msgstr ""
+msgstr "Foydalanuvchi Nomi *"
 
 #: .\templates\users\dashboard.html:171
 msgid "Phone number"
-msgstr ""
+msgstr "Telefon Raqami"
 
 #: .\templates\users\dashboard.html:176
 msgid "Change Password"
-msgstr ""
+msgstr "Parolni O'zgartirish"
 
 #: .\templates\users\dashboard.html:178
 msgid "Current password"
-msgstr ""
+msgstr "Joriy parol"
 
 #: .\templates\users\dashboard.html:178 .\templates\users\dashboard.html:181
 msgid "leave blank to leave unchanged"
-msgstr ""
+msgstr "o'zgartirmaslik uchun bo'sh qoldiring"
 
 #: .\templates\users\dashboard.html:181
 msgid "New password"
-msgstr ""
+msgstr "Yangi parol"
 
 #: .\templates\users\dashboard.html:184
 msgid "Confirm new password"
-msgstr ""
+msgstr "Yangi parolni tasdiqlang"
 
 #: .\templates\users\dashboard.html:188
 msgid "SAVE CHANGES"
-msgstr ""
+msgstr "O'ZGARISHLARNI SAQLASH"
 
 #: .\templates\users\login.html:4
 msgid "Login / Register"
-msgstr ""
+msgstr "Kirish / Ro'yxatdan O'tish"
 
 #: .\templates\users\login.html:33
 msgid "Register"
-msgstr ""
+msgstr "Ro'yxatdan O'tish"
 
 #: .\templates\users\login.html:54
 msgid "Username or email address *"
-msgstr ""
+msgstr "Foydalanuvchi nomi yoki elektron pochta *"
 
 #: .\templates\users\login.html:63 .\templates\users\login.html:139
 msgid "Password *"
-msgstr ""
+msgstr "Parol *"
 
 #: .\templates\users\login.html:72
 msgid "LOG IN"
-msgstr ""
+msgstr "KIRISH"
 
 #: .\templates\users\login.html:77
 msgid "Remember Me"
-msgstr ""
+msgstr "Meni Eslab Qol"
 
 #: .\templates\users\login.html:106
 msgid "Your email address *"
-msgstr ""
+msgstr "Elektron pochta manzilingiz *"
 
 #: .\templates\users\login.html:149
 msgid "Confirm Password *"
-msgstr ""
+msgstr "Parolni Tasdiqlang *"
 
 #: .\templates\users\login.html:160
 msgid "SIGN UP"
-msgstr ""
+msgstr "RO'YXATDAN O'TISH"
 
 #: .\templates\users\login.html:166
 msgid "I agree to the"
-msgstr ""
+msgstr "Men qabul qilaman"
 
 #: .\templates\users\login.html:166
 msgid "privacy policy"
-msgstr ""
+msgstr "maxfiylik siyosatini"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
-msgstr ""
+msgstr "Xabarlar"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr ""
+msgstr "Sayt Xaritalari"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "Statik Fayllar"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr ""
+msgstr "Sindikatlashtirish"
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
 #: .\venv\Lib\site-packages\django\core\paginator.py:30
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:32
 msgid "That page number is not an integer"
-msgstr ""
+msgstr "Bu sahifa raqami butun son emas"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:33
 msgid "That page number is less than 1"
-msgstr ""
+msgstr "Bu sahifa raqami 1 dan kam"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:34
 msgid "That page contains no results"
-msgstr ""
+msgstr "Bu sahifada natijalar yo'q"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
-msgstr ""
+msgstr "To'g'ri qiymat kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:70
 msgid "Enter a valid domain name."
-msgstr ""
+msgstr "To'g'ri domen nomini kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:153
 #: .\venv\Lib\site-packages\django\forms\fields.py:774
 msgid "Enter a valid URL."
-msgstr ""
+msgstr "To'g'ri URL manzilini kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:200
 msgid "Enter a valid integer."
-msgstr ""
+msgstr "To'g'ri butun son kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:211
 msgid "Enter a valid email address."
-msgstr ""
+msgstr "To'g'ri elektron pochta manzilini kiriting."
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: .\venv\Lib\site-packages\django\core\validators.py:289
 msgid ""
-"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+"Enter a valid \u201cslug\u201d consisting of letters, numbers, underscores or hyphens."
 msgstr ""
+"Harflar, raqamlar, pastki chiziqlar yoki defislardan iborat to'g'ri \"slug\" kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:297
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"Enter a valid \u201cslug\u201d consisting of Unicode letters, numbers, underscores, or "
 "hyphens."
 msgstr ""
+"Unicode harflar, raqamlar, pastki chiziqlar yoki defislardan iborat to'g'ri \"slug\" kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:309
 #: .\venv\Lib\site-packages\django\core\validators.py:318
@@ -1432,44 +1462,44 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
 #, python-format
 msgid "Enter a valid %(protocol)s address."
-msgstr ""
+msgstr "To'g'ri %(protocol)s manzilini kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:311
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:320
 #: .\venv\Lib\site-packages\django\utils\ipv6.py:43
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:334
 msgid "IPv4 or IPv6"
-msgstr ""
+msgstr "IPv4 yoki IPv6"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:375
 msgid "Enter only digits separated by commas."
-msgstr ""
+msgstr "Faqat vergul bilan ajratilgan raqamlar kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:381
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
+msgstr "Bu qiymat %(limit_value)s bo'lishi kerak (hozir %(show_value)s)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:416
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
+msgstr "Bu qiymat %(limit_value)s dan kichik yoki teng bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:425
 #, python-format
 msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
+msgstr "Bu qiymat %(limit_value)s dan katta yoki teng bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:434
 #, python-format
 msgid "Ensure this value is a multiple of step size %(limit_value)s."
-msgstr ""
+msgstr "Bu qiymat %(limit_value)s qadam hajmining karrali bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:441
 #, python-format
@@ -1477,6 +1507,8 @@ msgid ""
 "Ensure this value is a multiple of step size %(limit_value)s, starting from "
 "%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
 msgstr ""
+"Bu qiymat %(offset)s dan boshlab %(limit_value)s qadam hajmining karrali bo'lishi kerak, "
+"masalan %(offset)s, %(valid_value1)s, %(valid_value2)s va hokazo."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:473
 #, python-format
@@ -1487,7 +1519,7 @@ msgid_plural ""
 "Ensure this value has at least %(limit_value)d characters (it has "
 "%(show_value)d)."
 msgstr[0] ""
-msgstr[1] ""
+"Bu qiymatda kamida %(limit_value)d ta belgi bo'lishi kerak (hozir %(show_value)d ta)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:491
 #, python-format
@@ -1498,27 +1530,25 @@ msgid_plural ""
 "Ensure this value has at most %(limit_value)d characters (it has "
 "%(show_value)d)."
 msgstr[0] ""
-msgstr[1] ""
+"Bu qiymatda ko'pi bilan %(limit_value)d ta belgi bo'lishi kerak (hozir %(show_value)d ta)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:514
 #: .\venv\Lib\site-packages\django\forms\fields.py:365
 #: .\venv\Lib\site-packages\django\forms\fields.py:404
 msgid "Enter a number."
-msgstr ""
+msgstr "Raqam kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:516
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Jami ko'pi bilan %(max)s ta raqam bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:521
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ko'pi bilan %(max)s ta kasr qismi bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:526
 #, python-format
@@ -1526,344 +1556,348 @@ msgid ""
 "Ensure that there are no more than %(max)s digit before the decimal point."
 msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kasr nuqtasidan oldin ko'pi bilan %(max)s ta raqam bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:597
 #, python-format
 msgid ""
-"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"File extension \u201c%(extension)s\u201d is not allowed. Allowed extensions are: "
 "%(allowed_extensions)s."
 msgstr ""
+"\"%(extension)s\" fayl kengaytmasiga ruxsat berilmagan. Ruxsat etilgan kengaytmalar: "
+"%(allowed_extensions)s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:659
 msgid "Null characters are not allowed."
-msgstr ""
+msgstr "Null belgilarga ruxsat berilmagan."
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1602
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
+msgstr "Bu %(field_labels)s bilan %(model_name)s allaqachon mavjud."
 
 #: .\venv\Lib\site-packages\django\db\models\constraints.py:22
 #, python-format
-msgid "Constraint “%(name)s” is violated."
-msgstr ""
+msgid "Constraint \u201c%(name)s\u201d is violated."
+msgstr "\"%(name)s\" cheklovi buzilgan."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
 #, python-format
 msgid "Value %(value)r is not a valid choice."
-msgstr ""
+msgstr "%(value)r qiymati to'g'ri tanlov emas."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
 msgid "This field cannot be null."
-msgstr ""
+msgstr "Bu maydon null bo'lishi mumkin emas."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
 msgid "This field cannot be blank."
-msgstr ""
+msgstr "Bu maydon bo'sh bo'lishi mumkin emas."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
 #, python-format
 msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
+msgstr "Bu %(field_label)s bilan %(model_name)s allaqachon mavjud."
 
-#. Translators: The 'lookup_type' is one of 'date', 'year' or
-#. 'month'. Eg: "Title must be unique for pub_date year"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
 #, python-format
 msgid ""
 "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-msgstr ""
+msgstr "%(field_label)s %(date_field_label)s %(lookup_type)s uchun noyob bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
 #, python-format
 msgid "Field of type: %(field_type)s"
-msgstr ""
+msgstr "Maydon turi: %(field_type)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
 #, python-format
-msgid "“%(value)s” value must be either True or False."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be either True or False."
+msgstr "\"%(value)s\" qiymati True yoki False bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
 #, python-format
-msgid "“%(value)s” value must be either True, False, or None."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be either True, False, or None."
+msgstr "\"%(value)s\" qiymati True, False yoki None bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
 msgid "Boolean (Either True or False)"
-msgstr ""
+msgstr "Mantiqiy (True yoki False)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
 #, python-format
 msgid "String (up to %(max_length)s)"
-msgstr ""
+msgstr "Satr (%(max_length)s gacha)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
 msgid "String (unlimited)"
-msgstr ""
+msgstr "Satr (cheksiz)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
 msgid "Comma-separated integers"
-msgstr ""
+msgstr "Vergul bilan ajratilgan butun sonlar"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"\u201c%(value)s\u201d value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
+"\"%(value)s\" qiymatining sana formati noto'g'ri. YYYY-MM-DD formatida bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
+"\"%(value)s\" qiymati to'g'ri formatda (YYYY-MM-DD), lekin noto'g'ri sana."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
 msgid "Date (without time)"
-msgstr ""
+msgstr "Sana (vaqtsiz)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"\u201c%(value)s\u201d value has an invalid format. It must be in YYYY-MM-DD "
 "HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
+"\"%(value)s\" qiymatining formati noto'g'ri. YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] formatida bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
 "[TZ]) but it is an invalid date/time."
 msgstr ""
+"\"%(value)s\" qiymati to'g'ri formatda (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]), lekin noto'g'ri sana/vaqt."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
 msgid "Date (with time)"
-msgstr ""
+msgstr "Sana (vaqt bilan)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
 #, python-format
-msgid "“%(value)s” value must be a decimal number."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be a decimal number."
+msgstr "\"%(value)s\" qiymati o'nli kasr bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
 msgid "Decimal number"
-msgstr ""
+msgstr "O'nli kasr"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
+"\u201c%(value)s\u201d value has an invalid format. It must be in [DD] "
 "[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
+"\"%(value)s\" qiymatining formati noto'g'ri. [DD] [[HH:]MM:]ss[.uuuuuu] formatida bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
 msgid "Duration"
-msgstr ""
+msgstr "Davomiylik"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
 msgid "Email address"
-msgstr ""
+msgstr "Elektron pochta manzili"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
 msgid "File path"
-msgstr ""
+msgstr "Fayl yo'li"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
 #, python-format
-msgid "“%(value)s” value must be a float."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be a float."
+msgstr "\"%(value)s\" qiymati kasr son bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
 msgid "Floating point number"
-msgstr ""
+msgstr "Kasr son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
 #, python-format
-msgid "“%(value)s” value must be an integer."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be an integer."
+msgstr "\"%(value)s\" qiymati butun son bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
 msgid "Integer"
-msgstr ""
+msgstr "Butun son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
 msgid "Big (8 byte) integer"
-msgstr ""
+msgstr "Katta (8 bayt) butun son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
 msgid "Small integer"
-msgstr ""
+msgstr "Kichik butun son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
 msgid "IPv4 address"
-msgstr ""
+msgstr "IPv4 manzili"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
 msgid "IP address"
-msgstr ""
+msgstr "IP manzili"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
 #, python-format
-msgid "“%(value)s” value must be either None, True or False."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be either None, True or False."
+msgstr "\"%(value)s\" qiymati None, True yoki False bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
 msgid "Boolean (Either True, False or None)"
-msgstr ""
+msgstr "Mantiqiy (True, False yoki None)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
 msgid "Positive big integer"
-msgstr ""
+msgstr "Musbat katta butun son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
 msgid "Positive integer"
-msgstr ""
+msgstr "Musbat butun son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
 msgid "Positive small integer"
-msgstr ""
+msgstr "Musbat kichik butun son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
 #, python-format
 msgid "Slug (up to %(max_length)s)"
-msgstr ""
+msgstr "Slug (%(max_length)s gacha)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
 msgid "Text"
-msgstr ""
+msgstr "Matn"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"\u201c%(value)s\u201d value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
+"\"%(value)s\" qiymatining formati noto'g'ri. HH:MM[:ss[.uuuuuu]] formatida bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"\u201c%(value)s\u201d value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
+"\"%(value)s\" qiymati to'g'ri formatda (HH:MM[:ss[.uuuuuu]]), lekin noto'g'ri vaqt."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
 msgid "Time"
-msgstr ""
+msgstr "Vaqt"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
 msgid "Raw binary data"
-msgstr ""
+msgstr "Xom ikkilik ma'lumot"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
 #, python-format
-msgid "“%(value)s” is not a valid UUID."
-msgstr ""
+msgid "\u201c%(value)s\u201d is not a valid UUID."
+msgstr "\"%(value)s\" to'g'ri UUID emas."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
 msgid "Universally unique identifier"
-msgstr ""
+msgstr "Universally unique identifier (UUID)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
 msgid "File"
-msgstr ""
+msgstr "Fayl"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
 msgid "Image"
-msgstr ""
+msgstr "Rasm"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
 msgid "A JSON object"
-msgstr ""
+msgstr "JSON obyekt"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
 msgid "Value must be valid JSON."
-msgstr ""
+msgstr "Qiymat to'g'ri JSON bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:979
 #, python-format
 msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
-msgstr ""
+msgstr "%(field)s %(value)r bilan %(model)s namunasi to'g'ri tanlov emas."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:982
 msgid "Foreign Key (type determined by related field)"
-msgstr ""
+msgstr "Tashqi kalit (turi bog'liq maydon tomonidan aniqlanadi)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1276
 msgid "One-to-one relationship"
-msgstr ""
+msgstr "Bir-birga munosabat"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1333
 #, python-format
 msgid "%(from)s-%(to)s relationship"
-msgstr ""
+msgstr "%(from)s-%(to)s munosabati"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1335
 #, python-format
 msgid "%(from)s-%(to)s relationships"
-msgstr ""
+msgstr "%(from)s-%(to)s munosabatlari"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1383
 msgid "Many-to-many relationship"
-msgstr ""
+msgstr "Ko'p-ko'pga munosabat"
 
-#. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:185
 msgid ":?.!"
-msgstr ""
+msgstr ":?.!"
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:94
 msgid "This field is required."
-msgstr ""
+msgstr "Bu maydon majburiy."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:314
 msgid "Enter a whole number."
-msgstr ""
+msgstr "Butun son kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:485
 #: .\venv\Lib\site-packages\django\forms\fields.py:1257
 msgid "Enter a valid date."
-msgstr ""
+msgstr "To'g'ri sana kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:508
 #: .\venv\Lib\site-packages\django\forms\fields.py:1258
 msgid "Enter a valid time."
-msgstr ""
+msgstr "To'g'ri vaqt kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:535
 msgid "Enter a valid date/time."
-msgstr ""
+msgstr "To'g'ri sana/vaqt kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:569
 msgid "Enter a valid duration."
-msgstr ""
+msgstr "To'g'ri davomiylik kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:570
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
+msgstr "Kunlar soni {min_days} va {max_days} orasida bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:639
 msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
+msgstr "Hech qanday fayl yuborilmadi. Formadagi kodlash turini tekshiring."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:640
 msgid "No file was submitted."
-msgstr ""
+msgstr "Hech qanday fayl yuborilmadi."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:641
 msgid "The submitted file is empty."
-msgstr ""
+msgstr "Yuborilgan fayl bo'sh."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:643
 #, python-format
@@ -1871,52 +1905,52 @@ msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
-msgstr[1] ""
+"Fayl nomida ko'pi bilan %(max)d ta belgi bo'lishi kerak (hozir %(length)d ta)."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:648
 msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
+msgstr "Iltimos, fayl yuboring yoki tozalash katakchasini belgilang, ikkalasini emas."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:716
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
 msgstr ""
+"To'g'ri rasm yuklang. Yuklangan fayl rasm emas yoki buzilgan rasm."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:879
 #: .\venv\Lib\site-packages\django\forms\fields.py:965
 #: .\venv\Lib\site-packages\django\forms\models.py:1592
 #, python-format
 msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
+msgstr "To'g'ri tanlovni tanlang. %(value)s mavjud tanlovlardan biri emas."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:967
 #: .\venv\Lib\site-packages\django\forms\fields.py:1086
 #: .\venv\Lib\site-packages\django\forms\models.py:1590
 msgid "Enter a list of values."
-msgstr ""
+msgstr "Qiymatlar ro'yxatini kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1087
 msgid "Enter a complete value."
-msgstr ""
+msgstr "To'liq qiymat kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1329
 msgid "Enter a valid UUID."
-msgstr ""
+msgstr "To'g'ri UUID kiriting."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1359
 msgid "Enter a valid JSON."
-msgstr ""
+msgstr "To'g'ri JSON kiriting."
 
-#. Translators: This is the default suffix added to form field labels
 #: .\venv\Lib\site-packages\django\forms\forms.py:97
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: .\venv\Lib\site-packages\django\forms\forms.py:239
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
+msgstr "(Yashirin maydon %(name)s) %(error)s"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:61
 #, python-format
@@ -1924,39 +1958,39 @@ msgid ""
 "ManagementForm data is missing or has been tampered with. Missing fields: "
 "%(field_names)s. You may need to file a bug report if the issue persists."
 msgstr ""
+"ManagementForm ma'lumotlari yo'q yoki o'zgartirilgan. Yo'q maydonlar: "
+"%(field_names)s. Agar muammo davom etsa, xato hisobotini topshiring."
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:65
 #, python-format
 msgid "Please submit at most %(num)d form."
 msgid_plural "Please submit at most %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Iltimos, ko'pi bilan %(num)d ta forma yuboring."
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:70
 #, python-format
 msgid "Please submit at least %(num)d form."
 msgid_plural "Please submit at least %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Iltimos, kamida %(num)d ta forma yuboring."
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:484
 #: .\venv\Lib\site-packages\django\forms\formsets.py:491
 msgid "Order"
-msgstr ""
+msgstr "Tartib"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:499
 msgid "Delete"
-msgstr ""
+msgstr "O'chirish"
 
 #: .\venv\Lib\site-packages\django\forms\models.py:901
 #, python-format
 msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
+msgstr "%(field)s uchun takrorlangan ma'lumotlarni to'g'rilang."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:906
 #, python-format
 msgid "Please correct the duplicate data for %(field)s, which must be unique."
-msgstr ""
+msgstr "%(field)s uchun takrorlangan ma'lumotlarni to'g'rilang, u noyob bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:913
 #, python-format
@@ -1964,478 +1998,485 @@ msgid ""
 "Please correct the duplicate data for %(field_name)s which must be unique "
 "for the %(lookup)s in %(date_field)s."
 msgstr ""
+"%(field_name)s uchun takrorlangan ma'lumotlarni to'g'rilang, u %(date_field)s dagi "
+"%(lookup)s uchun noyob bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:922
 msgid "Please correct the duplicate values below."
-msgstr ""
+msgstr "Quyidagi takrorlangan qiymatlarni to'g'rilang."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1359
 msgid "The inline value did not match the parent instance."
-msgstr ""
+msgstr "Ichki qiymat ota-ona namunasiga mos kelmadi."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1450
 msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
+msgstr "To'g'ri tanlovni tanlang. Bu tanlov mavjud tanlovlardan biri emas."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1594
 #, python-format
-msgid "“%(pk)s” is not a valid value."
-msgstr ""
+msgid "\u201c%(pk)s\u201d is not a valid value."
+msgstr "\"%(pk)s\" to'g'ri qiymat emas."
 
 #: .\venv\Lib\site-packages\django\forms\utils.py:229
 #, python-format
 msgid ""
-"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
 "may be ambiguous or it may not exist."
 msgstr ""
+"%(datetime)s qiymatini %(current_timezone)s vaqt mintaqasida talqin qilib bo'lmadi; "
+"u noaniq yoki mavjud bo'lmasligi mumkin."
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:527
 msgid "Clear"
-msgstr ""
+msgstr "Tozalash"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:528
 msgid "Currently"
-msgstr ""
+msgstr "Hozirda"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:529
 msgid "Change"
-msgstr ""
+msgstr "O'zgartirish"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:866
 msgid "Unknown"
-msgstr ""
+msgstr "Noma'lum"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:867
 msgid "Yes"
-msgstr ""
+msgstr "Ha"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:868
 msgid "No"
-msgstr ""
+msgstr "Yo'q"
 
-#. Translators: Please do not add spaces around commas.
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
 msgid "yes,no,maybe"
-msgstr ""
+msgstr "ha,yo'q,ehtimol"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d bayt"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
 #, python-format
 msgid "%s KB"
-msgstr ""
+msgstr "%s KB"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
 #, python-format
 msgid "%s MB"
-msgstr ""
+msgstr "%s MB"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
 #, python-format
 msgid "%s GB"
-msgstr ""
+msgstr "%s GB"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
 #, python-format
 msgid "%s TB"
-msgstr ""
+msgstr "%s TB"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
 #, python-format
 msgid "%s PB"
-msgstr ""
+msgstr "%s PB"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:74
 msgid "p.m."
-msgstr ""
+msgstr "p.m."
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:75
 msgid "a.m."
-msgstr ""
+msgstr "a.m."
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:80
 msgid "PM"
-msgstr ""
+msgstr "PM"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:81
 msgid "AM"
-msgstr ""
+msgstr "AM"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:153
 msgid "midnight"
-msgstr ""
+msgstr "yarim tun"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:155
 msgid "noon"
-msgstr ""
+msgstr "tush"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:7
 msgid "Monday"
-msgstr ""
+msgstr "Dushanba"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:8
 msgid "Tuesday"
-msgstr ""
+msgstr "Seshanba"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:9
 msgid "Wednesday"
-msgstr ""
+msgstr "Chorshanba"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Thursday"
-msgstr ""
+msgstr "Payshanba"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:11
 msgid "Friday"
-msgstr ""
+msgstr "Juma"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:12
 msgid "Saturday"
-msgstr ""
+msgstr "Shanba"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:16
 msgid "Mon"
-msgstr ""
+msgstr "Du"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:17
 msgid "Tue"
-msgstr ""
+msgstr "Se"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:18
 msgid "Wed"
-msgstr ""
+msgstr "Cho"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "Thu"
-msgstr ""
+msgstr "Pay"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "Fri"
-msgstr ""
+msgstr "Ju"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:21
 msgid "Sat"
-msgstr ""
+msgstr "Sha"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:22
 msgid "Sun"
-msgstr ""
+msgstr "Yak"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:25
 msgid "January"
-msgstr ""
+msgstr "Yanvar"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:26
 msgid "February"
-msgstr ""
+msgstr "Fevral"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:27
 msgid "March"
-msgstr ""
+msgstr "Mart"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:28
 msgid "April"
-msgstr ""
+msgstr "Aprel"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:29
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:30
 msgid "June"
-msgstr ""
+msgstr "Iyun"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:31
 msgid "July"
-msgstr ""
+msgstr "Iyul"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:32
 msgid "August"
-msgstr ""
+msgstr "Avgust"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:33
 msgid "September"
-msgstr ""
+msgstr "Sentabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:34
 msgid "October"
-msgstr ""
+msgstr "Oktabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:35
 msgid "November"
-msgstr ""
+msgstr "Noyabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:36
 msgid "December"
-msgstr ""
+msgstr "Dekabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:39
 msgid "jan"
-msgstr ""
+msgstr "yan"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:40
 msgid "feb"
-msgstr ""
+msgstr "fev"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:41
 msgid "mar"
-msgstr ""
+msgstr "mar"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:42
 msgid "apr"
-msgstr ""
+msgstr "apr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:43
 msgid "may"
-msgstr ""
+msgstr "may"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:44
 msgid "jun"
-msgstr ""
+msgstr "iyn"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:45
 msgid "jul"
-msgstr ""
+msgstr "iyl"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:46
 msgid "aug"
-msgstr ""
+msgstr "avg"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:47
 msgid "sep"
-msgstr ""
+msgstr "sen"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:48
 msgid "oct"
-msgstr ""
+msgstr "okt"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:49
 msgid "nov"
-msgstr ""
+msgstr "noy"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:50
 msgid "dec"
-msgstr ""
+msgstr "dek"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:53
 msgctxt "abbrev. month"
 msgid "Jan."
-msgstr ""
+msgstr "Yan."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:54
 msgctxt "abbrev. month"
 msgid "Feb."
-msgstr ""
+msgstr "Fev."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:55
 msgctxt "abbrev. month"
 msgid "March"
-msgstr ""
+msgstr "Mart"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:56
 msgctxt "abbrev. month"
 msgid "April"
-msgstr ""
+msgstr "Aprel"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:57
 msgctxt "abbrev. month"
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:58
 msgctxt "abbrev. month"
 msgid "June"
-msgstr ""
+msgstr "Iyun"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:59
 msgctxt "abbrev. month"
 msgid "July"
-msgstr ""
+msgstr "Iyul"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:60
 msgctxt "abbrev. month"
 msgid "Aug."
-msgstr ""
+msgstr "Avg."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:61
 msgctxt "abbrev. month"
 msgid "Sept."
-msgstr ""
+msgstr "Sen."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:62
 msgctxt "abbrev. month"
 msgid "Oct."
-msgstr ""
+msgstr "Okt."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:63
 msgctxt "abbrev. month"
 msgid "Nov."
-msgstr ""
+msgstr "Noy."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:64
 msgctxt "abbrev. month"
 msgid "Dec."
-msgstr ""
+msgstr "Dek."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:67
 msgctxt "alt. month"
 msgid "January"
-msgstr ""
+msgstr "Yanvar"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:68
 msgctxt "alt. month"
 msgid "February"
-msgstr ""
+msgstr "Fevral"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:69
 msgctxt "alt. month"
 msgid "March"
-msgstr ""
+msgstr "Mart"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:70
 msgctxt "alt. month"
 msgid "April"
-msgstr ""
+msgstr "Aprel"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:71
 msgctxt "alt. month"
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:72
 msgctxt "alt. month"
 msgid "June"
-msgstr ""
+msgstr "Iyun"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:73
 msgctxt "alt. month"
 msgid "July"
-msgstr ""
+msgstr "Iyul"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:74
 msgctxt "alt. month"
 msgid "August"
-msgstr ""
+msgstr "Avgust"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:75
 msgctxt "alt. month"
 msgid "September"
-msgstr ""
+msgstr "Sentabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:76
 msgctxt "alt. month"
 msgid "October"
-msgstr ""
+msgstr "Oktabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:77
 msgctxt "alt. month"
 msgid "November"
-msgstr ""
+msgstr "Noyabr"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:78
 msgctxt "alt. month"
 msgid "December"
-msgstr ""
+msgstr "Dekabr"
 
 #: .\venv\Lib\site-packages\django\utils\ipv6.py:20
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "Bu to'g'ri IPv6 manzili emas."
 
 #: .\venv\Lib\site-packages\django\utils\text.py:76
 #, python-format
 msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
-msgstr ""
+msgstr "%(truncated_text)s…"
 
 #: .\venv\Lib\site-packages\django\utils\text.py:282
 msgid "or"
-msgstr ""
+msgstr "yoki"
 
-#. Translators: This string is used as a separator between list elements
 #: .\venv\Lib\site-packages\django\utils\text.py:301
 #: .\venv\Lib\site-packages\django\utils\timesince.py:135
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:8
 #, python-format
 msgid "%(num)d year"
 msgid_plural "%(num)d years"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d yil"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:9
 #, python-format
 msgid "%(num)d month"
 msgid_plural "%(num)d months"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d oy"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:10
 #, python-format
 msgid "%(num)d week"
 msgid_plural "%(num)d weeks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d hafta"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:11
 #, python-format
 msgid "%(num)d day"
 msgid_plural "%(num)d days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d kun"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:12
 #, python-format
 msgid "%(num)d hour"
 msgid_plural "%(num)d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d soat"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:13
 #, python-format
 msgid "%(num)d minute"
 msgid_plural "%(num)d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d daqiqa"
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:29
 msgid "Forbidden"
-msgstr ""
+msgstr "Taqiqlangan"
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:30
 msgid "CSRF verification failed. Request aborted."
-msgstr ""
+msgstr "CSRF tekshiruvi muvaffaqiyatsiz tugadi. So'rov bekor qilindi."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:34
 msgid ""
-"You are seeing this message because this HTTPS site requires a “Referer "
-"header” to be sent by your web browser, but none was sent. This header is "
+"You are seeing this message because this HTTPS site requires a \u201cReferer "
+"header\u201d to be sent by your web browser, but none was sent. This header is "
 "required for security reasons, to ensure that your browser is not being "
 "hijacked by third parties."
 msgstr ""
+"Siz bu xabarni ko'rmoqdasiz, chunki bu HTTPS sayt brauzeringizdan \"Referer "
+"sarlavhasi\" yuborilishini talab qiladi, lekin hech qanday yuborilmadi. Bu sarlavha "
+"xavfsizlik sabablari uchun, brauzeringiz uchinchi shaxslar tomonidan egallanmasligini "
+"ta'minlash uchun talab etiladi."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:40
 msgid ""
-"If you have configured your browser to disable “Referer” headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for “same-"
-"origin” requests."
+"If you have configured your browser to disable \u201cReferer\u201d headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for \u201csame-"
+"origin\u201d requests."
 msgstr ""
+"Agar brauzeringizda \"Referer\" sarlavhalarini o'chirib qo'ygan bo'lsangiz, iltimos "
+"kamida ushbu sayt uchun yoki HTTPS ulanishlari uchun yoki \"bir xil manba\" "
+"so'rovlari uchun ularni qayta yoqing."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:45
 msgid ""
 "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" …> for links to third-party sites."
+"including the \u201cReferrer-Policy: no-referrer\u201d header, please remove them. The "
+"CSRF protection requires the \u201cReferer\u201d header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" \u2026> for links to third-party sites."
 msgstr ""
+"Agar <meta name=\"referrer\" content=\"no-referrer\"> tegidan yoki \"Referrer-Policy: "
+"no-referrer\" sarlavhasidan foydalanayotgan bo'lsangiz, iltimos ularni olib tashlang. "
+"CSRF himoyasi qat'iy referer tekshiruvi uchun \"Referer\" sarlavhasini talab qiladi. "
+"Maxfiylik haqida qayg'ursangiz, uchinchi tomon saytlariga havolalar uchun "
+"<a rel=\"noreferrer\" …> kabi muqobillardan foydalaning."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:54
 msgid ""
@@ -2443,44 +2484,49 @@ msgid ""
 "submitting forms. This cookie is required for security reasons, to ensure "
 "that your browser is not being hijacked by third parties."
 msgstr ""
+"Siz bu xabarni ko'rmoqdasiz, chunki bu sayt formalarni yuborishda CSRF kukilarini "
+"talab qiladi. Bu kukil xavfsizlik sabablari uchun, brauzeringiz uchinchi shaxslar "
+"tomonidan egallanmasligini ta'minlash uchun talab etiladi."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:60
 msgid ""
 "If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for “same-origin” requests."
+"them, at least for this site, or for \u201csame-origin\u201d requests."
 msgstr ""
+"Agar brauzeringizda kukilarni o'chirib qo'ygan bo'lsangiz, iltimos kamida ushbu "
+"sayt uchun yoki \"bir xil manba\" so'rovlari uchun ularni qayta yoqing."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:66
 msgid "More information is available with DEBUG=True."
-msgstr ""
+msgstr "Qo'shimcha ma'lumot DEBUG=True bilan mavjud."
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:44
 msgid "No year specified"
-msgstr ""
+msgstr "Yil ko'rsatilmagan"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:64
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:115
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:214
 msgid "Date out of range"
-msgstr ""
+msgstr "Sana diapazondan tashqarida"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:94
 msgid "No month specified"
-msgstr ""
+msgstr "Oy ko'rsatilmagan"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:147
 msgid "No day specified"
-msgstr ""
+msgstr "Kun ko'rsatilmagan"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:194
 msgid "No week specified"
-msgstr ""
+msgstr "Hafta ko'rsatilmagan"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:353
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:384
 #, python-format
 msgid "No %(verbose_name_plural)s available"
-msgstr ""
+msgstr "Hech qanday %(verbose_name_plural)s mavjud emas"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:680
 #, python-format
@@ -2488,51 +2534,53 @@ msgid ""
 "Future %(verbose_name_plural)s not available because "
 "%(class_name)s.allow_future is False."
 msgstr ""
+"Kelajakdagi %(verbose_name_plural)s mavjud emas, chunki "
+"%(class_name)s.allow_future False."
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:720
 #, python-format
-msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-msgstr ""
+msgid "Invalid date string \u201c%(datestr)s\u201d given format \u201c%(format)s\u201d"
+msgstr "\"%(format)s\" formatidagi \"%(datestr)s\" noto'g'ri sana satri"
 
 #: .\venv\Lib\site-packages\django\views\generic\detail.py:56
 #, python-format
 msgid "No %(verbose_name)s found matching the query"
-msgstr ""
+msgstr "So'rovga mos %(verbose_name)s topilmadi"
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:70
-msgid "Page is not “last”, nor can it be converted to an int."
-msgstr ""
+msgid "Page is not \"last\", nor can it be converted to an int."
+msgstr "Sahifa \"oxirgi\" emas va butun songa ham aylantirib bo'lmaydi."
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:77
 #, python-format
 msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
+msgstr "Noto'g'ri sahifa (%(page_number)s): %(message)s"
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:173
 #, python-format
-msgid "Empty list and “%(class_name)s.allow_empty” is False."
-msgstr ""
+msgid "Empty list and \"%(class_name)s.allow_empty\" is False."
+msgstr "Bo'sh ro'yxat va \"%(class_name)s.allow_empty\" False."
 
 #: .\venv\Lib\site-packages\django\views\static.py:49
 msgid "Directory indexes are not allowed here."
-msgstr ""
+msgstr "Bu yerda katalog indekslari ruxsat etilmaydi."
 
 #: .\venv\Lib\site-packages\django\views\static.py:51
 #, python-format
-msgid "“%(path)s” does not exist"
-msgstr ""
+msgid "\u201c%(path)s\u201d does not exist"
+msgstr "\"%(path)s\" mavjud emas"
 
 #: .\venv\Lib\site-packages\django\views\static.py:68
 #: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
 #: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
 #, python-format
 msgid "Index of %(directory)s"
-msgstr ""
+msgstr "%(directory)s indeksi"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
 msgid "The install worked successfully! Congratulations!"
-msgstr ""
+msgstr "O'rnatish muvaffaqiyatli yakunlandi! Tabriklaymiz!"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
 #, python-format
@@ -2540,6 +2588,8 @@ msgid ""
 "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
 "target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
 msgstr ""
+"Django %(version)s uchun <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">chiqarish eslatmalarini</a> ko'ring"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
 #, python-format
@@ -2549,82 +2599,66 @@ msgid ""
 "rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
 "configured any URLs."
 msgstr ""
+"Siz bu sahifani ko'rmoqdasiz, chunki sozlamalar faylingizda <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> mavjud va hech qanday URL sozlanmagan."
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
 msgid "Django Documentation"
-msgstr ""
+msgstr "Django Hujjatlari"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
+msgid "Topics, references, &amp; how-to's"
+msgstr "Mavzular, ma'lumotnomalar va qo'llanmalar"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
 msgid "Tutorial: A Polling App"
-msgstr ""
+msgstr "O'quv qo'llanma: So'rovnoma Ilovasi"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
 msgid "Get started with Django"
-msgstr ""
+msgstr "Django bilan boshlang"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
 msgid "Django Community"
-msgstr ""
+msgstr "Django Hamjamiyati"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
 msgid "Connect, get help, or contribute"
-msgstr ""
+msgstr "Bog'laning, yordam oling yoki hissa qo'shing"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:14
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:94
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:102
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:112
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:122
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:126
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:158
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:177
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:404
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:409
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:419
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:439
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:456
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:475
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:481
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:498
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:510
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:518
 msgid "title"
-msgstr ""
+msgstr "sarlavha"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:18
 msgid "password"
-msgstr ""
+msgstr "parol"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:285
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:304
 msgid "title a"
-msgstr ""
+msgstr "sarlavha a"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:289
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:315
 msgid "title b"
-msgstr ""
+msgstr "sarlavha b"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:293
 msgid "title c"
-msgstr ""
+msgstr "sarlavha c"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:297
 msgid "title d"
-msgstr ""
+msgstr "sarlavha d"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:420
 msgid "visits"
-msgstr ""
+msgstr "tashriflar"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\translation.py:74
 msgid "Sorry, translation is not available."
-msgstr ""
+msgstr "Kechirasiz, tarjima mavjud emas."
 
 #: .\venv\Lib\site-packages\modeltranslation\widgets.py:32
 msgid "None"
-msgstr ""
+msgstr "Yo'q"

@@ -1,30 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Russian translations for Molla Sport Store
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 13:26+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2026-03-10 13:25+0500\n"
+"PO-Revision-Date: 2026-03-10 13:25+0500\n"
+"Last-Translator: Translator <translator@example.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: .\templates\blogs\blog.html:4 .\templates\blogs\blog.html:12
 #: .\templates\blogs\blog.html:20 .\templates\blogs\single.html:20
 #: .\templates\layout\base.html:121
 msgid "Blog"
-msgstr ""
+msgstr "Блог"
 
 #: .\templates\blogs\blog.html:4 .\templates\blogs\single.html:4
 #: .\templates\cart\cart.html:4 .\templates\cart\checkout.html:4
@@ -34,11 +31,11 @@ msgstr ""
 #: .\templates\shared\contact.html:4 .\templates\users\dashboard.html:4
 #: .\templates\users\login.html:4
 msgid "Molla Sport Store"
-msgstr ""
+msgstr "Спортивный магазин Molla"
 
 #: .\templates\blogs\blog.html:12
 msgid "Latest News"
-msgstr ""
+msgstr "Последние новости"
 
 #: .\templates\blogs\blog.html:19 .\templates\blogs\single.html:19
 #: .\templates\cart\cart.html:20 .\templates\cart\checkout.html:20
@@ -48,153 +45,155 @@ msgstr ""
 #: .\templates\shared\contact.html:11 .\templates\users\dashboard.html:17
 #: .\templates\users\login.html:11
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: .\templates\blogs\blog.html:43 .\templates\blogs\single.html:41
 msgid "by"
-msgstr ""
+msgstr "автор"
 
 #: .\templates\blogs\blog.html:61 .\templates\blogs\single.html:57
 #: .\templates\blogs\single.html:174
 msgid "in"
-msgstr ""
+msgstr "в"
 
 #: .\templates\blogs\blog.html:70
 msgid "Continue Reading"
-msgstr ""
+msgstr "Читать далее"
 
 #: .\templates\blogs\blog.html:76
 msgid "No blog posts published yet."
-msgstr ""
+msgstr "Записи в блоге пока не опубликованы."
 
 #: .\templates\blogs\blog.html:86 .\templates\products\category.html:130
 msgid "Prev"
-msgstr ""
+msgstr "Назад"
 
 #: .\templates\blogs\blog.html:96 .\templates\products\category.html:145
 msgid "Next"
-msgstr ""
+msgstr "Вперёд"
 
 #: .\templates\blogs\blog.html:108 .\templates\blogs\blog.html:115
 #: .\templates\blogs\single.html:219 .\templates\blogs\single.html:225
 #: .\templates\layout\base.html:140 .\templates\layout\base.html:143
 #: .\templates\layout\base.html:275
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: .\templates\blogs\blog.html:110 .\templates\blogs\blog.html:112
 #: .\templates\blogs\single.html:221 .\templates\blogs\single.html:223
 msgid "Search in blog"
-msgstr ""
+msgstr "Поиск по блогу"
 
 #: .\templates\blogs\blog.html:121 .\templates\blogs\single.html:231
 msgid "Categories"
-msgstr ""
+msgstr "Категории"
 
 #: .\templates\blogs\blog.html:130 .\templates\blogs\single.html:240
 msgid "All Posts"
-msgstr ""
+msgstr "Все записи"
 
 #: .\templates\blogs\blog.html:136 .\templates\blogs\single.html:246
 msgid "Popular Posts"
-msgstr ""
+msgstr "Популярные записи"
 
 #: .\templates\blogs\blog.html:155
 msgid "No posts yet."
-msgstr ""
+msgstr "Записей пока нет."
 
 #: .\templates\blogs\blog.html:161 .\templates\blogs\single.html:269
 msgid "Browse Tags"
-msgstr ""
+msgstr "Просмотр тегов"
 
 #: .\templates\blogs\blog.html:166 .\templates\blogs\single.html:274
 msgid "sport"
-msgstr ""
+msgstr "спорт"
 
 #: .\templates\blogs\blog.html:167 .\templates\blogs\single.html:275
 msgid "outdoor"
-msgstr ""
+msgstr "на улице"
 
 #: .\templates\blogs\blog.html:168 .\templates\blogs\single.html:276
 msgid "gear"
-msgstr ""
+msgstr "снаряжение"
 
 #: .\templates\blogs\blog.html:174 .\templates\blogs\single.html:282
 msgid "About Blog"
-msgstr ""
+msgstr "О блоге"
 
 #: .\templates\blogs\blog.html:176 .\templates\blogs\single.html:284
 msgid ""
 "Stay up to date with the latest news, gear reviews, and tips from the world "
 "of extreme sports."
 msgstr ""
+"Будьте в курсе последних новостей, обзоров снаряжения и советов "
+"из мира экстремального спорта."
 
 #: .\templates\blogs\single.html:12
 msgid "Single Post"
-msgstr ""
+msgstr "Запись"
 
 #: .\templates\blogs\single.html:72
 msgid "Tags:"
-msgstr ""
+msgstr "Теги:"
 
 #: .\templates\blogs\single.html:81
 msgid "Share this post:"
-msgstr ""
+msgstr "Поделиться записью:"
 
 #: .\templates\blogs\single.html:128
 msgid "Previous Post"
-msgstr ""
+msgstr "Предыдущая запись"
 
 #: .\templates\blogs\single.html:134
 msgid "Next Post"
-msgstr ""
+msgstr "Следующая запись"
 
 #: .\templates\blogs\single.html:143
 msgid "Related Posts"
-msgstr ""
+msgstr "Похожие записи"
 
 #: .\templates\blogs\single.html:190
 msgid "Leave A Reply"
-msgstr ""
+msgstr "Оставить комментарий"
 
 #: .\templates\blogs\single.html:191
 msgid "Your email address will not be published. Required fields are marked *"
-msgstr ""
+msgstr "Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены *"
 
 #: .\templates\blogs\single.html:195
 msgid "Comment"
-msgstr ""
+msgstr "Комментарий"
 
 #: .\templates\blogs\single.html:196
 msgid "Comment *"
-msgstr ""
+msgstr "Комментарий *"
 
 #: .\templates\blogs\single.html:199 .\templates\shared\contact.html:83
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 #: .\templates\blogs\single.html:200 .\templates\products\product.html:215
 #: .\templates\shared\contact.html:85
 msgid "Name *"
-msgstr ""
+msgstr "Имя *"
 
 #: .\templates\blogs\single.html:203 .\templates\shared\contact.html:88
 msgid "Email"
-msgstr ""
+msgstr "Эл. почта"
 
 #: .\templates\blogs\single.html:204 .\templates\products\product.html:219
 #: .\templates\shared\contact.html:90
 msgid "Email *"
-msgstr ""
+msgstr "Эл. почта *"
 
 #: .\templates\blogs\single.html:208
 msgid "POST COMMENT"
-msgstr ""
+msgstr "ОТПРАВИТЬ КОММЕНТАРИЙ"
 
 #: .\templates\cart\cart.html:4 .\templates\cart\cart.html:13
 #: .\templates\cart\cart.html:22
 msgid "Shopping Cart"
-msgstr ""
+msgstr "Корзина"
 
 #: .\templates\cart\cart.html:13 .\templates\cart\cart.html:21
 #: .\templates\cart\checkout.html:13 .\templates\cart\checkout.html:21
@@ -204,593 +203,599 @@ msgstr ""
 #: .\templates\products\product.html:18 .\templates\users\dashboard.html:10
 #: .\templates\users\dashboard.html:18
 msgid "Shop"
-msgstr ""
+msgstr "Магазин"
 
 #: .\templates\cart\cart.html:35 .\templates\cart\checkout.html:115
 #: .\templates\cart\wishlist.html:32
 msgid "Product"
-msgstr ""
+msgstr "Товар"
 
 #: .\templates\cart\cart.html:36 .\templates\cart\wishlist.html:33
 #: .\templates\products\category.html:189
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 #: .\templates\cart\cart.html:37
 msgid "Quantity"
-msgstr ""
+msgstr "Количество"
 
 #: .\templates\cart\cart.html:38 .\templates\cart\checkout.html:116
 msgid "Total"
-msgstr ""
+msgstr "Итого"
 
 #: .\templates\cart\cart.html:45
 msgid "Your cart is empty."
-msgstr ""
+msgstr "Ваша корзина пуста."
 
 #: .\templates\cart\cart.html:46
 msgid "Continue Shopping"
-msgstr ""
+msgstr "Продолжить покупки"
 
 #: .\templates\cart\cart.html:58
 msgid "coupon code"
-msgstr ""
+msgstr "код купона"
 
 #: .\templates\cart\cart.html:68
 msgid "UPDATE CART"
-msgstr ""
+msgstr "ОБНОВИТЬ КОРЗИНУ"
 
 #: .\templates\cart\cart.html:75
 msgid "Cart Total"
-msgstr ""
+msgstr "Итого по корзине"
 
 #: .\templates\cart\cart.html:79 .\templates\cart\checkout.html:121
 msgid "Subtotal:"
-msgstr ""
+msgstr "Промежуточный итог:"
 
 #: .\templates\cart\cart.html:83 .\templates\cart\checkout.html:125
 msgid "Shipping:"
-msgstr ""
+msgstr "Доставка:"
 
 #: .\templates\cart\cart.html:90 .\templates\layout\base.html:171
 msgid "Free Shipping"
-msgstr ""
+msgstr "Бесплатная доставка"
 
 #: .\templates\cart\cart.html:99
 msgid "Standard:"
-msgstr ""
+msgstr "Стандартная:"
 
 #: .\templates\cart\cart.html:108
 msgid "Express:"
-msgstr ""
+msgstr "Экспресс:"
 
 #: .\templates\cart\cart.html:114
 msgid "Estimate for Your Country"
-msgstr ""
+msgstr "Расчёт для вашей страны"
 
 #: .\templates\cart\cart.html:115
 msgid "Change address"
-msgstr ""
+msgstr "Изменить адрес"
 
 #: .\templates\cart\cart.html:120 .\templates\cart\checkout.html:129
 msgid "Total:"
-msgstr ""
+msgstr "Итого:"
 
 #: .\templates\cart\cart.html:126
 msgid "PROCEED TO CHECKOUT"
-msgstr ""
+msgstr "ПЕРЕЙТИ К ОПЛАТЕ"
 
 #: .\templates\cart\cart.html:130
 msgid "CONTINUE SHOPPING"
-msgstr ""
+msgstr "ПРОДОЛЖИТЬ ПОКУПКИ"
 
 #: .\templates\cart\checkout.html:4 .\templates\cart\checkout.html:13
 #: .\templates\cart\checkout.html:22 .\templates\layout\base.html:109
 msgid "Checkout"
-msgstr ""
+msgstr "Оформление заказа"
 
 #: .\templates\cart\checkout.html:36
 msgid "Have a coupon?"
-msgstr ""
+msgstr "Есть купон?"
 
 #: .\templates\cart\checkout.html:36
 msgid "Click here to enter your code"
-msgstr ""
+msgstr "Нажмите здесь, чтобы ввести код"
 
 #: .\templates\cart\checkout.html:46
 msgid "Billing Details"
-msgstr ""
+msgstr "Платёжные данные"
 
 #: .\templates\cart\checkout.html:50
 msgid "First Name *"
-msgstr ""
+msgstr "Имя *"
 
 #: .\templates\cart\checkout.html:55
 msgid "Last Name *"
-msgstr ""
+msgstr "Фамилия *"
 
 #: .\templates\cart\checkout.html:60
 msgid "Company Name (Optional)"
-msgstr ""
+msgstr "Название компании (необязательно)"
 
 #: .\templates\cart\checkout.html:63
 msgid "Country *"
-msgstr ""
+msgstr "Страна *"
 
 #: .\templates\cart\checkout.html:66
 msgid "Street address *"
-msgstr ""
+msgstr "Адрес *"
 
 #: .\templates\cart\checkout.html:68
 msgid "House number and Street name"
-msgstr ""
+msgstr "Номер дома и название улицы"
 
 #: .\templates\cart\checkout.html:70
 msgid "Apartment, suite, unit etc."
-msgstr ""
+msgstr "Квартира, офис и т.д."
 
 #: .\templates\cart\checkout.html:74
 msgid "Town / City *"
-msgstr ""
+msgstr "Город *"
 
 #: .\templates\cart\checkout.html:78
 msgid "State / County *"
-msgstr ""
+msgstr "Область / Регион *"
 
 #: .\templates\cart\checkout.html:85
 msgid "Postcode / ZIP *"
-msgstr ""
+msgstr "Почтовый индекс *"
 
 #: .\templates\cart\checkout.html:89
 msgid "Phone *"
-msgstr ""
+msgstr "Телефон *"
 
 #: .\templates\cart\checkout.html:95 .\templates\users\dashboard.html:167
 msgid "Email address *"
-msgstr ""
+msgstr "Адрес эл. почты *"
 
 #: .\templates\cart\checkout.html:101
 msgid "Ship to a different address?"
-msgstr ""
+msgstr "Доставить на другой адрес?"
 
 #: .\templates\cart\checkout.html:104
 msgid "Order notes (optional)"
-msgstr ""
+msgstr "Примечания к заказу (необязательно)"
 
 #: .\templates\cart\checkout.html:106
 msgid "Notes about your order, e.g. special notes for delivery"
-msgstr ""
+msgstr "Примечания к заказу, например особые инструкции для доставки"
 
 #: .\templates\cart\checkout.html:111
 msgid "Your Order"
-msgstr ""
+msgstr "Ваш заказ"
 
 #: .\templates\cart\checkout.html:126
 msgid "Free shipping"
-msgstr ""
+msgstr "Бесплатная доставка"
 
 #: .\templates\cart\checkout.html:140
 msgid "Direct bank transfer"
-msgstr ""
+msgstr "Прямой банковский перевод"
 
 #: .\templates\cart\checkout.html:145
 msgid ""
 "Make your payment directly into our bank account. Please use your Order ID "
 "as the payment reference."
 msgstr ""
+"Произведите оплату напрямую на наш банковский счёт. Укажите номер заказа "
+"в качестве назначения платежа."
 
 #: .\templates\cart\checkout.html:152
 msgid "Check payments"
-msgstr ""
+msgstr "Оплата чеком"
 
 #: .\templates\cart\checkout.html:157
 msgid "Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio."
-msgstr ""
+msgstr "Дополнительная информация об оплате чеком."
 
 #: .\templates\cart\checkout.html:164
 msgid "Cash on delivery"
-msgstr ""
+msgstr "Наличными при получении"
 
 #: .\templates\cart\checkout.html:169
 msgid "Quisque volutpat mattis eros. Lorem ipsum dolor sit amet."
-msgstr ""
+msgstr "Дополнительная информация об оплате наличными."
 
 #: .\templates\cart\checkout.html:176
 msgid "What is PayPal?"
-msgstr ""
+msgstr "Что такое PayPal?"
 
 #: .\templates\cart\checkout.html:181
 msgid ""
 "Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper "
 "suscipit."
-msgstr ""
+msgstr "Безопасная оплата через PayPal."
 
 #: .\templates\cart\checkout.html:188
 msgid "Credit Card (Stripe)"
-msgstr ""
+msgstr "Банковская карта (Stripe)"
 
 #: .\templates\cart\checkout.html:189
 msgid "payments cards"
-msgstr ""
+msgstr "платёжные карты"
 
 #: .\templates\cart\checkout.html:194
 msgid ""
 "Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet."
-msgstr ""
+msgstr "Безопасная оплата банковской картой."
 
 #: .\templates\cart\checkout.html:200
 msgid "Place Order"
-msgstr ""
+msgstr "Оформить заказ"
 
 #: .\templates\cart\checkout.html:201
 msgid "Proceed to Checkout"
-msgstr ""
+msgstr "Перейти к оформлению"
 
 #: .\templates\cart\wishlist.html:4 .\templates\cart\wishlist.html:13
 #: .\templates\cart\wishlist.html:22 .\templates\layout\base.html:110
 #: .\templates\layout\base.html:149 .\templates\products\product.html:110
 msgid "Wishlist"
-msgstr ""
+msgstr "Список желаний"
 
 #: .\templates\cart\wishlist.html:34
 msgid "Stock Status"
-msgstr ""
+msgstr "Наличие на складе"
 
 #: .\templates\cart\wishlist.html:42
 msgid "Your wishlist is empty."
-msgstr ""
+msgstr "Ваш список желаний пуст."
 
 #: .\templates\cart\wishlist.html:43
 msgid "Browse Products"
-msgstr ""
+msgstr "Просмотреть товары"
 
 #: .\templates\cart\wishlist.html:52
 msgid "Share on:"
-msgstr ""
+msgstr "Поделиться в:"
 
 #: .\templates\layout\base.html:42 .\templates\layout\base.html:46
 msgid "Usd"
-msgstr ""
+msgstr "USD"
 
 #: .\templates\layout\base.html:45
 msgid "Eur"
-msgstr ""
+msgstr "EUR"
 
 #: .\templates\layout\base.html:54
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: .\templates\layout\base.html:55
 msgid "Uzbek"
-msgstr ""
+msgstr "Узбекский"
 
 #: .\templates\layout\base.html:56
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
 
 #: .\templates\layout\base.html:64
 msgid "Links"
-msgstr ""
+msgstr "Ссылки"
 
 #: .\templates\layout\base.html:66
 msgid "Call: +0123 456 789"
-msgstr ""
+msgstr "Звонок: +0123 456 789"
 
 #: .\templates\layout\base.html:67 .\templates\layout\base.html:129
 #: .\templates\layout\base.html:226 .\templates\shared\about.html:4
 #: .\templates\shared\about.html:12 .\templates\shared\about.html:20
 msgid "About Us"
-msgstr ""
+msgstr "О нас"
 
 #: .\templates\layout\base.html:68 .\templates\layout\base.html:130
 #: .\templates\layout\base.html:227 .\templates\shared\contact.html:4
 #: .\templates\shared\contact.html:12 .\templates\shared\contact.html:20
 msgid "Contact Us"
-msgstr ""
+msgstr "Связаться с нами"
 
 #: .\templates\layout\base.html:70 .\templates\layout\base.html:111
 #: .\templates\layout\base.html:247 .\templates\layout\base.html:252
 #: .\templates\users\dashboard.html:4 .\templates\users\dashboard.html:10
 #: .\templates\users\dashboard.html:19
 msgid "My Account"
-msgstr ""
+msgstr "Мой аккаунт"
 
 #: .\templates\layout\base.html:71
 msgid "Logout"
-msgstr ""
+msgstr "Выйти"
 
 #: .\templates\layout\base.html:73 .\templates\layout\base.html:131
 #: .\templates\users\login.html:12
 msgid "Login"
-msgstr ""
+msgstr "Войти"
 
 #: .\templates\layout\base.html:84
 msgid "Toggle mobile menu"
-msgstr ""
+msgstr "Открыть/закрыть мобильное меню"
 
 #: .\templates\layout\base.html:106
 msgid "Shop Pages"
-msgstr ""
+msgstr "Страницы магазина"
 
 #: .\templates\layout\base.html:108
 msgid "Cart"
-msgstr ""
+msgstr "Корзина"
 
 #: .\templates\layout\base.html:123
 msgid "Blog Posts"
-msgstr ""
+msgstr "Записи блога"
 
 #: .\templates\layout\base.html:127
 msgid "Pages"
-msgstr ""
+msgstr "Страницы"
 
 #: .\templates\layout\base.html:144 .\templates\layout\base.html:276
 msgid "Search in..."
-msgstr ""
+msgstr "Поиск в..."
 
 #: .\templates\layout\base.html:172
 msgid "Orders $50 or more"
-msgstr ""
+msgstr "Заказы от $50"
 
 #: .\templates\layout\base.html:180
 msgid "Free Returns"
-msgstr ""
+msgstr "Бесплатный возврат"
 
 #: .\templates\layout\base.html:181
 msgid "Within 30 days"
-msgstr ""
+msgstr "В течение 30 дней"
 
 #: .\templates\layout\base.html:189
 #, python-format
 msgid "Get 20%% Off 1 Item"
-msgstr ""
+msgstr "Скидка 20%% на 1 товар"
 
 #: .\templates\layout\base.html:190
 msgid "When you sign up"
-msgstr ""
+msgstr "При регистрации"
 
 #: .\templates\layout\base.html:198
 msgid "We Support"
-msgstr ""
+msgstr "Мы поддерживаем"
 
 #: .\templates\layout\base.html:199
 msgid "24/7 amazing services"
-msgstr ""
+msgstr "Отличный сервис 24/7"
 
 #: .\templates\layout\base.html:212
 msgid ""
 "Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu "
 "vulputate magna eros eu erat."
 msgstr ""
+"Мы предлагаем лучшие спортивные товары и обслуживание. "
+"Всегда рядом с вами."
 
 #: .\templates\layout\base.html:224
 msgid "Useful Links"
-msgstr ""
+msgstr "Полезные ссылки"
 
 #: .\templates\layout\base.html:228
 msgid "Log In"
-msgstr ""
+msgstr "Войти"
 
 #: .\templates\layout\base.html:234
 msgid "Customer Service"
-msgstr ""
+msgstr "Служба поддержки"
 
 #: .\templates\layout\base.html:236
 msgid "Payment Methods"
-msgstr ""
+msgstr "Способы оплаты"
 
 #: .\templates\layout\base.html:237
 msgid "Money-back guarantee!"
-msgstr ""
+msgstr "Гарантия возврата денег!"
 
 #: .\templates\layout\base.html:238
 msgid "Returns"
-msgstr ""
+msgstr "Возвраты"
 
 #: .\templates\layout\base.html:239
 msgid "Shipping"
-msgstr ""
+msgstr "Доставка"
 
 #: .\templates\layout\base.html:240
 msgid "Terms and conditions"
-msgstr ""
+msgstr "Условия использования"
 
 #: .\templates\layout\base.html:241
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Политика конфиденциальности"
 
 #: .\templates\layout\base.html:249 .\templates\users\login.html:27
 msgid "Sign In"
-msgstr ""
+msgstr "Войти"
 
 #: .\templates\layout\base.html:250
 msgid "View Cart"
-msgstr ""
+msgstr "Просмотреть корзину"
 
 #: .\templates\layout\base.html:251
 msgid "My Wishlist"
-msgstr ""
+msgstr "Мой список желаний"
 
 #: .\templates\layout\base.html:262
 msgid "Copyright © 2024 Molla Sport Store. All Rights Reserved."
-msgstr ""
+msgstr "© 2024 Спортивный магазин Molla. Все права защищены."
 
 #: .\templates\layout\base.html:268
 msgid "Back to Top"
-msgstr ""
+msgstr "Наверх"
 
 #: .\templates\layout\base.html:281
 msgid "HOME"
-msgstr ""
+msgstr "ГЛАВНАЯ"
 
 #: .\templates\layout\base.html:282
 msgid "SHOP"
-msgstr ""
+msgstr "МАГАЗИН"
 
 #: .\templates\layout\base.html:283
 msgid "BLOG"
-msgstr ""
+msgstr "БЛОГ"
 
 #: .\templates\layout\base.html:284
 msgid "ABOUT US"
-msgstr ""
+msgstr "О НАС"
 
 #: .\templates\layout\base.html:285
 msgid "CONTACT"
-msgstr ""
+msgstr "КОНТАКТЫ"
 
 #: .\templates\layout\base.html:287
 msgid "MY ACCOUNT"
-msgstr ""
+msgstr "МОЙ АККАУНТ"
 
 #: .\templates\layout\base.html:288
 msgid "LOGOUT"
-msgstr ""
+msgstr "ВЫЙТИ"
 
 #: .\templates\layout\base.html:290
 msgid "LOGIN"
-msgstr ""
+msgstr "ВОЙТИ"
 
 #: .\templates\products\category.html:17 .\templates\products\category.html:28
 msgid "All Products"
-msgstr ""
+msgstr "Все товары"
 
 #: .\templates\products\category.html:42
 msgid "Showing"
-msgstr ""
+msgstr "Показано"
 
 #: .\templates\products\category.html:42
 msgid "of"
-msgstr ""
+msgstr "из"
 
 #: .\templates\products\category.html:42
 msgid "Products"
-msgstr ""
+msgstr "Товаров"
 
 #: .\templates\products\category.html:47
 msgid "Sort by:"
-msgstr ""
+msgstr "Сортировка:"
 
 #: .\templates\products\category.html:51
 msgid "Default"
-msgstr ""
+msgstr "По умолчанию"
 
 #: .\templates\products\category.html:52
 msgid "Price: Low to High"
-msgstr ""
+msgstr "Цена: по возрастанию"
 
 #: .\templates\products\category.html:53
 msgid "Price: High to Low"
-msgstr ""
+msgstr "Цена: по убыванию"
 
 #: .\templates\products\category.html:54
 msgid "Newest"
-msgstr ""
+msgstr "Новинки"
 
 #: .\templates\products\category.html:68 .\templates\products\product.html:259
 msgid "Out of Stock"
-msgstr ""
+msgstr "Нет в наличии"
 
 #: .\templates\products\category.html:70
 msgid "Sale"
-msgstr ""
+msgstr "Скидка"
 
 #: .\templates\products\category.html:80 .\templates\products\product.html:268
 msgid "add to wishlist"
-msgstr ""
+msgstr "добавить в список желаний"
 
 #: .\templates\products\category.html:83 .\templates\products\product.html:108
 #: .\templates\products\product.html:271 .\templates\shared\home.html:136
 msgid "add to cart"
-msgstr ""
+msgstr "добавить в корзину"
 
 #: .\templates\products\category.html:98 .\templates\products\product.html:87
 #: .\templates\products\product.html:284 .\templates\shared\home.html:129
 msgid "Was"
-msgstr ""
+msgstr "Было"
 
 #: .\templates\products\category.html:109 .\templates\products\product.html:145
 #: .\templates\products\product.html:174 .\templates\products\product.html:295
 msgid "Reviews"
-msgstr ""
+msgstr "Отзывы"
 
 #: .\templates\products\category.html:116
 msgid "No products found"
-msgstr ""
+msgstr "Товары не найдены"
 
 #: .\templates\products\category.html:116
 msgid "for"
-msgstr ""
+msgstr "по запросу"
 
 #: .\templates\products\category.html:117
 msgid "View All Products"
-msgstr ""
+msgstr "Смотреть все товары"
 
 #: .\templates\products\category.html:157
 msgid "Filters:"
-msgstr ""
+msgstr "Фильтры:"
 
 #: .\templates\products\category.html:158
 msgid "Clean All"
-msgstr ""
+msgstr "Сбросить всё"
 
 #: .\templates\products\category.html:164
 msgid "Category"
-msgstr ""
+msgstr "Категория"
 
 #: .\templates\products\category.html:196
 msgid "Price Range:"
-msgstr ""
+msgstr "Диапазон цен:"
 
 #: .\templates\products\product.html:80
 msgid "Review"
-msgstr ""
+msgstr "Отзыв"
 
 #: .\templates\products\product.html:100
 msgid "Qty:"
-msgstr ""
+msgstr "Кол-во:"
 
 #: .\templates\products\product.html:110 .\templates\shared\home.html:137
 msgid "Add to Wishlist"
-msgstr ""
+msgstr "Добавить в список желаний"
 
 #: .\templates\products\product.html:117
 msgid "Category:"
-msgstr ""
+msgstr "Категория:"
 
 #: .\templates\products\product.html:122
 msgid "Share:"
-msgstr ""
+msgstr "Поделиться:"
 
 #: .\templates\products\product.html:138
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: .\templates\products\product.html:141
 msgid "Shipping & Returns"
-msgstr ""
+msgstr "Доставка и возвраты"
 
 #: .\templates\products\product.html:153
 msgid "Product Information"
-msgstr ""
+msgstr "Информация о товаре"
 
 #: .\templates\products\product.html:157
 msgid "No description available for this product."
-msgstr ""
+msgstr "Описание этого товара недоступно."
 
 #: .\templates\products\product.html:165
 msgid "Delivery & Returns"
-msgstr ""
+msgstr "Доставка и возвраты"
 
 #: .\templates\products\product.html:166
 msgid ""
 "We deliver to over 100 countries around the world. For full details of the "
 "delivery options we offer, please view our"
 msgstr ""
+"Мы доставляем более чем в 100 стран мира. Для получения полной информации "
+"о вариантах доставки, пожалуйста, ознакомьтесь с нашей"
 
 #: .\templates\products\product.html:166
 msgid "Delivery information"
-msgstr ""
+msgstr "Информацией о доставке"
 
 #: .\templates\products\product.html:167
 msgid ""
@@ -798,78 +803,81 @@ msgid ""
 "you can do so within a month of receipt. For full details of how to make a "
 "return, please view our"
 msgstr ""
+"Мы надеемся, что каждая покупка вас порадует, но если вам нужно вернуть "
+"товар, вы можете сделать это в течение месяца с момента получения. "
+"Подробная информация доступна в нашей"
 
 #: .\templates\products\product.html:167
 msgid "Returns information"
-msgstr ""
+msgstr "Политике возврата"
 
 #: .\templates\products\product.html:196
 msgid "No reviews yet. Be the first to review this product!"
-msgstr ""
+msgstr "Отзывов пока нет. Будьте первым, кто оставит отзыв!"
 
 #: .\templates\products\product.html:201
 msgid "Add a Review"
-msgstr ""
+msgstr "Написать отзыв"
 
 #: .\templates\products\product.html:205
 msgid "Your rating:"
-msgstr ""
+msgstr "Ваша оценка:"
 
 #: .\templates\products\product.html:207
 msgid "1 Star"
-msgstr ""
+msgstr "1 звезда"
 
 #: .\templates\products\product.html:208
 msgid "2 Stars"
-msgstr ""
+msgstr "2 звезды"
 
 #: .\templates\products\product.html:209
 msgid "3 Stars"
-msgstr ""
+msgstr "3 звезды"
 
 #: .\templates\products\product.html:210
 msgid "4 Stars"
-msgstr ""
+msgstr "4 звезды"
 
 #: .\templates\products\product.html:211
 msgid "5 Stars"
-msgstr ""
+msgstr "5 звёзд"
 
 #: .\templates\products\product.html:223
 msgid "Your Review *"
-msgstr ""
+msgstr "Ваш отзыв *"
 
 #: .\templates\products\product.html:228 .\templates\shared\contact.html:109
 msgid "SUBMIT"
-msgstr ""
+msgstr "ОТПРАВИТЬ"
 
 #: .\templates\products\product.html:241
 msgid "You May Also Like"
-msgstr ""
+msgstr "Вам также может понравиться"
 
 #: .\templates\shared\404.html:4
 msgid "404 - Page Not Found"
-msgstr ""
+msgstr "404 - Страница не найдена"
 
 #: .\templates\shared\404.html:20
 msgid "Error 404"
-msgstr ""
+msgstr "Ошибка 404"
 
 #: .\templates\shared\404.html:21
 msgid "We are sorry, the page you've requested is not available."
-msgstr ""
+msgstr "Извините, запрошенная страница недоступна."
 
 #: .\templates\shared\404.html:23
 msgid "BACK TO HOMEPAGE"
-msgstr ""
+msgstr "НА ГЛАВНУЮ"
 
 #: .\templates\shared\about.html:20 .\templates\shared\about.html:44
 msgid "Who We Are"
-msgstr ""
+msgstr "Кто мы"
 
 #: .\templates\shared\about.html:29
 msgid "Our Vision"
-msgstr ""
+msgstr "Наше видение"
 
 #: .\templates\shared\about.html:30
 msgid ""
@@ -878,10 +886,13 @@ msgid ""
 "dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet "
 "viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh."
 msgstr ""
+"Мы стремимся предоставлять лучшие спортивные товары и снаряжение "
+"для активного образа жизни. Качество и удовлетворённость клиентов — "
+"наши главные приоритеты."
 
 #: .\templates\shared\about.html:33
 msgid "Our Mission"
-msgstr ""
+msgstr "Наша миссия"
 
 #: .\templates\shared\about.html:34
 msgid ""
@@ -890,12 +901,17 @@ msgid ""
 "quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed "
 "semper lorem at felis."
 msgstr ""
+"Наша миссия — сделать профессиональное спортивное снаряжение доступным "
+"для каждого. Мы предлагаем широкий выбор товаров для любого вида спорта "
+"и активного отдыха."
 
 #: .\templates\shared\about.html:45
 msgid ""
 "Pellentesque odio nisi, euismod pharetra a ultricies in diam. Sed arcu. Cras "
 "consequat"
 msgstr ""
+"Мы постоянно развиваемся, чтобы занять лидирующие позиции "
+"среди спортивных магазинов."
 
 #: .\templates\shared\about.html:46
 msgid ""
@@ -903,59 +919,60 @@ msgid ""
 "eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et "
 "vulputate volutpat, uctus metus libero eu augue."
 msgstr ""
+"Благодаря высококачественным товарам и отличному обслуживанию "
+"мы стали надёжным партнёром в мире спорта."
 
 #: .\templates\shared\about.html:48
 msgid "VIEW OUR NEWS"
-msgstr ""
+msgstr "НАШИ НОВОСТИ"
 
 #: .\templates\shared\about.html:66
 msgid "The world's premium design brands in one destination."
-msgstr ""
+msgstr "Лучшие мировые бренды в одном месте."
 
 #: .\templates\shared\about.html:67
 msgid ""
 "Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, "
 "aliquet vel, dapibus id, mattis vel, nis"
 msgstr ""
+"Полная коллекция самых популярных спортивных брендов. "
+"Высокое качество и современный дизайн."
 
 #: .\templates\shared\about.html:76 .\templates\shared\home.html:51
-#: .\templates\shared\home.html:52 .\templates\shared\home.html:53
-#: .\templates\shared\home.html:54 .\templates\shared\home.html:55
-#: .\templates\shared\home.html:56
 msgid "Brand Name"
-msgstr ""
+msgstr "Название бренда"
 
 #: .\templates\shared\about.html:87
 msgid "Meet Our Team"
-msgstr ""
+msgstr "Познакомьтесь с нашей командой"
 
 #: .\templates\shared\about.html:94 .\templates\shared\about.html:116
 #: .\templates\shared\about.html:138
 msgid "member photo"
-msgstr ""
+msgstr "фото участника"
 
 #: .\templates\shared\about.html:97 .\templates\shared\about.html:108
 msgid "Founder & CEO"
-msgstr ""
+msgstr "Основатель и генеральный директор"
 
 #: .\templates\shared\about.html:98 .\templates\shared\about.html:120
 #: .\templates\shared\about.html:142
 msgid ""
 "Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget "
 "blandit nunc."
-msgstr ""
+msgstr "Опытный специалист в области спорта и активного отдыха."
 
 #: .\templates\shared\about.html:119 .\templates\shared\about.html:130
 msgid "Sales & Marketing Manager"
-msgstr ""
+msgstr "Менеджер по продажам и маркетингу"
 
 #: .\templates\shared\about.html:141 .\templates\shared\about.html:152
 msgid "Product Manager"
-msgstr ""
+msgstr "Менеджер по продукту"
 
 #: .\templates\shared\about.html:163
 msgid "What Customers Say About Us"
-msgstr ""
+msgstr "Что говорят наши клиенты"
 
 #: .\templates\shared\about.html:174
 msgid ""
@@ -963,24 +980,27 @@ msgid ""
 "aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, "
 "nisi."
 msgstr ""
+"Я очень доволен покупкой в магазине Molla Sport! Отличное качество товаров "
+"и быстрая доставка. Большое спасибо!"
 
 #: .\templates\shared\about.html:175 .\templates\shared\about.html:180
 msgid "Customer"
-msgstr ""
+msgstr "Покупатель"
 
 #: .\templates\shared\about.html:179
 msgid ""
 "Impedit, ratione sequi, sunt incidunt magnam et. Delectus obcaecati optio "
 "eius error libero perferendis nesciunt."
 msgstr ""
+"Отличный сервис и высокое качество товаров. Рекомендую этот магазин всем!"
 
 #: .\templates\shared\contact.html:20
 msgid "Keep in touch with us"
-msgstr ""
+msgstr "Оставайтесь на связи с нами"
 
 #: .\templates\shared\contact.html:35
 msgid "Contact Information"
-msgstr ""
+msgstr "Контактная информация"
 
 #: .\templates\shared\contact.html:36
 msgid ""
@@ -988,490 +1008,485 @@ msgid ""
 "pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum "
 "et, dapibus sed, urna."
 msgstr ""
+"Если у вас есть вопросы или пожелания, свяжитесь с нами. "
+"Наша команда всегда готова помочь."
 
 #: .\templates\shared\contact.html:40
 msgid "The Office"
-msgstr ""
+msgstr "Офис"
 
 #: .\templates\shared\contact.html:44
 msgid "70 Washington Square South New York, NY 10012, United States"
-msgstr ""
+msgstr "70 Washington Square South, Нью-Йорк, NY 10012, США"
 
 #: .\templates\shared\contact.html:59
 msgid "Store Hours"
-msgstr ""
+msgstr "Часы работы"
 
 #: .\templates\shared\contact.html:63
 msgid "Monday–Saturday"
-msgstr ""
+msgstr "Понедельник–Суббота"
 
 #: .\templates\shared\contact.html:63
 msgid "11am–7pm ET"
-msgstr ""
+msgstr "11:00–19:00 ET"
 
 #: .\templates\shared\contact.html:67
 #: .\venv\Lib\site-packages\django\utils\dates.py:13
 msgid "Sunday"
-msgstr ""
+msgstr "Воскресенье"
 
 #: .\templates\shared\contact.html:67
 msgid "11am–6pm ET"
-msgstr ""
+msgstr "11:00–18:00 ET"
 
 #: .\templates\shared\contact.html:76
 msgid "Got Any Questions?"
-msgstr ""
+msgstr "Есть вопросы?"
 
 #: .\templates\shared\contact.html:77
 msgid "Use the form below to get in touch with the sales team"
-msgstr ""
+msgstr "Используйте форму ниже, чтобы связаться с отделом продаж"
 
 #: .\templates\shared\contact.html:95 .\templates\shared\contact.html:97
 #: .\templates\users\dashboard.html:98
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 #: .\templates\shared\contact.html:100 .\templates\shared\contact.html:102
 msgid "Subject"
-msgstr ""
+msgstr "Тема"
 
 #: .\templates\shared\contact.html:105
 msgid "Message"
-msgstr ""
+msgstr "Сообщение"
 
 #: .\templates\shared\contact.html:107
 msgid "Message *"
-msgstr ""
+msgstr "Сообщение *"
 
 #: .\templates\shared\contact.html:119
 msgid "Our Stores"
-msgstr ""
+msgstr "Наши магазины"
 
 #: .\templates\shared\contact.html:126 .\templates\shared\contact.html:148
 msgid "Store image"
-msgstr ""
+msgstr "Фото магазина"
 
 #: .\templates\shared\contact.html:131
 msgid "Wall Street Plaza"
-msgstr ""
+msgstr "Wall Street Plaza"
 
 #: .\templates\shared\contact.html:132 .\templates\shared\contact.html:154
 msgid "88 Pine St, New York, NY 10005, USA"
-msgstr ""
+msgstr "88 Pine St, Нью-Йорк, NY 10005, США"
 
 #: .\templates\shared\contact.html:134 .\templates\shared\contact.html:156
 msgid "Store Hours:"
-msgstr ""
+msgstr "Часы работы:"
 
 #: .\templates\shared\contact.html:135
 msgid "Monday – Saturday 11am to 7pm"
-msgstr ""
+msgstr "Понедельник – Суббота с 11:00 до 19:00"
 
 #: .\templates\shared\contact.html:136
 msgid "Sunday 11am to 6pm"
-msgstr ""
+msgstr "Воскресенье с 11:00 до 18:00"
 
 #: .\templates\shared\contact.html:137 .\templates\shared\contact.html:160
 msgid "View Map"
-msgstr ""
+msgstr "Посмотреть на карте"
 
 #: .\templates\shared\contact.html:153
 msgid "One New York Plaza"
-msgstr ""
+msgstr "One New York Plaza"
 
 #: .\templates\shared\contact.html:157
 msgid "Monday – Friday 9am to 8pm"
-msgstr ""
+msgstr "Понедельник – Пятница с 9:00 до 20:00"
 
 #: .\templates\shared\contact.html:158
 msgid "Saturday – 9am to 2pm"
-msgstr ""
+msgstr "Суббота – с 9:00 до 14:00"
 
 #: .\templates\shared\contact.html:159
 msgid "Sunday – Closed"
-msgstr ""
+msgstr "Воскресенье – Закрыто"
 
 #: .\templates\shared\home.html:4
 msgid "Molla - Extreme Sport Store"
-msgstr ""
+msgstr "Molla - Магазин экстремального спорта"
 
 #: .\templates\shared\home.html:13
 msgid "Premium Outdoor Gear & Clothing"
-msgstr ""
+msgstr "Премиальное снаряжение и одежда для улицы"
 
 #: .\templates\shared\home.html:16
 msgid "Our New Collections 2019"
-msgstr ""
+msgstr "Наши новые коллекции 2019"
 
 #: .\templates\shared\home.html:17
 msgid "Ski & Snowboard"
-msgstr ""
+msgstr "Лыжи и сноуборд"
 
 #: .\templates\shared\home.html:20
 msgid "discover now"
-msgstr ""
+msgstr "узнать сейчас"
 
 #: .\templates\shared\home.html:35
 msgid "trending brands"
-msgstr ""
+msgstr "популярные бренды"
 
 #: .\templates\shared\home.html:67
 msgid "Online mega deal"
-msgstr ""
+msgstr "Мега-распродажа онлайн"
 
 #: .\templates\shared\home.html:68
 msgid "Camping Gear & Accessories"
-msgstr ""
+msgstr "Туристическое снаряжение и аксессуары"
 
 #: .\templates\shared\home.html:69 .\templates\shared\home.html:84
 msgid "Shop Now"
-msgstr ""
+msgstr "Купить сейчас"
 
 #: .\templates\shared\home.html:75
 msgid "Summer"
-msgstr ""
+msgstr "Лето"
 
 #: .\templates\shared\home.html:75
 msgid "Clearance"
-msgstr ""
+msgstr "Распродажа"
 
 #: .\templates\shared\home.html:76
 msgid "Discover Now"
-msgstr ""
+msgstr "Узнать сейчас"
 
 #: .\templates\shared\home.html:82
 msgid "Lightning Deals"
-msgstr ""
+msgstr "Молниеносные скидки"
 
 #: .\templates\shared\home.html:83
 msgid "Sports & Outdoors"
-msgstr ""
+msgstr "Спорт и активный отдых"
 
 #: .\templates\shared\home.html:94
 msgid "favourite from every category"
-msgstr ""
+msgstr "лучшее из каждой категории"
 
 #: .\templates\shared\home.html:95
 msgid "Best Sellers"
-msgstr ""
+msgstr "Бестселлеры"
 
 #: .\templates\shared\home.html:142
 msgid "No featured products yet. Add some from the admin panel!"
-msgstr ""
+msgstr "Рекомендуемых товаров пока нет. Добавьте их через панель администратора!"
 
 #: .\templates\shared\home.html:151
 msgid "Get The Latest News & Deals"
-msgstr ""
+msgstr "Последние новости и акции"
 
 #: .\templates\shared\home.html:152
 msgid "Stay In The Know"
-msgstr ""
+msgstr "Будьте в курсе"
 
 #: .\templates\shared\home.html:157
 msgid "Enter your Email Address"
-msgstr ""
+msgstr "Введите адрес эл. почты"
 
 #: .\templates\shared\home.html:157
 msgid "Email Address"
-msgstr ""
+msgstr "Адрес эл. почты"
 
 #: .\templates\shared\home.html:159
 msgid "Subscribe"
-msgstr ""
+msgstr "Подписаться"
 
 #: .\templates\shared\home.html:170
 msgid "Our Fresh News"
-msgstr ""
+msgstr "Свежие новости"
 
 #: .\templates\shared\home.html:171
 msgid "New Blog Posts"
-msgstr ""
+msgstr "Новые записи в блоге"
 
 #: .\templates\shared\home.html:205
 msgid "read more"
-msgstr ""
+msgstr "читать далее"
 
 #: .\templates\shared\home.html:210
 msgid "No blog posts yet."
-msgstr ""
+msgstr "Записей в блоге пока нет."
 
 #: .\templates\users\dashboard.html:34
 msgid "Dashboard"
-msgstr ""
+msgstr "Личный кабинет"
 
 #: .\templates\users\dashboard.html:39
 msgid "Orders"
-msgstr ""
+msgstr "Заказы"
 
 #: .\templates\users\dashboard.html:44
 msgid "Addresses"
-msgstr ""
+msgstr "Адреса"
 
 #: .\templates\users\dashboard.html:49
 msgid "Account Details"
-msgstr ""
+msgstr "Данные аккаунта"
 
 #: .\templates\users\dashboard.html:52
 msgid "Sign Out"
-msgstr ""
+msgstr "Выйти"
 
 #: .\templates\users\dashboard.html:71
 msgid "Hello"
-msgstr ""
+msgstr "Здравствуйте"
 
 #: .\templates\users\dashboard.html:72
 msgid "not"
-msgstr ""
+msgstr "не"
 
 #: .\templates\users\dashboard.html:73
 msgid "Log out"
-msgstr ""
+msgstr "Выйти"
 
 #: .\templates\users\dashboard.html:75
 msgid "From your account dashboard you can view your"
-msgstr ""
+msgstr "В личном кабинете вы можете просматривать"
 
 #: .\templates\users\dashboard.html:76
 msgid "recent orders"
-msgstr ""
+msgstr "последние заказы"
 
 #: .\templates\users\dashboard.html:77
 msgid "manage your"
-msgstr ""
+msgstr "управлять"
 
 #: .\templates\users\dashboard.html:78
 msgid "shipping and billing addresses"
-msgstr ""
+msgstr "адресами доставки и оплаты"
 
 #: .\templates\users\dashboard.html:79
 #: .\venv\Lib\site-packages\django\db\models\base.py:1600
 #: .\venv\Lib\site-packages\django\forms\models.py:908
 msgid "and"
-msgstr ""
+msgstr "и"
 
 #: .\templates\users\dashboard.html:80
 msgid "edit your password and account details"
-msgstr ""
+msgstr "изменять пароль и данные аккаунта"
 
 #: .\templates\users\dashboard.html:110
 msgid "No order has been made yet."
-msgstr ""
+msgstr "Заказов пока нет."
 
 #: .\templates\users\dashboard.html:112
 msgid "GO SHOP"
-msgstr ""
+msgstr "В МАГАЗИН"
 
 #: .\templates\users\dashboard.html:119
 msgid "The following addresses will be used on the checkout page by default."
-msgstr ""
+msgstr "Следующие адреса будут использоваться на странице оформления заказа по умолчанию."
 
 #: .\templates\users\dashboard.html:124
 msgid "Billing Address"
-msgstr ""
+msgstr "Платёжный адрес"
 
 #: .\templates\users\dashboard.html:129 .\templates\users\dashboard.html:140
 msgid "Edit"
-msgstr ""
+msgstr "Изменить"
 
 #: .\templates\users\dashboard.html:137
 msgid "Shipping Address"
-msgstr ""
+msgstr "Адрес доставки"
 
 #: .\templates\users\dashboard.html:139
 msgid "You have not set up this type of address yet."
-msgstr ""
+msgstr "Вы ещё не добавили адрес этого типа."
 
 #: .\templates\users\dashboard.html:156 .\templates\users\login.html:128
 msgid "Full Name *"
-msgstr ""
+msgstr "Полное имя *"
 
 #: .\templates\users\dashboard.html:161 .\templates\users\login.html:117
 msgid "Username *"
-msgstr ""
+msgstr "Имя пользователя *"
 
 #: .\templates\users\dashboard.html:171
 msgid "Phone number"
-msgstr ""
+msgstr "Номер телефона"
 
 #: .\templates\users\dashboard.html:176
 msgid "Change Password"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: .\templates\users\dashboard.html:178
 msgid "Current password"
-msgstr ""
+msgstr "Текущий пароль"
 
 #: .\templates\users\dashboard.html:178 .\templates\users\dashboard.html:181
 msgid "leave blank to leave unchanged"
-msgstr ""
+msgstr "оставьте пустым, чтобы не менять"
 
 #: .\templates\users\dashboard.html:181
 msgid "New password"
-msgstr ""
+msgstr "Новый пароль"
 
 #: .\templates\users\dashboard.html:184
 msgid "Confirm new password"
-msgstr ""
+msgstr "Подтвердите новый пароль"
 
 #: .\templates\users\dashboard.html:188
 msgid "SAVE CHANGES"
-msgstr ""
+msgstr "СОХРАНИТЬ ИЗМЕНЕНИЯ"
 
 #: .\templates\users\login.html:4
 msgid "Login / Register"
-msgstr ""
+msgstr "Вход / Регистрация"
 
 #: .\templates\users\login.html:33
 msgid "Register"
-msgstr ""
+msgstr "Регистрация"
 
 #: .\templates\users\login.html:54
 msgid "Username or email address *"
-msgstr ""
+msgstr "Имя пользователя или эл. почта *"
 
 #: .\templates\users\login.html:63 .\templates\users\login.html:139
 msgid "Password *"
-msgstr ""
+msgstr "Пароль *"
 
 #: .\templates\users\login.html:72
 msgid "LOG IN"
-msgstr ""
+msgstr "ВОЙТИ"
 
 #: .\templates\users\login.html:77
 msgid "Remember Me"
-msgstr ""
+msgstr "Запомнить меня"
 
 #: .\templates\users\login.html:106
 msgid "Your email address *"
-msgstr ""
+msgstr "Ваш адрес эл. почты *"
 
 #: .\templates\users\login.html:149
 msgid "Confirm Password *"
-msgstr ""
+msgstr "Подтвердите пароль *"
 
 #: .\templates\users\login.html:160
 msgid "SIGN UP"
-msgstr ""
+msgstr "ЗАРЕГИСТРИРОВАТЬСЯ"
 
 #: .\templates\users\login.html:166
 msgid "I agree to the"
-msgstr ""
+msgstr "Я принимаю"
 
 #: .\templates\users\login.html:166
 msgid "privacy policy"
-msgstr ""
+msgstr "политику конфиденциальности"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
 msgid "Messages"
-msgstr ""
+msgstr "Сообщения"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr ""
+msgstr "Карты сайта"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "Статические файлы"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr ""
+msgstr "Синдикация"
 
-#. Translators: String used to replace omitted page numbers in elided page
-#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
 #: .\venv\Lib\site-packages\django\core\paginator.py:30
 msgid "…"
-msgstr ""
+msgstr "…"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:32
 msgid "That page number is not an integer"
-msgstr ""
+msgstr "Номер страницы не является целым числом"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:33
 msgid "That page number is less than 1"
-msgstr ""
+msgstr "Номер страницы меньше 1"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:34
 msgid "That page contains no results"
-msgstr ""
+msgstr "На этой странице нет результатов"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
-msgstr ""
+msgstr "Введите корректное значение."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:70
 msgid "Enter a valid domain name."
-msgstr ""
+msgstr "Введите корректное доменное имя."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:153
-#: .\venv\Lib\site-packages\django\forms\fields.py:774
 msgid "Enter a valid URL."
-msgstr ""
+msgstr "Введите корректный URL."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:200
 msgid "Enter a valid integer."
-msgstr ""
+msgstr "Введите корректное целое число."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:211
 msgid "Enter a valid email address."
-msgstr ""
+msgstr "Введите корректный адрес эл. почты."
 
-#. Translators: "letters" means latin letters: a-z and A-Z.
 #: .\venv\Lib\site-packages\django\core\validators.py:289
 msgid ""
-"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+"Enter a valid \u201cslug\u201d consisting of letters, numbers, underscores or hyphens."
 msgstr ""
+"Введите корректный «слаг», состоящий из букв, цифр, знаков подчёркивания или дефисов."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:297
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid \u201cslug\u201d consisting of Unicode letters, numbers, underscores, or hyphens."
 msgstr ""
+"Введите корректный «слаг», состоящий из Unicode-букв, цифр, знаков подчёркивания или дефисов."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:309
-#: .\venv\Lib\site-packages\django\core\validators.py:318
-#: .\venv\Lib\site-packages\django\core\validators.py:332
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
 #, python-format
 msgid "Enter a valid %(protocol)s address."
-msgstr ""
+msgstr "Введите корректный %(protocol)s адрес."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:311
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:320
-#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:334
 msgid "IPv4 or IPv6"
-msgstr ""
+msgstr "IPv4 или IPv6"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:375
 msgid "Enter only digits separated by commas."
-msgstr ""
+msgstr "Введите только цифры, разделённые запятыми."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:381
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
+msgstr "Убедитесь, что это значение равно %(limit_value)s (сейчас %(show_value)s)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:416
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
+msgstr "Убедитесь, что это значение меньше или равно %(limit_value)s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:425
 #, python-format
 msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
+msgstr "Убедитесь, что это значение больше или равно %(limit_value)s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:434
 #, python-format
 msgid "Ensure this value is a multiple of step size %(limit_value)s."
-msgstr ""
+msgstr "Убедитесь, что это значение кратно шагу %(limit_value)s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:441
 #, python-format
@@ -1479,1154 +1494,934 @@ msgid ""
 "Ensure this value is a multiple of step size %(limit_value)s, starting from "
 "%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
 msgstr ""
+"Убедитесь, что это значение кратно шагу %(limit_value)s, начиная с %(offset)s, "
+"например: %(offset)s, %(valid_value1)s, %(valid_value2)s и т.д."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:473
 #, python-format
 msgid ""
-"Ensure this value has at least %(limit_value)d character (it has "
-"%(show_value)d)."
+"Ensure this value has at least %(limit_value)d character (it has %(show_value)d)."
 msgid_plural ""
-"Ensure this value has at least %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
+"Ensure this value has at least %(limit_value)d characters (it has %(show_value)d)."
+msgstr[0] "Убедитесь, что в этом значении не менее %(limit_value)d символа (сейчас %(show_value)d)."
+msgstr[1] "Убедитесь, что в этом значении не менее %(limit_value)d символов (сейчас %(show_value)d)."
+msgstr[2] "Убедитесь, что в этом значении не менее %(limit_value)d символов (сейчас %(show_value)d)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:491
 #, python-format
 msgid ""
-"Ensure this value has at most %(limit_value)d character (it has "
-"%(show_value)d)."
+"Ensure this value has at most %(limit_value)d character (it has %(show_value)d)."
 msgid_plural ""
-"Ensure this value has at most %(limit_value)d characters (it has "
-"%(show_value)d)."
-msgstr[0] ""
-msgstr[1] ""
+"Ensure this value has at most %(limit_value)d characters (it has %(show_value)d)."
+msgstr[0] "Убедитесь, что в этом значении не более %(limit_value)d символа (сейчас %(show_value)d)."
+msgstr[1] "Убедитесь, что в этом значении не более %(limit_value)d символов (сейчас %(show_value)d)."
+msgstr[2] "Убедитесь, что в этом значении не более %(limit_value)d символов (сейчас %(show_value)d)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:514
-#: .\venv\Lib\site-packages\django\forms\fields.py:365
-#: .\venv\Lib\site-packages\django\forms\fields.py:404
 msgid "Enter a number."
-msgstr ""
+msgstr "Введите число."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:516
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Убедитесь, что всего не более %(max)s цифры."
+msgstr[1] "Убедитесь, что всего не более %(max)s цифр."
+msgstr[2] "Убедитесь, что всего не более %(max)s цифр."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:521
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Убедитесь, что не более %(max)s знака после запятой."
+msgstr[1] "Убедитесь, что не более %(max)s знаков после запятой."
+msgstr[2] "Убедитесь, что не более %(max)s знаков после запятой."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:526
 #, python-format
-msgid ""
-"Ensure that there are no more than %(max)s digit before the decimal point."
-msgid_plural ""
-"Ensure that there are no more than %(max)s digits before the decimal point."
-msgstr[0] ""
-msgstr[1] ""
+msgid "Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural "Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] "Убедитесь, что не более %(max)s цифры до запятой."
+msgstr[1] "Убедитесь, что не более %(max)s цифр до запятой."
+msgstr[2] "Убедитесь, что не более %(max)s цифр до запятой."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:597
 #, python-format
 msgid ""
-"File extension “%(extension)s” is not allowed. Allowed extensions are: "
-"%(allowed_extensions)s."
+"File extension \u201c%(extension)s\u201d is not allowed. Allowed extensions are: %(allowed_extensions)s."
 msgstr ""
+"Расширение файла «%(extension)s» не разрешено. Допустимые расширения: %(allowed_extensions)s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:659
 msgid "Null characters are not allowed."
-msgstr ""
+msgstr "Нулевые символы не допускаются."
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1602
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
+msgstr "%(model_name)s с таким %(field_labels)s уже существует."
 
 #: .\venv\Lib\site-packages\django\db\models\constraints.py:22
 #, python-format
-msgid "Constraint “%(name)s” is violated."
-msgstr ""
+msgid "Constraint \u201c%(name)s\u201d is violated."
+msgstr "Ограничение «%(name)s» нарушено."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
 #, python-format
 msgid "Value %(value)r is not a valid choice."
-msgstr ""
+msgstr "Значение %(value)r не является допустимым выбором."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
 msgid "This field cannot be null."
-msgstr ""
+msgstr "Это поле не может быть пустым (null)."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
 msgid "This field cannot be blank."
-msgstr ""
+msgstr "Это поле не может быть пустым."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
 #, python-format
 msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
+msgstr "%(model_name)s с таким %(field_label)s уже существует."
 
-#. Translators: The 'lookup_type' is one of 'date', 'year' or
-#. 'month'. Eg: "Title must be unique for pub_date year"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
 #, python-format
-msgid ""
-"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
-msgstr ""
+msgid "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr "%(field_label)s должен быть уникальным для %(date_field_label)s %(lookup_type)s."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
 #, python-format
 msgid "Field of type: %(field_type)s"
-msgstr ""
+msgstr "Поле типа: %(field_type)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
 #, python-format
-msgid "“%(value)s” value must be either True or False."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be either True or False."
+msgstr "Значение «%(value)s» должно быть True или False."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
 #, python-format
-msgid "“%(value)s” value must be either True, False, or None."
-msgstr ""
+msgid "\u201c%(value)s\u201d value must be either True, False, or None."
+msgstr "Значение «%(value)s» должно быть True, False или None."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
 msgid "Boolean (Either True or False)"
-msgstr ""
+msgstr "Логическое (True или False)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
 #, python-format
 msgid "String (up to %(max_length)s)"
-msgstr ""
+msgstr "Строка (до %(max_length)s символов)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
 msgid "String (unlimited)"
-msgstr ""
+msgstr "Строка (без ограничений)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
 msgid "Comma-separated integers"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
-"format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
-"date."
-msgstr ""
+msgstr "Целые числа через запятую"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
 msgid "Date (without time)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
-msgstr ""
+msgstr "Дата (без времени)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
 msgid "Date (with time)"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
-#, python-format
-msgid "“%(value)s” value must be a decimal number."
-msgstr ""
+msgstr "Дата (с временем)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
 msgid "Decimal number"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
-"[[HH:]MM:]ss[.uuuuuu] format."
-msgstr ""
+msgstr "Десятичное число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
 msgid "Duration"
-msgstr ""
+msgstr "Длительность"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
 msgid "Email address"
-msgstr ""
+msgstr "Адрес эл. почты"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
 msgid "File path"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
-#, python-format
-msgid "“%(value)s” value must be a float."
-msgstr ""
+msgstr "Путь к файлу"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
 msgid "Floating point number"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
-#, python-format
-msgid "“%(value)s” value must be an integer."
-msgstr ""
+msgstr "Число с плавающей точкой"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
 msgid "Integer"
-msgstr ""
+msgstr "Целое число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
 msgid "Big (8 byte) integer"
-msgstr ""
+msgstr "Большое (8 байт) целое число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
 msgid "Small integer"
-msgstr ""
+msgstr "Малое целое число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
 msgid "IPv4 address"
-msgstr ""
+msgstr "IPv4 адрес"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
 msgid "IP address"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
-#, python-format
-msgid "“%(value)s” value must be either None, True or False."
-msgstr ""
+msgstr "IP адрес"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
 msgid "Boolean (Either True, False or None)"
-msgstr ""
+msgstr "Логическое (True, False или None)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
 msgid "Positive big integer"
-msgstr ""
+msgstr "Положительное большое целое число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
 msgid "Positive integer"
-msgstr ""
+msgstr "Положительное целое число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
 msgid "Positive small integer"
-msgstr ""
+msgstr "Положительное малое целое число"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
 #, python-format
 msgid "Slug (up to %(max_length)s)"
-msgstr ""
+msgstr "Слаг (до %(max_length)s символов)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
 msgid "Text"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
-#, python-format
-msgid ""
-"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
-"format."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
-#, python-format
-msgid ""
-"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
-"invalid time."
-msgstr ""
+msgstr "Текст"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
 msgid "Time"
-msgstr ""
+msgstr "Время"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
 msgid "Raw binary data"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
-#, python-format
-msgid "“%(value)s” is not a valid UUID."
-msgstr ""
+msgstr "Необработанные двоичные данные"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
 msgid "Universally unique identifier"
-msgstr ""
+msgstr "Универсальный уникальный идентификатор"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
 msgid "File"
-msgstr ""
+msgstr "Файл"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
 msgid "Image"
-msgstr ""
+msgstr "Изображение"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
 msgid "A JSON object"
-msgstr ""
+msgstr "JSON объект"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
 msgid "Value must be valid JSON."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\db\models\fields\related.py:979
-#, python-format
-msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
-msgstr ""
+msgstr "Значение должно быть корректным JSON."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:982
 msgid "Foreign Key (type determined by related field)"
-msgstr ""
+msgstr "Внешний ключ (тип определяется связанным полем)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1276
 msgid "One-to-one relationship"
-msgstr ""
+msgstr "Отношение один-к-одному"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1333
 #, python-format
 msgid "%(from)s-%(to)s relationship"
-msgstr ""
+msgstr "Отношение %(from)s-%(to)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1335
 #, python-format
 msgid "%(from)s-%(to)s relationships"
-msgstr ""
+msgstr "Отношения %(from)s-%(to)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1383
 msgid "Many-to-many relationship"
-msgstr ""
+msgstr "Отношение многие-ко-многим"
 
-#. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:185
 msgid ":?.!"
-msgstr ""
+msgstr ":?.!"
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:94
 msgid "This field is required."
-msgstr ""
+msgstr "Это поле обязательно."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:314
 msgid "Enter a whole number."
-msgstr ""
+msgstr "Введите целое число."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:485
-#: .\venv\Lib\site-packages\django\forms\fields.py:1257
 msgid "Enter a valid date."
-msgstr ""
+msgstr "Введите корректную дату."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:508
-#: .\venv\Lib\site-packages\django\forms\fields.py:1258
 msgid "Enter a valid time."
-msgstr ""
+msgstr "Введите корректное время."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:535
 msgid "Enter a valid date/time."
-msgstr ""
+msgstr "Введите корректную дату/время."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:569
 msgid "Enter a valid duration."
-msgstr ""
+msgstr "Введите корректную длительность."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:570
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
+msgstr "Количество дней должно быть от {min_days} до {max_days}."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:639
 msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
+msgstr "Файл не был отправлен. Проверьте тип кодировки формы."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:640
 msgid "No file was submitted."
-msgstr ""
+msgstr "Файл не был отправлен."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:641
 msgid "The submitted file is empty."
-msgstr ""
+msgstr "Отправленный файл пуст."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:643
 #, python-format
 msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
-msgid_plural ""
-"Ensure this filename has at most %(max)d characters (it has %(length)d)."
-msgstr[0] ""
-msgstr[1] ""
+msgid_plural "Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "Имя файла должно содержать не более %(max)d символа (сейчас %(length)d)."
+msgstr[1] "Имя файла должно содержать не более %(max)d символов (сейчас %(length)d)."
+msgstr[2] "Имя файла должно содержать не более %(max)d символов (сейчас %(length)d)."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:648
 msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
+msgstr "Пожалуйста, либо отправьте файл, либо отметьте флажок очистки, но не оба варианта."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:716
 msgid ""
-"Upload a valid image. The file you uploaded was either not an image or a "
-"corrupted image."
+"Upload a valid image. The file you uploaded was either not an image or a corrupted image."
 msgstr ""
+"Загрузите корректное изображение. Загруженный файл не является изображением или повреждён."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:879
-#: .\venv\Lib\site-packages\django\forms\fields.py:965
-#: .\venv\Lib\site-packages\django\forms\models.py:1592
 #, python-format
 msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
+msgstr "Выберите корректный вариант. %(value)s не входит в список доступных вариантов."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:967
-#: .\venv\Lib\site-packages\django\forms\fields.py:1086
-#: .\venv\Lib\site-packages\django\forms\models.py:1590
 msgid "Enter a list of values."
-msgstr ""
+msgstr "Введите список значений."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1087
 msgid "Enter a complete value."
-msgstr ""
+msgstr "Введите полное значение."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1329
 msgid "Enter a valid UUID."
-msgstr ""
+msgstr "Введите корректный UUID."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1359
 msgid "Enter a valid JSON."
-msgstr ""
+msgstr "Введите корректный JSON."
 
-#. Translators: This is the default suffix added to form field labels
 #: .\venv\Lib\site-packages\django\forms\forms.py:97
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: .\venv\Lib\site-packages\django\forms\forms.py:239
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\formsets.py:61
-#, python-format
-msgid ""
-"ManagementForm data is missing or has been tampered with. Missing fields: "
-"%(field_names)s. You may need to file a bug report if the issue persists."
-msgstr ""
+msgstr "(Скрытое поле %(name)s) %(error)s"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:65
 #, python-format
 msgid "Please submit at most %(num)d form."
 msgid_plural "Please submit at most %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Пожалуйста, отправьте не более %(num)d формы."
+msgstr[1] "Пожалуйста, отправьте не более %(num)d форм."
+msgstr[2] "Пожалуйста, отправьте не более %(num)d форм."
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:70
 #, python-format
 msgid "Please submit at least %(num)d form."
 msgid_plural "Please submit at least %(num)d forms."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Пожалуйста, отправьте не менее %(num)d формы."
+msgstr[1] "Пожалуйста, отправьте не менее %(num)d форм."
+msgstr[2] "Пожалуйста, отправьте не менее %(num)d форм."
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:484
-#: .\venv\Lib\site-packages\django\forms\formsets.py:491
 msgid "Order"
-msgstr ""
+msgstr "Порядок"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:499
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: .\venv\Lib\site-packages\django\forms\models.py:901
 #, python-format
 msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
+msgstr "Исправьте повторяющиеся данные для %(field)s."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:906
 #, python-format
 msgid "Please correct the duplicate data for %(field)s, which must be unique."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:913
-#, python-format
-msgid ""
-"Please correct the duplicate data for %(field_name)s which must be unique "
-"for the %(lookup)s in %(date_field)s."
-msgstr ""
+msgstr "Исправьте повторяющиеся данные для %(field)s, которое должно быть уникальным."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:922
 msgid "Please correct the duplicate values below."
-msgstr ""
+msgstr "Исправьте повторяющиеся значения ниже."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1359
 msgid "The inline value did not match the parent instance."
-msgstr ""
+msgstr "Встроенное значение не соответствует родительскому экземпляру."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1450
 msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\models.py:1594
-#, python-format
-msgid "“%(pk)s” is not a valid value."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\forms\utils.py:229
-#, python-format
-msgid ""
-"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
-"may be ambiguous or it may not exist."
-msgstr ""
+msgstr "Выберите корректный вариант. Данный вариант не входит в список доступных."
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:527
 msgid "Clear"
-msgstr ""
+msgstr "Очистить"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:528
 msgid "Currently"
-msgstr ""
+msgstr "Текущий"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:529
 msgid "Change"
-msgstr ""
+msgstr "Изменить"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:866
 msgid "Unknown"
-msgstr ""
+msgstr "Неизвестно"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:867
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:868
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
-#. Translators: Please do not add spaces around commas.
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
 msgid "yes,no,maybe"
-msgstr ""
+msgstr "да,нет,возможно"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
-#: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
 #, python-format
 msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(size)d байт"
+msgstr[1] "%(size)d байта"
+msgstr[2] "%(size)d байт"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
 #, python-format
 msgid "%s KB"
-msgstr ""
+msgstr "%s КБ"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
 #, python-format
 msgid "%s MB"
-msgstr ""
+msgstr "%s МБ"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
 #, python-format
 msgid "%s GB"
-msgstr ""
+msgstr "%s ГБ"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
 #, python-format
 msgid "%s TB"
-msgstr ""
+msgstr "%s ТБ"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
 #, python-format
 msgid "%s PB"
-msgstr ""
+msgstr "%s ПБ"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:74
 msgid "p.m."
-msgstr ""
+msgstr "п.п."
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:75
 msgid "a.m."
-msgstr ""
+msgstr "д.п."
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:80
 msgid "PM"
-msgstr ""
+msgstr "ПП"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:81
 msgid "AM"
-msgstr ""
+msgstr "ДП"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:153
 msgid "midnight"
-msgstr ""
+msgstr "полночь"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:155
 msgid "noon"
-msgstr ""
+msgstr "полдень"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:7
 msgid "Monday"
-msgstr ""
+msgstr "Понедельник"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:8
 msgid "Tuesday"
-msgstr ""
+msgstr "Вторник"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:9
 msgid "Wednesday"
-msgstr ""
+msgstr "Среда"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Thursday"
-msgstr ""
+msgstr "Четверг"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:11
 msgid "Friday"
-msgstr ""
+msgstr "Пятница"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:12
 msgid "Saturday"
-msgstr ""
+msgstr "Суббота"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:16
 msgid "Mon"
-msgstr ""
+msgstr "Пн"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:17
 msgid "Tue"
-msgstr ""
+msgstr "Вт"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:18
 msgid "Wed"
-msgstr ""
+msgstr "Ср"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "Thu"
-msgstr ""
+msgstr "Чт"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "Fri"
-msgstr ""
+msgstr "Пт"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:21
 msgid "Sat"
-msgstr ""
+msgstr "Сб"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:22
 msgid "Sun"
-msgstr ""
+msgstr "Вс"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:25
 msgid "January"
-msgstr ""
+msgstr "Январь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:26
 msgid "February"
-msgstr ""
+msgstr "Февраль"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:27
 msgid "March"
-msgstr ""
+msgstr "Март"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:28
 msgid "April"
-msgstr ""
+msgstr "Апрель"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:29
 msgid "May"
-msgstr ""
+msgstr "Май"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:30
 msgid "June"
-msgstr ""
+msgstr "Июнь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:31
 msgid "July"
-msgstr ""
+msgstr "Июль"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:32
 msgid "August"
-msgstr ""
+msgstr "Август"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:33
 msgid "September"
-msgstr ""
+msgstr "Сентябрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:34
 msgid "October"
-msgstr ""
+msgstr "Октябрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:35
 msgid "November"
-msgstr ""
+msgstr "Ноябрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:36
 msgid "December"
-msgstr ""
+msgstr "Декабрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:39
 msgid "jan"
-msgstr ""
+msgstr "янв"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:40
 msgid "feb"
-msgstr ""
+msgstr "фев"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:41
 msgid "mar"
-msgstr ""
+msgstr "мар"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:42
 msgid "apr"
-msgstr ""
+msgstr "апр"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:43
 msgid "may"
-msgstr ""
+msgstr "май"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:44
 msgid "jun"
-msgstr ""
+msgstr "июн"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:45
 msgid "jul"
-msgstr ""
+msgstr "июл"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:46
 msgid "aug"
-msgstr ""
+msgstr "авг"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:47
 msgid "sep"
-msgstr ""
+msgstr "сен"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:48
 msgid "oct"
-msgstr ""
+msgstr "окт"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:49
 msgid "nov"
-msgstr ""
+msgstr "ноя"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:50
 msgid "dec"
-msgstr ""
+msgstr "дек"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:53
 msgctxt "abbrev. month"
 msgid "Jan."
-msgstr ""
+msgstr "Янв."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:54
 msgctxt "abbrev. month"
 msgid "Feb."
-msgstr ""
+msgstr "Фев."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:55
 msgctxt "abbrev. month"
 msgid "March"
-msgstr ""
+msgstr "Март"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:56
 msgctxt "abbrev. month"
 msgid "April"
-msgstr ""
+msgstr "Апр."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:57
 msgctxt "abbrev. month"
 msgid "May"
-msgstr ""
+msgstr "Май"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:58
 msgctxt "abbrev. month"
 msgid "June"
-msgstr ""
+msgstr "Июнь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:59
 msgctxt "abbrev. month"
 msgid "July"
-msgstr ""
+msgstr "Июль"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:60
 msgctxt "abbrev. month"
 msgid "Aug."
-msgstr ""
+msgstr "Авг."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:61
 msgctxt "abbrev. month"
 msgid "Sept."
-msgstr ""
+msgstr "Сент."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:62
 msgctxt "abbrev. month"
 msgid "Oct."
-msgstr ""
+msgstr "Окт."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:63
 msgctxt "abbrev. month"
 msgid "Nov."
-msgstr ""
+msgstr "Нояб."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:64
 msgctxt "abbrev. month"
 msgid "Dec."
-msgstr ""
+msgstr "Дек."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:67
 msgctxt "alt. month"
 msgid "January"
-msgstr ""
+msgstr "Январь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:68
 msgctxt "alt. month"
 msgid "February"
-msgstr ""
+msgstr "Февраль"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:69
 msgctxt "alt. month"
 msgid "March"
-msgstr ""
+msgstr "Март"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:70
 msgctxt "alt. month"
 msgid "April"
-msgstr ""
+msgstr "Апрель"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:71
 msgctxt "alt. month"
 msgid "May"
-msgstr ""
+msgstr "Май"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:72
 msgctxt "alt. month"
 msgid "June"
-msgstr ""
+msgstr "Июнь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:73
 msgctxt "alt. month"
 msgid "July"
-msgstr ""
+msgstr "Июль"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:74
 msgctxt "alt. month"
 msgid "August"
-msgstr ""
+msgstr "Август"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:75
 msgctxt "alt. month"
 msgid "September"
-msgstr ""
+msgstr "Сентябрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:76
 msgctxt "alt. month"
 msgid "October"
-msgstr ""
+msgstr "Октябрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:77
 msgctxt "alt. month"
 msgid "November"
-msgstr ""
+msgstr "Ноябрь"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:78
 msgctxt "alt. month"
 msgid "December"
-msgstr ""
+msgstr "Декабрь"
 
 #: .\venv\Lib\site-packages\django\utils\ipv6.py:20
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "Это некорректный IPv6 адрес."
 
 #: .\venv\Lib\site-packages\django\utils\text.py:76
 #, python-format
 msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
-msgstr ""
+msgstr "%(truncated_text)s…"
 
 #: .\venv\Lib\site-packages\django\utils\text.py:282
 msgid "or"
-msgstr ""
+msgstr "или"
 
-#. Translators: This string is used as a separator between list elements
 #: .\venv\Lib\site-packages\django\utils\text.py:301
-#: .\venv\Lib\site-packages\django\utils\timesince.py:135
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:8
 #, python-format
 msgid "%(num)d year"
 msgid_plural "%(num)d years"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d год"
+msgstr[1] "%(num)d года"
+msgstr[2] "%(num)d лет"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:9
 #, python-format
 msgid "%(num)d month"
 msgid_plural "%(num)d months"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d месяц"
+msgstr[1] "%(num)d месяца"
+msgstr[2] "%(num)d месяцев"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:10
 #, python-format
 msgid "%(num)d week"
 msgid_plural "%(num)d weeks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d неделя"
+msgstr[1] "%(num)d недели"
+msgstr[2] "%(num)d недель"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:11
 #, python-format
 msgid "%(num)d day"
 msgid_plural "%(num)d days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d день"
+msgstr[1] "%(num)d дня"
+msgstr[2] "%(num)d дней"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:12
 #, python-format
 msgid "%(num)d hour"
 msgid_plural "%(num)d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d час"
+msgstr[1] "%(num)d часа"
+msgstr[2] "%(num)d часов"
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:13
 #, python-format
 msgid "%(num)d minute"
 msgid_plural "%(num)d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(num)d минута"
+msgstr[1] "%(num)d минуты"
+msgstr[2] "%(num)d минут"
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:29
 msgid "Forbidden"
-msgstr ""
+msgstr "Доступ запрещён"
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:30
 msgid "CSRF verification failed. Request aborted."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:34
-msgid ""
-"You are seeing this message because this HTTPS site requires a “Referer "
-"header” to be sent by your web browser, but none was sent. This header is "
-"required for security reasons, to ensure that your browser is not being "
-"hijacked by third parties."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:40
-msgid ""
-"If you have configured your browser to disable “Referer” headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for “same-"
-"origin” requests."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:45
-msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" …> for links to third-party sites."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:54
-msgid ""
-"You are seeing this message because this site requires a CSRF cookie when "
-"submitting forms. This cookie is required for security reasons, to ensure "
-"that your browser is not being hijacked by third parties."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\csrf.py:60
-msgid ""
-"If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for “same-origin” requests."
-msgstr ""
+msgstr "Проверка CSRF не прошла. Запрос отменён."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:66
 msgid "More information is available with DEBUG=True."
-msgstr ""
+msgstr "Дополнительная информация доступна при DEBUG=True."
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:44
 msgid "No year specified"
-msgstr ""
+msgstr "Год не указан"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:64
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
 msgid "Date out of range"
-msgstr ""
+msgstr "Дата вне допустимого диапазона"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:94
 msgid "No month specified"
-msgstr ""
+msgstr "Месяц не указан"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:147
 msgid "No day specified"
-msgstr ""
+msgstr "День не указан"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:194
 msgid "No week specified"
-msgstr ""
+msgstr "Неделя не указана"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:353
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
 #, python-format
 msgid "No %(verbose_name_plural)s available"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
-#, python-format
-msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
-#, python-format
-msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-msgstr ""
+msgstr "%(verbose_name_plural)s недоступны"
 
 #: .\venv\Lib\site-packages\django\views\generic\detail.py:56
 #, python-format
 msgid "No %(verbose_name)s found matching the query"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\list.py:70
-msgid "Page is not “last”, nor can it be converted to an int."
-msgstr ""
+msgstr "%(verbose_name)s по запросу не найдено"
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:77
 #, python-format
 msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\generic\list.py:173
-#, python-format
-msgid "Empty list and “%(class_name)s.allow_empty” is False."
-msgstr ""
+msgstr "Недопустимая страница (%(page_number)s): %(message)s"
 
 #: .\venv\Lib\site-packages\django\views\static.py:49
 msgid "Directory indexes are not allowed here."
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\static.py:51
-#, python-format
-msgid "“%(path)s” does not exist"
-msgstr ""
+msgstr "Индексы директорий здесь не разрешены."
 
 #: .\venv\Lib\site-packages\django\views\static.py:68
-#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
-#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
 #, python-format
 msgid "Index of %(directory)s"
-msgstr ""
+msgstr "Индекс %(directory)s"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
 msgid "The install worked successfully! Congratulations!"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
-#, python-format
-msgid ""
-"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
-"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
-
-#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
-#, python-format
-msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
-msgstr ""
+msgstr "Установка прошла успешно! Поздравляем!"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
 msgid "Django Documentation"
-msgstr ""
+msgstr "Документация Django"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
-msgid "Topics, references, &amp; how-to’s"
-msgstr ""
+msgid "Topics, references, &amp; how-to's"
+msgstr "Темы, справочники и инструкции"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
 msgid "Tutorial: A Polling App"
-msgstr ""
+msgstr "Руководство: приложение для голосования"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
 msgid "Get started with Django"
-msgstr ""
+msgstr "Начало работы с Django"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
 msgid "Django Community"
-msgstr ""
+msgstr "Сообщество Django"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
 msgid "Connect, get help, or contribute"
-msgstr ""
+msgstr "Присоединяйтесь, получите помощь или внесите вклад"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:14
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:94
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:102
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:112
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:122
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:126
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:158
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:177
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:404
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:409
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:419
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:439
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:456
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:475
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:481
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:498
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:510
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:518
 msgid "title"
-msgstr ""
+msgstr "заголовок"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:18
 msgid "password"
-msgstr ""
+msgstr "пароль"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:285
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:304
 msgid "title a"
-msgstr ""
+msgstr "заголовок а"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:289
-#: .\venv\Lib\site-packages\modeltranslation\tests\models.py:315
 msgid "title b"
-msgstr ""
+msgstr "заголовок б"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:293
 msgid "title c"
-msgstr ""
+msgstr "заголовок в"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:297
 msgid "title d"
-msgstr ""
+msgstr "заголовок г"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\models.py:420
 msgid "visits"
-msgstr ""
+msgstr "посещения"
 
 #: .\venv\Lib\site-packages\modeltranslation\tests\translation.py:74
 msgid "Sorry, translation is not available."
-msgstr ""
+msgstr "Извините, перевод недоступен."
 
 #: .\venv\Lib\site-packages\modeltranslation\widgets.py:32
 msgid "None"
-msgstr ""
+msgstr "Нет"
