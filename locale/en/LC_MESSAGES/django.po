@@ -1448,15 +1448,15 @@ msgstr "Enter a valid email address."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:289
 msgid ""
-"Enter a valid \u201cslug\u201d consisting of letters, numbers, underscores or hyphens."
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
-"Enter a valid \u201cslug\u201d consisting of letters, numbers, underscores or hyphens."
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:297
 msgid ""
-"Enter a valid \u201cslug\u201d consisting of Unicode letters, numbers, underscores, or hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or hyphens."
 msgstr ""
-"Enter a valid \u201cslug\u201d consisting of Unicode letters, numbers, underscores, or hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or hyphens."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:309
 #, python-format
@@ -1554,9 +1554,9 @@ msgstr[1] "Ensure that there are no more than %(max)s digits before the decimal 
 #: .\venv\Lib\site-packages\django\core\validators.py:597
 #, python-format
 msgid ""
-"File extension \u201c%(extension)s\u201d is not allowed. Allowed extensions are: %(allowed_extensions)s."
+"File extension “%(extension)s” is not allowed. Allowed extensions are: %(allowed_extensions)s."
 msgstr ""
-"File extension \u201c%(extension)s\u201d is not allowed. Allowed extensions are: %(allowed_extensions)s."
+"File extension “%(extension)s” is not allowed. Allowed extensions are: %(allowed_extensions)s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:659
 msgid "Null characters are not allowed."
@@ -1569,8 +1569,8 @@ msgstr "%(model_name)s with this %(field_labels)s already exists."
 
 #: .\venv\Lib\site-packages\django\db\models\constraints.py:22
 #, python-format
-msgid "Constraint \u201c%(name)s\u201d is violated."
-msgstr "Constraint \u201c%(name)s\u201d is violated."
+msgid "Constraint “%(name)s” is violated."
+msgstr "Constraint “%(name)s” is violated."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
 #, python-format
@@ -1602,13 +1602,13 @@ msgstr "Field of type: %(field_type)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either True or False."
-msgstr "\u201c%(value)s\u201d value must be either True or False."
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” value must be either True or False."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either True, False, or None."
-msgstr "\u201c%(value)s\u201d value must be either True, False, or None."
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” value must be either True, False, or None."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
 msgid "Boolean (Either True or False)"
@@ -1629,13 +1629,13 @@ msgstr "Comma-separated integers"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
 #, python-format
-msgid "\u201c%(value)s\u201d value has an invalid date format. It must be in YYYY-MM-DD format."
-msgstr "\u201c%(value)s\u201d value has an invalid date format. It must be in YYYY-MM-DD format."
+msgid "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD format."
+msgstr "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
 #, python-format
-msgid "\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD) but it is an invalid date."
-msgstr "\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD) but it is an invalid date."
+msgid "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid date."
+msgstr "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid date."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
 msgid "Date (without time)"
@@ -1643,13 +1643,13 @@ msgstr "Date (without time)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
 #, python-format
-msgid "\u201c%(value)s\u201d value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."
-msgstr "\u201c%(value)s\u201d value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."
+msgid "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
 #, python-format
-msgid "\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
-msgstr "\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgid "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgstr "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
 msgid "Date (with time)"
@@ -1657,8 +1657,8 @@ msgstr "Date (with time)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
 #, python-format
-msgid "\u201c%(value)s\u201d value must be a decimal number."
-msgstr "\u201c%(value)s\u201d value must be a decimal number."
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” value must be a decimal number."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
 msgid "Decimal number"
@@ -1666,8 +1666,8 @@ msgstr "Decimal number"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
 #, python-format
-msgid "\u201c%(value)s\u201d value has an invalid format. It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
-msgstr "\u201c%(value)s\u201d value has an invalid format. It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
+msgid "“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
+msgstr "“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[.uuuuuu] format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
 msgid "Duration"
@@ -1683,8 +1683,8 @@ msgstr "File path"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
 #, python-format
-msgid "\u201c%(value)s\u201d value must be a float."
-msgstr "\u201c%(value)s\u201d value must be a float."
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” value must be a float."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
 msgid "Floating point number"
@@ -1692,8 +1692,8 @@ msgstr "Floating point number"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
 #, python-format
-msgid "\u201c%(value)s\u201d value must be an integer."
-msgstr "\u201c%(value)s\u201d value must be an integer."
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” value must be an integer."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
 msgid "Integer"
@@ -1717,8 +1717,8 @@ msgstr "IP address"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either None, True or False."
-msgstr "\u201c%(value)s\u201d value must be either None, True or False."
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” value must be either None, True or False."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
 msgid "Boolean (Either True, False or None)"
@@ -1747,13 +1747,13 @@ msgstr "Text"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
 #, python-format
-msgid "\u201c%(value)s\u201d value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
-msgstr "\u201c%(value)s\u201d value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
+msgid "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
+msgstr "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
 #, python-format
-msgid "\u201c%(value)s\u201d value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time."
-msgstr "\u201c%(value)s\u201d value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time."
+msgid "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time."
+msgstr "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
 msgid "Time"
@@ -1769,8 +1769,8 @@ msgstr "Raw binary data"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
 #, python-format
-msgid "\u201c%(value)s\u201d is not a valid UUID."
-msgstr "\u201c%(value)s\u201d is not a valid UUID."
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” is not a valid UUID."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
 msgid "Universally unique identifier"
@@ -1975,8 +1975,8 @@ msgstr "Select a valid choice. That choice is not one of the available choices."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1594
 #, python-format
-msgid "\u201c%(pk)s\u201d is not a valid value."
-msgstr "\u201c%(pk)s\u201d is not a valid value."
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” is not a valid value."
 
 #: .\venv\Lib\site-packages\django\forms\utils.py:229
 #, python-format
@@ -2409,21 +2409,21 @@ msgstr "CSRF verification failed. Request aborted."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:34
 msgid ""
-"You are seeing this message because this HTTPS site requires a \u201cReferer header\u201d "
+"You are seeing this message because this HTTPS site requires a “Referer header” "
 "to be sent by your web browser, but none was sent. This header is required for "
 "security reasons, to ensure that your browser is not being hijacked by third parties."
 msgstr ""
-"You are seeing this message because this HTTPS site requires a \u201cReferer header\u201d "
+"You are seeing this message because this HTTPS site requires a “Referer header” "
 "to be sent by your web browser, but none was sent. This header is required for "
 "security reasons, to ensure that your browser is not being hijacked by third parties."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:40
 msgid ""
-"If you have configured your browser to disable \u201cReferer\u201d headers, please re-enable "
-"them, at least for this site, or for HTTPS connections, or for \u201csame-origin\u201d requests."
+"If you have configured your browser to disable “Referer” headers, please re-enable "
+"them, at least for this site, or for HTTPS connections, or for “same-origin” requests."
 msgstr ""
-"If you have configured your browser to disable \u201cReferer\u201d headers, please re-enable "
-"them, at least for this site, or for HTTPS connections, or for \u201csame-origin\u201d requests."
+"If you have configured your browser to disable “Referer” headers, please re-enable "
+"them, at least for this site, or for HTTPS connections, or for “same-origin” requests."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:66
 msgid "More information is available with DEBUG=True."
@@ -2463,8 +2463,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:720
 #, python-format
-msgid "Invalid date string \u201c%(datestr)s\u201d given format \u201c%(format)s\u201d"
-msgstr "Invalid date string \u201c%(datestr)s\u201d given format \u201c%(format)s\u201d"
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Invalid date string “%(datestr)s” given format “%(format)s”"
 
 #: .\venv\Lib\site-packages\django\views\generic\detail.py:56
 #, python-format
@@ -2491,8 +2491,8 @@ msgstr "Directory indexes are not allowed here."
 
 #: .\venv\Lib\site-packages\django\views\static.py:51
 #, python-format
-msgid "\u201c%(path)s\u201d does not exist"
-msgstr "\u201c%(path)s\u201d does not exist"
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” does not exist"
 
 #: .\venv\Lib\site-packages\django\views\static.py:68
 #, python-format

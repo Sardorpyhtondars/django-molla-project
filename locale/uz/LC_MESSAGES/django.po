@@ -1445,13 +1445,13 @@ msgstr "To'g'ri elektron pochta manzilini kiriting."
 #. Translators: "letters" means latin letters: a-z and A-Z.
 #: .\venv\Lib\site-packages\django\core\validators.py:289
 msgid ""
-"Enter a valid \u201cslug\u201d consisting of letters, numbers, underscores or hyphens."
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
 "Harflar, raqamlar, pastki chiziqlar yoki defislardan iborat to'g'ri \"slug\" kiriting."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:297
 msgid ""
-"Enter a valid \u201cslug\u201d consisting of Unicode letters, numbers, underscores, or "
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
 "hyphens."
 msgstr ""
 "Unicode harflar, raqamlar, pastki chiziqlar yoki defislardan iborat to'g'ri \"slug\" kiriting."
@@ -1561,7 +1561,7 @@ msgstr[0] "Kasr nuqtasidan oldin ko'pi bilan %(max)s ta raqam bo'lishi kerak."
 #: .\venv\Lib\site-packages\django\core\validators.py:597
 #, python-format
 msgid ""
-"File extension \u201c%(extension)s\u201d is not allowed. Allowed extensions are: "
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
 "%(allowed_extensions)s."
 msgstr ""
 "\"%(extension)s\" fayl kengaytmasiga ruxsat berilmagan. Ruxsat etilgan kengaytmalar: "
@@ -1578,7 +1578,7 @@ msgstr "Bu %(field_labels)s bilan %(model_name)s allaqachon mavjud."
 
 #: .\venv\Lib\site-packages\django\db\models\constraints.py:22
 #, python-format
-msgid "Constraint \u201c%(name)s\u201d is violated."
+msgid "Constraint “%(name)s” is violated."
 msgstr "\"%(name)s\" cheklovi buzilgan."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
@@ -1612,12 +1612,12 @@ msgstr "Maydon turi: %(field_type)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either True or False."
+msgid "“%(value)s” value must be either True or False."
 msgstr "\"%(value)s\" qiymati True yoki False bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either True, False, or None."
+msgid "“%(value)s” value must be either True, False, or None."
 msgstr "\"%(value)s\" qiymati True, False yoki None bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
@@ -1640,7 +1640,7 @@ msgstr "Vergul bilan ajratilgan butun sonlar"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has an invalid date format. It must be in YYYY-MM-DD "
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
 "\"%(value)s\" qiymatining sana formati noto'g'ri. YYYY-MM-DD formatida bo'lishi kerak."
@@ -1649,7 +1649,7 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD) but it is an invalid "
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
 "\"%(value)s\" qiymati to'g'ri formatda (YYYY-MM-DD), lekin noto'g'ri sana."
@@ -1661,7 +1661,7 @@ msgstr "Sana (vaqtsiz)"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has an invalid format. It must be in YYYY-MM-DD "
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
 "HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 "\"%(value)s\" qiymatining formati noto'g'ri. YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] formatida bo'lishi kerak."
@@ -1669,7 +1669,7 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
 "[TZ]) but it is an invalid date/time."
 msgstr ""
 "\"%(value)s\" qiymati to'g'ri formatda (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]), lekin noto'g'ri sana/vaqt."
@@ -1680,7 +1680,7 @@ msgstr "Sana (vaqt bilan)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
 #, python-format
-msgid "\u201c%(value)s\u201d value must be a decimal number."
+msgid "“%(value)s” value must be a decimal number."
 msgstr "\"%(value)s\" qiymati o'nli kasr bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
@@ -1690,7 +1690,7 @@ msgstr "O'nli kasr"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has an invalid format. It must be in [DD] "
+"“%(value)s” value has an invalid format. It must be in [DD] "
 "[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 "\"%(value)s\" qiymatining formati noto'g'ri. [DD] [[HH:]MM:]ss[.uuuuuu] formatida bo'lishi kerak."
@@ -1709,7 +1709,7 @@ msgstr "Fayl yo'li"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
 #, python-format
-msgid "\u201c%(value)s\u201d value must be a float."
+msgid "“%(value)s” value must be a float."
 msgstr "\"%(value)s\" qiymati kasr son bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
@@ -1718,7 +1718,7 @@ msgstr "Kasr son"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
 #, python-format
-msgid "\u201c%(value)s\u201d value must be an integer."
+msgid "“%(value)s” value must be an integer."
 msgstr "\"%(value)s\" qiymati butun son bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
@@ -1744,7 +1744,7 @@ msgstr "IP manzili"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either None, True or False."
+msgid "“%(value)s” value must be either None, True or False."
 msgstr "\"%(value)s\" qiymati None, True yoki False bo'lishi kerak."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
@@ -1775,7 +1775,7 @@ msgstr "Matn"
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
 "\"%(value)s\" qiymatining formati noto'g'ri. HH:MM[:ss[.uuuuuu]] formatida bo'lishi kerak."
@@ -1783,7 +1783,7 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
 #, python-format
 msgid ""
-"\u201c%(value)s\u201d value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
 "\"%(value)s\" qiymati to'g'ri formatda (HH:MM[:ss[.uuuuuu]]), lekin noto'g'ri vaqt."
@@ -1802,7 +1802,7 @@ msgstr "Xom ikkilik ma'lumot"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
 #, python-format
-msgid "\u201c%(value)s\u201d is not a valid UUID."
+msgid "“%(value)s” is not a valid UUID."
 msgstr "\"%(value)s\" to'g'ri UUID emas."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
@@ -2015,7 +2015,7 @@ msgstr "To'g'ri tanlovni tanlang. Bu tanlov mavjud tanlovlardan biri emas."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1594
 #, python-format
-msgid "\u201c%(pk)s\u201d is not a valid value."
+msgid "“%(pk)s” is not a valid value."
 msgstr "\"%(pk)s\" to'g'ri qiymat emas."
 
 #: .\venv\Lib\site-packages\django\forms\utils.py:229
@@ -2444,8 +2444,8 @@ msgstr "CSRF tekshiruvi muvaffaqiyatsiz tugadi. So'rov bekor qilindi."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:34
 msgid ""
-"You are seeing this message because this HTTPS site requires a \u201cReferer "
-"header\u201d to be sent by your web browser, but none was sent. This header is "
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
 "required for security reasons, to ensure that your browser is not being "
 "hijacked by third parties."
 msgstr ""
@@ -2456,9 +2456,9 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:40
 msgid ""
-"If you have configured your browser to disable \u201cReferer\u201d headers, please re-"
-"enable them, at least for this site, or for HTTPS connections, or for \u201csame-"
-"origin\u201d requests."
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
 msgstr ""
 "Agar brauzeringizda \"Referer\" sarlavhalarini o'chirib qo'ygan bo'lsangiz, iltimos "
 "kamida ushbu sayt uchun yoki HTTPS ulanishlari uchun yoki \"bir xil manba\" "
@@ -2467,10 +2467,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\csrf.py:45
 msgid ""
 "If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the \u201cReferrer-Policy: no-referrer\u201d header, please remove them. The "
-"CSRF protection requires the \u201cReferer\u201d header to do strict referer checking. "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
 "If you're concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" \u2026> for links to third-party sites."
+"rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 "Agar <meta name=\"referrer\" content=\"no-referrer\"> tegidan yoki \"Referrer-Policy: "
 "no-referrer\" sarlavhasidan foydalanayotgan bo'lsangiz, iltimos ularni olib tashlang. "
@@ -2491,7 +2491,7 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\csrf.py:60
 msgid ""
 "If you have configured your browser to disable cookies, please re-enable "
-"them, at least for this site, or for \u201csame-origin\u201d requests."
+"them, at least for this site, or for “same-origin” requests."
 msgstr ""
 "Agar brauzeringizda kukilarni o'chirib qo'ygan bo'lsangiz, iltimos kamida ushbu "
 "sayt uchun yoki \"bir xil manba\" so'rovlari uchun ularni qayta yoqing."
@@ -2539,7 +2539,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:720
 #, python-format
-msgid "Invalid date string \u201c%(datestr)s\u201d given format \u201c%(format)s\u201d"
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
 msgstr "\"%(format)s\" formatidagi \"%(datestr)s\" noto'g'ri sana satri"
 
 #: .\venv\Lib\site-packages\django\views\generic\detail.py:56
@@ -2567,7 +2567,7 @@ msgstr "Bu yerda katalog indekslari ruxsat etilmaydi."
 
 #: .\venv\Lib\site-packages\django\views\static.py:51
 #, python-format
-msgid "\u201c%(path)s\u201d does not exist"
+msgid "“%(path)s” does not exist"
 msgstr "\"%(path)s\" mavjud emas"
 
 #: .\venv\Lib\site-packages\django\views\static.py:68

@@ -1437,13 +1437,13 @@ msgstr "Введите корректный адрес эл. почты."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:289
 msgid ""
-"Enter a valid \u201cslug\u201d consisting of letters, numbers, underscores or hyphens."
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
 "Введите корректный «слаг», состоящий из букв, цифр, знаков подчёркивания или дефисов."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:297
 msgid ""
-"Enter a valid \u201cslug\u201d consisting of Unicode letters, numbers, underscores, or hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or hyphens."
 msgstr ""
 "Введите корректный «слаг», состоящий из Unicode-букв, цифр, знаков подчёркивания или дефисов."
 
@@ -1548,7 +1548,7 @@ msgstr[2] "Убедитесь, что не более %(max)s цифр до за
 #: .\venv\Lib\site-packages\django\core\validators.py:597
 #, python-format
 msgid ""
-"File extension \u201c%(extension)s\u201d is not allowed. Allowed extensions are: %(allowed_extensions)s."
+"File extension “%(extension)s” is not allowed. Allowed extensions are: %(allowed_extensions)s."
 msgstr ""
 "Расширение файла «%(extension)s» не разрешено. Допустимые расширения: %(allowed_extensions)s."
 
@@ -1563,7 +1563,7 @@ msgstr "%(model_name)s с таким %(field_labels)s уже существуе�
 
 #: .\venv\Lib\site-packages\django\db\models\constraints.py:22
 #, python-format
-msgid "Constraint \u201c%(name)s\u201d is violated."
+msgid "Constraint “%(name)s” is violated."
 msgstr "Ограничение «%(name)s» нарушено."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
@@ -1596,12 +1596,12 @@ msgstr "Поле типа: %(field_type)s"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either True or False."
+msgid "“%(value)s” value must be either True or False."
 msgstr "Значение «%(value)s» должно быть True или False."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
 #, python-format
-msgid "\u201c%(value)s\u201d value must be either True, False, or None."
+msgid "“%(value)s” value must be either True, False, or None."
 msgstr "Значение «%(value)s» должно быть True, False или None."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
