@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Shopping Cart - Molla Sport Store{% endblock %}
+{% block title %}{% trans "Shopping Cart" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block nav_shop %}active{% endblock %}
 
@@ -10,16 +10,16 @@
     <div class="page-header text-center"
          style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
         <div class="container">
-            <h1 class="page-title">Shopping Cart<span>Shop</span></h1>
+            <h1 class="page-title">{% trans "Shopping Cart" %}<span>{% trans "Shop" %}</span></h1>
         </div>
     </div>
 
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">Shop</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">{% trans "Shop" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "Shopping Cart" %}</li>
             </ol>
         </div>
     </nav>
@@ -32,19 +32,18 @@
                         <table class="table table-cart table-mobile">
                             <thead>
                                 <tr>
-                                    <th>Product</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
+                                    <th>{% trans "Product" %}</th>
+                                    <th>{% trans "Price" %}</th>
+                                    <th>{% trans "Quantity" %}</th>
+                                    <th>{% trans "Total" %}</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {# Cart items will be rendered here once cart functionality is implemented #}
                                 <tr>
                                     <td class="product-col" colspan="5">
-                                        <p class="text-center py-4">Your cart is empty.
-                                            <a href="{% url 'products:list' %}">Continue Shopping</a>
+                                        <p class="text-center py-4">{% trans "Your cart is empty." %}
+                                            <a href="{% url 'products:list' %}">{% trans "Continue Shopping" %}</a>
                                         </p>
                                     </td>
                                 </tr>
@@ -56,7 +55,7 @@
                                 <form action="#" method="post">
                                     {% csrf_token %}
                                     <div class="input-group">
-                                        <input type="text" class="form-control" required placeholder="coupon code">
+                                        <input type="text" class="form-control" required placeholder="{% trans "coupon code" %}">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-primary-2" type="submit">
                                                 <i class="icon-long-arrow-right"></i>
@@ -66,29 +65,29 @@
                                 </form>
                             </div>
                             <a href="#" class="btn btn-outline-dark-2">
-                                <span>UPDATE CART</span><i class="icon-refresh"></i>
+                                <span>{% trans "UPDATE CART" %}</span><i class="icon-refresh"></i>
                             </a>
                         </div>
                     </div><!-- End .col-lg-9 -->
 
                     <aside class="col-lg-3">
                         <div class="summary summary-cart">
-                            <h3 class="summary-title">Cart Total</h3>
+                            <h3 class="summary-title">{% trans "Cart Total" %}</h3>
                             <table class="table table-summary">
                                 <tbody>
                                     <tr class="summary-subtotal">
-                                        <td>Subtotal:</td>
+                                        <td>{% trans "Subtotal:" %}</td>
                                         <td>$0.00</td>
                                     </tr>
                                     <tr class="summary-shipping">
-                                        <td>Shipping:</td>
+                                        <td>{% trans "Shipping:" %}</td>
                                         <td>&nbsp;</td>
                                     </tr>
                                     <tr class="summary-shipping-row">
                                         <td>
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="free-shipping" name="shipping" class="custom-control-input" checked>
-                                                <label class="custom-control-label" for="free-shipping">Free Shipping</label>
+                                                <label class="custom-control-label" for="free-shipping">{% trans "Free Shipping" %}</label>
                                             </div>
                                         </td>
                                         <td>$0.00</td>
@@ -97,7 +96,7 @@
                                         <td>
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="standart-shipping" name="shipping" class="custom-control-input">
-                                                <label class="custom-control-label" for="standart-shipping">Standard:</label>
+                                                <label class="custom-control-label" for="standart-shipping">{% trans "Standard:" %}</label>
                                             </div>
                                         </td>
                                         <td>$10.00</td>
@@ -106,29 +105,29 @@
                                         <td>
                                             <div class="custom-control custom-radio">
                                                 <input type="radio" id="express-shipping" name="shipping" class="custom-control-input">
-                                                <label class="custom-control-label" for="express-shipping">Express:</label>
+                                                <label class="custom-control-label" for="express-shipping">{% trans "Express:" %}</label>
                                             </div>
                                         </td>
                                         <td>$20.00</td>
                                     </tr>
                                     <tr class="summary-shipping-estimate">
-                                        <td>Estimate for Your Country<br>
-                                            <a href="{% url 'users:account' %}">Change address</a>
+                                        <td>{% trans "Estimate for Your Country" %}<br>
+                                            <a href="{% url 'users:account' %}">{% trans "Change address" %}</a>
                                         </td>
                                         <td>&nbsp;</td>
                                     </tr>
                                     <tr class="summary-total">
-                                        <td>Total:</td>
+                                        <td>{% trans "Total:" %}</td>
                                         <td>$0.00</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <a href="{% url 'products:checkout' %}" class="btn btn-outline-primary-2 btn-order btn-block">
-                                PROCEED TO CHECKOUT
+                                {% trans "PROCEED TO CHECKOUT" %}
                             </a>
                         </div>
                         <a href="{% url 'products:list' %}" class="btn btn-outline-dark-2 btn-block mb-3">
-                            <span>CONTINUE SHOPPING</span><i class="icon-refresh"></i>
+                            <span>{% trans "CONTINUE SHOPPING" %}</span><i class="icon-refresh"></i>
                         </a>
                     </aside>
                 </div><!-- End .row -->

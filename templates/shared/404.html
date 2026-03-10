@@ -1,14 +1,14 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}404 - Page Not Found - Molla Sport Store{% endblock %}
+{% block title %}{% trans "404 - Page Not Found" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block content %}
 <main class="main">
     <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">404</li>
             </ol>
         </div>
@@ -17,10 +17,10 @@
     <div class="error-content text-center"
          style="background-image: url('{% static 'images/backgrounds/error-bg.jpg' %}')">
         <div class="container">
-            <h1 class="error-title">Error 404</h1>
-            <p>We are sorry, the page you've requested is not available.</p>
+            <h1 class="error-title">{% trans "Error 404" %}</h1>
+            <p>{% trans "We are sorry, the page you've requested is not available." %}</p>
             <a href="{% url 'shared:home' %}" class="btn btn-outline-primary-2 btn-minwidth-lg">
-                <span>BACK TO HOMEPAGE</span>
+                <span>{% trans "BACK TO HOMEPAGE" %}</span>
                 <i class="icon-long-arrow-right"></i>
             </a>
         </div>

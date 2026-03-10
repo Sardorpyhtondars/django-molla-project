@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Checkout - Molla Sport Store{% endblock %}
+{% block title %}{% trans "Checkout" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block nav_shop %}active{% endblock %}
 
@@ -10,16 +10,16 @@
     <div class="page-header text-center"
          style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
         <div class="container">
-            <h1 class="page-title">Checkout<span>Shop</span></h1>
+            <h1 class="page-title">{% trans "Checkout" %}<span>{% trans "Shop" %}</span></h1>
         </div>
     </div>
 
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">Shop</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">{% trans "Shop" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "Checkout" %}</li>
             </ol>
         </div>
     </nav>
@@ -28,13 +28,12 @@
         <div class="checkout">
             <div class="container">
 
-                <!-- Coupon -->
                 <div class="checkout-discount">
                     <form action="#" method="post">
                         {% csrf_token %}
                         <input type="text" class="form-control" required id="checkout-discount-input">
                         <label for="checkout-discount-input" class="text-truncate">
-                            Have a coupon? <span>Click here to enter your code</span>
+                            {% trans "Have a coupon?" %} <span>{% trans "Click here to enter your code" %}</span>
                         </label>
                     </form>
                 </div>
@@ -43,171 +42,163 @@
                     {% csrf_token %}
                     <div class="row">
 
-                        <!-- Billing Details -->
                         <div class="col-lg-9">
-                            <h2 class="checkout-title">Billing Details</h2>
+                            <h2 class="checkout-title">{% trans "Billing Details" %}</h2>
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label>First Name *</label>
+                                    <label>{% trans "First Name *" %}</label>
                                     <input type="text" class="form-control" name="first_name"
                                            value="{{ user.full_name|truncatewords:1|default:'' }}" required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label>Last Name *</label>
+                                    <label>{% trans "Last Name *" %}</label>
                                     <input type="text" class="form-control" name="last_name" required>
                                 </div>
                             </div>
 
-                            <label>Company Name (Optional)</label>
+                            <label>{% trans "Company Name (Optional)" %}</label>
                             <input type="text" class="form-control" name="company">
 
-                            <label>Country *</label>
+                            <label>{% trans "Country *" %}</label>
                             <input type="text" class="form-control" name="country" required>
 
-                            <label>Street address *</label>
+                            <label>{% trans "Street address *" %}</label>
                             <input type="text" class="form-control mb-2" name="address1"
-                                   placeholder="House number and Street name" required>
+                                   placeholder="{% trans "House number and Street name" %}" required>
                             <input type="text" class="form-control" name="address2"
-                                   placeholder="Apartment, suite, unit etc.">
+                                   placeholder="{% trans "Apartment, suite, unit etc." %}">
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label>Town / City *</label>
+                                    <label>{% trans "Town / City *" %}</label>
                                     <input type="text" class="form-control" name="city" required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label>State / County *</label>
+                                    <label>{% trans "State / County *" %}</label>
                                     <input type="text" class="form-control" name="state" required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label>Postcode / ZIP *</label>
+                                    <label>{% trans "Postcode / ZIP *" %}</label>
                                     <input type="text" class="form-control" name="postcode" required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <label>Phone *</label>
+                                    <label>{% trans "Phone *" %}</label>
                                     <input type="tel" class="form-control" name="phone"
                                            value="{{ user.phone_number|default:'' }}" required>
                                 </div>
                             </div>
 
-                            <label>Email address *</label>
+                            <label>{% trans "Email address *" %}</label>
                             <input type="email" class="form-control" name="email"
                                    value="{{ user.email|default:'' }}" required>
 
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="checkout-diff-address" name="diff_address">
-                                <label class="custom-control-label" for="checkout-diff-address">Ship to a different address?</label>
+                                <label class="custom-control-label" for="checkout-diff-address">{% trans "Ship to a different address?" %}</label>
                             </div>
 
-                            <label>Order notes (optional)</label>
+                            <label>{% trans "Order notes (optional)" %}</label>
                             <textarea class="form-control" cols="30" rows="4" name="notes"
-                                      placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                                      placeholder="{% trans "Notes about your order, e.g. special notes for delivery" %}"></textarea>
                         </div><!-- End .col-lg-9 -->
 
-                        <!-- Order Summary -->
                         <aside class="col-lg-3">
                             <div class="summary">
-                                <h3 class="summary-title">Your Order</h3>
+                                <h3 class="summary-title">{% trans "Your Order" %}</h3>
                                 <table class="table table-summary">
                                     <thead>
                                         <tr>
-                                            <th>Product</th>
-                                            <th>Total</th>
+                                            <th>{% trans "Product" %}</th>
+                                            <th>{% trans "Total" %}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="summary-subtotal">
-                                            <td>Subtotal:</td>
+                                            <td>{% trans "Subtotal:" %}</td>
                                             <td>$0.00</td>
                                         </tr>
                                         <tr>
-                                            <td>Shipping:</td>
-                                            <td>Free shipping</td>
+                                            <td>{% trans "Shipping:" %}</td>
+                                            <td>{% trans "Free shipping" %}</td>
                                         </tr>
                                         <tr class="summary-total">
-                                            <td>Total:</td>
+                                            <td>{% trans "Total:" %}</td>
                                             <td>$0.00</td>
                                         </tr>
                                     </tbody>
                                 </table>
 
-                                <!-- Payment Methods -->
                                 <div class="accordion-summary" id="accordion-payment">
                                     <div class="card">
                                         <div class="card-header" id="heading-1">
                                             <h2 class="card-title">
-                                                <a role="button" data-toggle="collapse" href="#collapse-1"
-                                                   aria-expanded="true" aria-controls="collapse-1">
-                                                    Direct bank transfer
+                                                <a role="button" data-toggle="collapse" href="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                                    {% trans "Direct bank transfer" %}
                                                 </a>
                                             </h2>
                                         </div>
                                         <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion-payment">
-                                            <div class="card-body">Make your payment directly into our bank account. Please use your Order ID as the payment reference.</div>
+                                            <div class="card-body">{% trans "Make your payment directly into our bank account. Please use your Order ID as the payment reference." %}</div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header" id="heading-2">
                                             <h2 class="card-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2"
-                                                   aria-expanded="false" aria-controls="collapse-2">
-                                                    Check payments
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                                    {% trans "Check payments" %}
                                                 </a>
                                             </h2>
                                         </div>
                                         <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion-payment">
-                                            <div class="card-body">Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</div>
+                                            <div class="card-body">{% trans "Ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio." %}</div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header" id="heading-3">
                                             <h2 class="card-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3"
-                                                   aria-expanded="false" aria-controls="collapse-3">
-                                                    Cash on delivery
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                                    {% trans "Cash on delivery" %}
                                                 </a>
                                             </h2>
                                         </div>
                                         <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion-payment">
-                                            <div class="card-body">Quisque volutpat mattis eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                            <div class="card-body">{% trans "Quisque volutpat mattis eros. Lorem ipsum dolor sit amet." %}</div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header" id="heading-4">
                                             <h2 class="card-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4"
-                                                   aria-expanded="false" aria-controls="collapse-4">
-                                                    PayPal <small class="float-right paypal-link">What is PayPal?</small>
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                                    PayPal <small class="float-right paypal-link">{% trans "What is PayPal?" %}</small>
                                                 </a>
                                             </h2>
                                         </div>
                                         <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion-payment">
-                                            <div class="card-body">Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit.</div>
+                                            <div class="card-body">{% trans "Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit." %}</div>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-header" id="heading-5">
                                             <h2 class="card-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5"
-                                                   aria-expanded="false" aria-controls="collapse-5">
-                                                    Credit Card (Stripe)
-                                                    <img src="{% static 'images/payments-summary.png' %}" alt="payments cards">
+                                                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                                    {% trans "Credit Card (Stripe)" %}
+                                                    <img src="{% static 'images/payments-summary.png' %}" alt="{% trans "payments cards" %}">
                                                 </a>
                                             </h2>
                                         </div>
                                         <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion-payment">
-                                            <div class="card-body">Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                                            <div class="card-body">{% trans "Donec nec justo eget felis facilisis fermentum. Lorem ipsum dolor sit amet." %}</div>
                                         </div>
                                     </div>
                                 </div><!-- End .accordion -->
 
                                 <button type="submit" class="btn btn-outline-primary-2 btn-order btn-block">
-                                    <span class="btn-text">Place Order</span>
-                                    <span class="btn-hover-text">Proceed to Checkout</span>
+                                    <span class="btn-text">{% trans "Place Order" %}</span>
+                                    <span class="btn-hover-text">{% trans "Proceed to Checkout" %}</span>
                                 </button>
                             </div><!-- End .summary -->
                         </aside>

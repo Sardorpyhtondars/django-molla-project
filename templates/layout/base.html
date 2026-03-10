@@ -1,8 +1,8 @@
-{% load static %}
+{% load static i18n my_tags %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}Molla Sport Store{% endblock %}</title>
+    <title>{% block title %}{% trans "Molla Sport Store" %}{% endblock %}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,27 +23,12 @@
     {% block extra_css %}{% endblock %}
 
     <style>
-    body {
-        color: black !important;
-    }
-
-    a {
-        color: black !important;
-    }
-
-    .header, .header * {
-        color: black !important;
-    }
-
-    .main-nav .menu li a {
-        color: black !important;
-    }
-
-    .footer, .footer * {
-        color: white !important;
-    }
+    body { color: black !important; }
+    a { color: black !important; }
+    .header, .header * { color: black !important; }
+    .main-nav .menu li a { color: black !important; }
+    .footer, .footer * { color: white !important; }
     </style>
-
 </head>
 <body>
 <div class="page-wrapper">
@@ -54,21 +39,21 @@
         <div class="header-top">
             <div class="header-left">
                 <div class="header-dropdown">
-                    <a href="#">Usd</a>
+                    <a href="#">{% trans "Usd" %}</a>
                     <div class="header-menu">
                         <ul>
-                            <li><a href="#">Eur</a></li>
-                            <li><a href="#">Usd</a></li>
+                            <li><a href="#">{% trans "Eur" %}</a></li>
+                            <li><a href="#">{% trans "Usd" %}</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="header-dropdown">
-                    <a href="#">Eng</a>
+                    <a href="#">{% get_current_language as LANGUAGE_CODE %}{{ LANGUAGE_CODE|upper }}</a>
                     <div class="header-menu">
                         <ul>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">French</a></li>
-                            <li><a href="#">Spanish</a></li>
+                            <li><a href="{% get_full_path request.path 'en' %}">{% trans "English" %}</a></li>
+                            <li><a href="{% get_full_path request.path 'uz' %}">{% trans "Uzbek" %}</a></li>
+                            <li><a href="{% get_full_path request.path 'ru' %}">{% trans "Russian" %}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,16 +61,16 @@
             <div class="header-right">
                 <ul class="top-menu">
                     <li>
-                        <a href="#">Links</a>
+                        <a href="#">{% trans "Links" %}</a>
                         <ul>
-                            <li><a href="tel:#"><i class="icon-phone"></i>Call: +0123 456 789</a></li>
-                            <li><a href="{% url 'shared:about' %}">About Us</a></li>
-                            <li><a href="{% url 'shared:contact' %}">Contact Us</a></li>
+                            <li><a href="tel:#"><i class="icon-phone"></i>{% trans "Call: +0123 456 789" %}</a></li>
+                            <li><a href="{% url 'shared:about' %}">{% trans "About Us" %}</a></li>
+                            <li><a href="{% url 'shared:contact' %}">{% trans "Contact Us" %}</a></li>
                             {% if user.is_authenticated %}
-                                <li><a href="{% url 'users:account' %}"><i class="icon-user"></i>My Account</a></li>
-                                <li><a href="{% url 'users:logout' %}"><i class="icon-user"></i>Logout</a></li>
+                                <li><a href="{% url 'users:account' %}"><i class="icon-user"></i>{% trans "My Account" %}</a></li>
+                                <li><a href="{% url 'users:logout' %}"><i class="icon-user"></i>{% trans "Logout" %}</a></li>
                             {% else %}
-                                <li><a href="{% url 'users:login' %}"><i class="icon-user"></i>Login</a></li>
+                                <li><a href="{% url 'users:login' %}"><i class="icon-user"></i>{% trans "Login" %}</a></li>
                             {% endif %}
                         </ul>
                     </li>
@@ -96,7 +81,7 @@
         <div class="header-middle sticky-header">
             <div class="header-left">
                 <button class="mobile-menu-toggler">
-                    <span class="sr-only">Toggle mobile menu</span>
+                    <span class="sr-only">{% trans "Toggle mobile menu" %}</span>
                     <i class="icon-bars"></i>
                 </button>
                 <a href="{% url 'shared:home' %}" class="logo">
@@ -108,22 +93,22 @@
                 <nav class="main-nav">
                     <ul class="menu sf-arrows">
                         <li class="{% block nav_home %}{% endblock %}">
-                            <a href="{% url 'shared:home' %}">Home</a>
+                            <a href="{% url 'shared:home' %}">{% trans "Home" %}</a>
                         </li>
                         <li class="{% block nav_shop %}{% endblock %}">
-                            <a href="{% url 'products:list' %}" class="sf-with-ul">Shop</a>
+                            <a href="{% url 'products:list' %}" class="sf-with-ul">{% trans "Shop" %}</a>
                             <div class="megamenu megamenu-md">
                                 <div class="row no-gutters">
                                     <div class="col-md-8">
                                         <div class="menu-col">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div class="menu-title">Shop Pages</div>
+                                                    <div class="menu-title">{% trans "Shop Pages" %}</div>
                                                     <ul>
-                                                        <li><a href="{% url 'products:cart' %}">Cart</a></li>
-                                                        <li><a href="{% url 'products:checkout' %}">Checkout</a></li>
-                                                        <li><a href="{% url 'products:wishlist' %}">Wishlist</a></li>
-                                                        <li><a href="{% url 'users:account' %}">My Account</a></li>
+                                                        <li><a href="{% url 'products:cart' %}">{% trans "Cart" %}</a></li>
+                                                        <li><a href="{% url 'products:checkout' %}">{% trans "Checkout" %}</a></li>
+                                                        <li><a href="{% url 'products:wishlist' %}">{% trans "Wishlist" %}</a></li>
+                                                        <li><a href="{% url 'users:account' %}">{% trans "My Account" %}</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -133,17 +118,17 @@
                             </div>
                         </li>
                         <li class="{% block nav_blog %}{% endblock %}">
-                            <a href="{% url 'blogs:list' %}" class="sf-with-ul">Blog</a>
+                            <a href="{% url 'blogs:list' %}" class="sf-with-ul">{% trans "Blog" %}</a>
                             <ul>
-                                <li><a href="{% url 'blogs:list' %}">Blog Posts</a></li>
+                                <li><a href="{% url 'blogs:list' %}">{% trans "Blog Posts" %}</a></li>
                             </ul>
                         </li>
                         <li class="{% block nav_pages %}{% endblock %}">
-                            <a href="#" class="sf-with-ul">Pages</a>
+                            <a href="#" class="sf-with-ul">{% trans "Pages" %}</a>
                             <ul>
-                                <li><a href="{% url 'shared:about' %}">About Us</a></li>
-                                <li><a href="{% url 'shared:contact' %}">Contact Us</a></li>
-                                <li><a href="{% url 'users:login' %}">Login</a></li>
+                                <li><a href="{% url 'shared:about' %}">{% trans "About Us" %}</a></li>
+                                <li><a href="{% url 'shared:contact' %}">{% trans "Contact Us" %}</a></li>
+                                <li><a href="{% url 'users:login' %}">{% trans "Login" %}</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -152,16 +137,16 @@
 
             <div class="header-right">
                 <div class="header-search">
-                    <a href="#" class="search-toggle" role="button" title="Search"><i class="icon-search"></i></a>
+                    <a href="#" class="search-toggle" role="button" title="{% trans "Search" %}"><i class="icon-search"></i></a>
                     <form action="{% url 'products:list' %}" method="get">
                         <div class="header-search-wrapper">
-                            <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search in..." required>
+                            <label for="q" class="sr-only">{% trans "Search" %}</label>
+                            <input type="search" class="form-control" name="q" id="q" placeholder="{% trans "Search in..." %}" required>
                         </div>
                     </form>
                 </div>
                 <div class="wishlist">
-                    <a href="{% url 'products:wishlist' %}" title="Wishlist">
+                    <a href="{% url 'products:wishlist' %}" title="{% trans "Wishlist" %}">
                         <i class="icon-heart-o"></i>
                     </a>
                 </div>
@@ -183,8 +168,8 @@
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon"><i class="icon-rocket"></i></span>
                         <div class="icon-box-content">
-                            <h3 class="icon-box-title">Free Shipping</h3>
-                            <p>Orders $50 or more</p>
+                            <h3 class="icon-box-title">{% trans "Free Shipping" %}</h3>
+                            <p>{% trans "Orders $50 or more" %}</p>
                         </div>
                     </div>
                 </div>
@@ -192,8 +177,8 @@
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon"><i class="icon-rotate-left"></i></span>
                         <div class="icon-box-content">
-                            <h3 class="icon-box-title">Free Returns</h3>
-                            <p>Within 30 days</p>
+                            <h3 class="icon-box-title">{% trans "Free Returns" %}</h3>
+                            <p>{% trans "Within 30 days" %}</p>
                         </div>
                     </div>
                 </div>
@@ -201,8 +186,8 @@
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon"><i class="icon-info-circle"></i></span>
                         <div class="icon-box-content">
-                            <h3 class="icon-box-title">Get 20% Off 1 Item</h3>
-                            <p>When you sign up</p>
+                            <h3 class="icon-box-title">{% trans "Get 20% Off 1 Item" %}</h3>
+                            <p>{% trans "When you sign up" %}</p>
                         </div>
                     </div>
                 </div>
@@ -210,8 +195,8 @@
                     <div class="icon-box icon-box-side">
                         <span class="icon-box-icon"><i class="icon-life-ring"></i></span>
                         <div class="icon-box-content">
-                            <h3 class="icon-box-title">We Support</h3>
-                            <p>24/7 amazing services</p>
+                            <h3 class="icon-box-title">{% trans "We Support" %}</h3>
+                            <p>{% trans "24/7 amazing services" %}</p>
                         </div>
                     </div>
                 </div>
@@ -224,7 +209,7 @@
                     <div class="col-lg-3 col-md-12">
                         <div class="widget widget-about">
                             <img src="{% static 'images/demos/demo-24/logo.png' %}" class="footer-logo" alt="Footer Logo" width="110" height="25">
-                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+                            <p>{% trans "Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat." %}</p>
                             <div class="social-icons">
                                 <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                 <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
@@ -236,35 +221,35 @@
                     </div>
                     <div class="col-lg-3 col-sm-4 col-md-4">
                         <div class="widget">
-                            <h4 class="widget-title">Useful Links</h4>
+                            <h4 class="widget-title">{% trans "Useful Links" %}</h4>
                             <ul class="widget-list">
-                                <li><a href="{% url 'shared:about' %}">About Us</a></li>
-                                <li><a href="{% url 'shared:contact' %}">Contact Us</a></li>
-                                <li><a href="{% url 'users:login' %}">Log In</a></li>
+                                <li><a href="{% url 'shared:about' %}">{% trans "About Us" %}</a></li>
+                                <li><a href="{% url 'shared:contact' %}">{% trans "Contact Us" %}</a></li>
+                                <li><a href="{% url 'users:login' %}">{% trans "Log In" %}</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-4 col-md-4">
                         <div class="widget">
-                            <h4 class="widget-title">Customer Service</h4>
+                            <h4 class="widget-title">{% trans "Customer Service" %}</h4>
                             <ul class="widget-list">
-                                <li><a href="#">Payment Methods</a></li>
-                                <li><a href="#">Money-back guarantee!</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">{% trans "Payment Methods" %}</a></li>
+                                <li><a href="#">{% trans "Money-back guarantee!" %}</a></li>
+                                <li><a href="#">{% trans "Returns" %}</a></li>
+                                <li><a href="#">{% trans "Shipping" %}</a></li>
+                                <li><a href="#">{% trans "Terms and conditions" %}</a></li>
+                                <li><a href="#">{% trans "Privacy Policy" %}</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-4 col-md-4">
                         <div class="widget">
-                            <h4 class="widget-title">My Account</h4>
+                            <h4 class="widget-title">{% trans "My Account" %}</h4>
                             <ul class="widget-list">
-                                <li><a href="{% url 'users:login' %}">Sign In</a></li>
-                                <li><a href="{% url 'products:cart' %}">View Cart</a></li>
-                                <li><a href="{% url 'products:wishlist' %}">My Wishlist</a></li>
-                                <li><a href="{% url 'users:account' %}">My Account</a></li>
+                                <li><a href="{% url 'users:login' %}">{% trans "Sign In" %}</a></li>
+                                <li><a href="{% url 'products:cart' %}">{% trans "View Cart" %}</a></li>
+                                <li><a href="{% url 'products:wishlist' %}">{% trans "My Wishlist" %}</a></li>
+                                <li><a href="{% url 'users:account' %}">{% trans "My Account" %}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -274,35 +259,35 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="footer-copyright">Copyright © 2024 Molla Sport Store. All Rights Reserved.</p>
+                <p class="footer-copyright">{% trans "Copyright © 2024 Molla Sport Store. All Rights Reserved." %}</p>
             </div>
         </div>
     </footer>
 </div><!-- End .page-wrapper -->
 
-<button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+<button id="scroll-top" title="{% trans "Back to Top" %}"><i class="icon-arrow-up"></i></button>
 
 <div class="mobile-menu-overlay"></div>
 <div class="mobile-menu-container mobile-menu-light">
     <div class="mobile-menu-wrapper">
         <span class="mobile-menu-close"><i class="icon-close"></i></span>
         <form action="{% url 'products:list' %}" method="get" class="mobile-search">
-            <label for="mobile-search" class="sr-only">Search</label>
-            <input type="search" class="form-control" name="q" id="mobile-search" placeholder="Search in..." required>
+            <label for="mobile-search" class="sr-only">{% trans "Search" %}</label>
+            <input type="search" class="form-control" name="q" id="mobile-search" placeholder="{% trans "Search in..." %}" required>
             <button class="btn btn-primary" type="submit"><i class="icon-search"></i></button>
         </form>
         <nav class="mobile-nav">
             <ul class="mobile-menu">
-                <li><a href="{% url 'shared:home' %}">HOME</a></li>
-                <li><a href="{% url 'products:list' %}">SHOP</a></li>
-                <li><a href="{% url 'blogs:list' %}">BLOG</a></li>
-                <li><a href="{% url 'shared:about' %}">ABOUT US</a></li>
-                <li><a href="{% url 'shared:contact' %}">CONTACT</a></li>
+                <li><a href="{% url 'shared:home' %}">{% trans "HOME" %}</a></li>
+                <li><a href="{% url 'products:list' %}">{% trans "SHOP" %}</a></li>
+                <li><a href="{% url 'blogs:list' %}">{% trans "BLOG" %}</a></li>
+                <li><a href="{% url 'shared:about' %}">{% trans "ABOUT US" %}</a></li>
+                <li><a href="{% url 'shared:contact' %}">{% trans "CONTACT" %}</a></li>
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'users:account' %}">MY ACCOUNT</a></li>
-                    <li><a href="{% url 'users:logout' %}">LOGOUT</a></li>
+                    <li><a href="{% url 'users:account' %}">{% trans "MY ACCOUNT" %}</a></li>
+                    <li><a href="{% url 'users:logout' %}">{% trans "LOGOUT" %}</a></li>
                 {% else %}
-                    <li><a href="{% url 'users:login' %}">LOGIN</a></li>
+                    <li><a href="{% url 'users:login' %}">{% trans "LOGIN" %}</a></li>
                 {% endif %}
             </ul>
         </nav>

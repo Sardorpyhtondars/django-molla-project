@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Shop - Molla Sport Store{% endblock %}
+{% block title %}{% trans "Shop" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block nav_shop %}active{% endblock %}
 
@@ -14,7 +14,7 @@
     <div class="page-header text-center" style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
         <div class="container">
             <h1 class="page-title">
-                {% if current_category %}{{ current_category.title }}{% else %}All Products{% endif %}<span>Shop</span>
+                {% if current_category %}{{ current_category.title }}{% else %}{% trans "All Products" %}{% endif %}<span>{% trans "Shop" %}</span>
             </h1>
         </div>
     </div>
@@ -22,10 +22,10 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-2">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">Shop</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">{% trans "Shop" %}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                    {% if current_category %}{{ current_category.title }}{% else %}All Products{% endif %}
+                    {% if current_category %}{{ current_category.title }}{% else %}{% trans "All Products" %}{% endif %}
                 </li>
             </ol>
         </div>
@@ -39,19 +39,19 @@
                     <div class="toolbox">
                         <div class="toolbox-left">
                             <div class="toolbox-info">
-                                Showing <span>{{ products|length }} of {{ total_count }}</span> Products
+                                {% trans "Showing" %} <span>{{ products|length }} {% trans "of" %} {{ total_count }}</span> {% trans "Products" %}
                             </div>
                         </div>
                         <div class="toolbox-right">
                             <div class="toolbox-sort">
-                                <label for="sortby">Sort by:</label>
+                                <label for="sortby">{% trans "Sort by:" %}</label>
                                 <div class="select-custom">
                                     <select name="sortby" id="sortby" class="form-control"
                                         onchange="window.location.href='?sortby='+this.value+'{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.category_id %}&category_id={{ request.GET.category_id }}{% endif %}'">
-                                        <option value="default" {% if not request.GET.sortby or request.GET.sortby == 'default' %}selected{% endif %}>Default</option>
-                                        <option value="price_asc" {% if request.GET.sortby == 'price_asc' %}selected{% endif %}>Price: Low to High</option>
-                                        <option value="price_desc" {% if request.GET.sortby == 'price_desc' %}selected{% endif %}>Price: High to Low</option>
-                                        <option value="newest" {% if request.GET.sortby == 'newest' %}selected{% endif %}>Newest</option>
+                                        <option value="default" {% if not request.GET.sortby or request.GET.sortby == 'default' %}selected{% endif %}>{% trans "Default" %}</option>
+                                        <option value="price_asc" {% if request.GET.sortby == 'price_asc' %}selected{% endif %}>{% trans "Price: Low to High" %}</option>
+                                        <option value="price_desc" {% if request.GET.sortby == 'price_desc' %}selected{% endif %}>{% trans "Price: High to Low" %}</option>
+                                        <option value="newest" {% if request.GET.sortby == 'newest' %}selected{% endif %}>{% trans "Newest" %}</option>
                                     </select>
                                 </div>
                             </div>
@@ -65,9 +65,9 @@
                                 <div class="product product-7 text-center">
                                     <figure class="product-media">
                                         {% if not product.stock %}
-                                            <span class="product-label label-out">Out of Stock</span>
+                                            <span class="product-label label-out">{% trans "Out of Stock" %}</span>
                                         {% elif product.old_price %}
-                                            <span class="product-label label-sale">Sale</span>
+                                            <span class="product-label label-sale">{% trans "Sale" %}</span>
                                         {% endif %}
                                         <a href="{% url 'products:detail' product.pk %}">
                                             {% if product.image %}
@@ -77,10 +77,10 @@
                                             {% endif %}
                                         </a>
                                         <div class="product-action-vertical">
-                                            <a href="{% url 'products:wishlist' %}" class="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                                            <a href="{% url 'products:wishlist' %}" class="btn-product-icon btn-wishlist btn-expandable"><span>{% trans "add to wishlist" %}</span></a>
                                         </div>
                                         <div class="product-action">
-                                            <a href="{% url 'products:cart' %}" class="btn-product btn-cart"><span>add to cart</span></a>
+                                            <a href="{% url 'products:cart' %}" class="btn-product btn-cart"><span>{% trans "add to cart" %}</span></a>
                                         </div>
                                     </figure>
                                     <div class="product-body">
@@ -95,7 +95,7 @@
                                         <div class="product-price">
                                             {% if product.old_price %}
                                                 <span class="new-price">${{ product.price }}</span>
-                                                <span class="old-price">Was ${{ product.old_price }}</span>
+                                                <span class="old-price">{% trans "Was" %} ${{ product.old_price }}</span>
                                             {% elif not product.stock %}
                                                 <span class="out-price">${{ product.price }}</span>
                                             {% else %}
@@ -106,21 +106,20 @@
                                             <div class="ratings">
                                                 <div class="ratings-val" style="width: 0%;"></div>
                                             </div>
-                                            <span class="ratings-text">( {{ product.review_set.count }} Reviews )</span>
+                                            <span class="ratings-text">( {{ product.review_set.count }} {% trans "Reviews" %} )</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             {% empty %}
                             <div class="col-12 text-center py-5">
-                                <p>No products found{% if request.GET.q %} for "{{ request.GET.q }}"{% endif %}.</p>
-                                <a href="{% url 'products:list' %}" class="btn btn-outline-primary-2">View All Products</a>
+                                <p>{% trans "No products found" %}{% if request.GET.q %} {% trans "for" %} "{{ request.GET.q }}"{% endif %}.</p>
+                                <a href="{% url 'products:list' %}" class="btn btn-outline-primary-2">{% trans "View All Products" %}</a>
                             </div>
                             {% endfor %}
                         </div>
                     </div>
 
-                    <!-- Pagination -->
                     {% if products.has_other_pages %}
                     <nav aria-label="Page navigation">
                         <ul class="pagination justify-content-center">
@@ -128,7 +127,7 @@
                                 <a class="page-link page-link-prev"
                                    href="?page={{ products.previous_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.category_id %}&category_id={{ request.GET.category_id }}{% endif %}"
                                    aria-label="Previous">
-                                    <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>Prev
+                                    <span aria-hidden="true"><i class="icon-long-arrow-left"></i></span>{% trans "Prev" %}
                                 </a>
                             </li>
                             {% for num in products.paginator.page_range %}
@@ -143,7 +142,7 @@
                                 <a class="page-link page-link-next"
                                    href="?page={{ products.next_page_number }}{% if request.GET.q %}&q={{ request.GET.q }}{% endif %}{% if request.GET.category_id %}&category_id={{ request.GET.category_id }}{% endif %}"
                                    aria-label="Next">
-                                    Next <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
+                                    {% trans "Next" %} <span aria-hidden="true"><i class="icon-long-arrow-right"></i></span>
                                 </a>
                             </li>
                         </ul>
@@ -155,15 +154,14 @@
                 <aside class="col-lg-3 order-lg-first">
                     <div class="sidebar sidebar-shop">
                         <div class="widget widget-clean">
-                            <label>Filters:</label>
-                            <a href="{% url 'products:list' %}" class="sidebar-filter-clear">Clean All</a>
+                            <label>{% trans "Filters:" %}</label>
+                            <a href="{% url 'products:list' %}" class="sidebar-filter-clear">{% trans "Clean All" %}</a>
                         </div>
 
-                        <!-- Category Filter -->
                         <div class="widget widget-collapsible">
                             <h3 class="widget-title">
                                 <a data-toggle="collapse" href="#widget-1" role="button" aria-expanded="true" aria-controls="widget-1">
-                                    Category
+                                    {% trans "Category" %}
                                 </a>
                             </h3>
                             <div class="collapse show" id="widget-1">
@@ -185,18 +183,17 @@
                             </div>
                         </div>
 
-                        <!-- Price Filter -->
                         <div class="widget widget-collapsible">
                             <h3 class="widget-title">
                                 <a data-toggle="collapse" href="#widget-5" role="button" aria-expanded="true" aria-controls="widget-5">
-                                    Price
+                                    {% trans "Price" %}
                                 </a>
                             </h3>
                             <div class="collapse show" id="widget-5">
                                 <div class="widget-body">
                                     <div class="filter-price">
                                         <div class="filter-price-text">
-                                            Price Range: <span id="filter-price-range"></span>
+                                            {% trans "Price Range:" %} <span id="filter-price-range"></span>
                                         </div>
                                         <div id="price-slider"></div>
                                     </div>

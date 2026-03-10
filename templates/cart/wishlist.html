@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Wishlist - Molla Sport Store{% endblock %}
+{% block title %}{% trans "Wishlist" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block nav_shop %}active{% endblock %}
 
@@ -10,16 +10,16 @@
     <div class="page-header text-center"
          style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
         <div class="container">
-            <h1 class="page-title">Wishlist<span>Shop</span></h1>
+            <h1 class="page-title">{% trans "Wishlist" %}<span>{% trans "Shop" %}</span></h1>
         </div>
     </div>
 
     <nav aria-label="breadcrumb" class="breadcrumb-nav">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">Shop</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">{% trans "Shop" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "Wishlist" %}</li>
             </ol>
         </div>
     </nav>
@@ -29,19 +29,18 @@
             <table class="table table-wishlist table-mobile">
                 <thead>
                     <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Stock Status</th>
+                        <th>{% trans "Product" %}</th>
+                        <th>{% trans "Price" %}</th>
+                        <th>{% trans "Stock Status" %}</th>
                         <th></th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    {# Wishlist items will be rendered here once wishlist functionality is implemented #}
                     <tr>
                         <td colspan="5">
-                            <p class="text-center py-4">Your wishlist is empty.
-                                <a href="{% url 'products:list' %}">Browse Products</a>
+                            <p class="text-center py-4">{% trans "Your wishlist is empty." %}
+                                <a href="{% url 'products:list' %}">{% trans "Browse Products" %}</a>
                             </p>
                         </td>
                     </tr>
@@ -50,7 +49,7 @@
 
             <div class="wishlist-share">
                 <div class="social-icons social-icons-sm mb-2">
-                    <label class="social-label">Share on:</label>
+                    <label class="social-label">{% trans "Share on:" %}</label>
                     <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                     <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
                     <a href="#" class="social-icon" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>

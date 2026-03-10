@@ -1,15 +1,15 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}About Us - Molla Sport Store{% endblock %}
+{% block title %}{% trans "About Us" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block content %}
 <main class="main">
     <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "About Us" %}</li>
             </ol>
         </div>
     </nav>
@@ -17,37 +17,35 @@
     <div class="container">
         <div class="page-header page-header-big text-center"
              style="background-image: url('{% static 'images/about-header-bg.jpg' %}')">
-            <h1 class="page-title text-white">About Us<span class="text-white">Who We Are</span></h1>
+            <h1 class="page-title text-white">{% trans "About Us" %}<span class="text-white">{% trans "Who We Are" %}</span></h1>
         </div>
     </div>
 
     <div class="page-content pb-0">
 
-        <!-- Vision & Mission -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-3 mb-lg-0">
-                    <h2 class="title">Our Vision</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.</p>
+                    <h2 class="title">{% trans "Our Vision" %}</h2>
+                    <p>{% trans "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh." %}</p>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="title">Our Mission</h2>
-                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus.<br>Praesent elementum hendrerit tortor. Sed semper lorem at felis.</p>
+                    <h2 class="title">{% trans "Our Mission" %}</h2>
+                    <p>{% trans "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis." %}</p>
                 </div>
             </div>
             <div class="mb-5"></div>
         </div>
 
-        <!-- Who We Are -->
         <div class="bg-light-2 pt-6 pb-5 mb-6 mb-lg-8">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 mb-3 mb-lg-0">
-                        <h2 class="title">Who We Are</h2>
-                        <p class="lead text-primary mb-3">Pellentesque odio nisi, euismod pharetra a ultricies<br>in diam. Sed arcu. Cras consequat</p>
-                        <p class="mb-2">Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue.</p>
+                        <h2 class="title">{% trans "Who We Are" %}</h2>
+                        <p class="lead text-primary mb-3">{% trans "Pellentesque odio nisi, euismod pharetra a ultricies in diam. Sed arcu. Cras consequat" %}</p>
+                        <p class="mb-2">{% trans "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue." %}</p>
                         <a href="{% url 'blogs:list' %}" class="btn btn-sm btn-minwidth btn-outline-primary-2">
-                            <span>VIEW OUR NEWS</span>
+                            <span>{% trans "VIEW OUR NEWS" %}</span>
                             <i class="icon-long-arrow-right"></i>
                         </a>
                     </div>
@@ -61,13 +59,12 @@
             </div>
         </div>
 
-        <!-- Brands + Team -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="brands-text">
-                        <h2 class="title">The world's premium design brands in one destination.</h2>
-                        <p>Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nis</p>
+                        <h2 class="title">{% trans "The world's premium design brands in one destination." %}</h2>
+                        <p>{% trans "Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nis" %}</p>
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -76,7 +73,7 @@
                             {% for i in "123456789" %}
                             <div class="col-6 col-sm-4">
                                 <a href="#" class="brand">
-                                    <img src="{% static 'images/brands/'|add:i|add:'.png' %}" alt="Brand Name">
+                                    <img src="{% static 'images/brands/'|add:i|add:'.png' %}" alt="{% trans "Brand Name" %}">
                                 </a>
                             </div>
                             {% endfor %}
@@ -87,19 +84,18 @@
 
             <hr class="mt-4 mb-6">
 
-            <h2 class="title text-center mb-4">Meet Our Team</h2>
+            <h2 class="title text-center mb-4">{% trans "Meet Our Team" %}</h2>
 
             <div class="row">
-                {% with members=team_members|default:'' %}
                 <!-- Member 1 -->
                 <div class="col-md-4">
                     <div class="member member-anim text-center">
                         <figure class="member-media">
-                            <img src="{% static 'images/team/member-1.jpg' %}" alt="member photo">
+                            <img src="{% static 'images/team/member-1.jpg' %}" alt="{% trans "member photo" %}">
                             <figcaption class="member-overlay">
                                 <div class="member-overlay-content">
-                                    <h3 class="member-title">Samanta Grey<span>Founder & CEO</span></h3>
-                                    <p>Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
+                                    <h3 class="member-title">Samanta Grey<span>{% trans "Founder & CEO" %}</span></h3>
+                                    <p>{% trans "Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc." %}</p>
                                     <div class="social-icons social-icons-simple">
                                         <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                         <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
@@ -109,7 +105,7 @@
                             </figcaption>
                         </figure>
                         <div class="member-content">
-                            <h3 class="member-title">Samanta Grey<span>Founder & CEO</span></h3>
+                            <h3 class="member-title">Samanta Grey<span>{% trans "Founder & CEO" %}</span></h3>
                         </div>
                     </div>
                 </div>
@@ -117,11 +113,11 @@
                 <div class="col-md-4">
                     <div class="member member-anim text-center">
                         <figure class="member-media">
-                            <img src="{% static 'images/team/member-2.jpg' %}" alt="member photo">
+                            <img src="{% static 'images/team/member-2.jpg' %}" alt="{% trans "member photo" %}">
                             <figcaption class="member-overlay">
                                 <div class="member-overlay-content">
-                                    <h3 class="member-title">Bruce Sutton<span>Sales & Marketing Manager</span></h3>
-                                    <p>Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
+                                    <h3 class="member-title">Bruce Sutton<span>{% trans "Sales & Marketing Manager" %}</span></h3>
+                                    <p>{% trans "Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc." %}</p>
                                     <div class="social-icons social-icons-simple">
                                         <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                         <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
@@ -131,7 +127,7 @@
                             </figcaption>
                         </figure>
                         <div class="member-content">
-                            <h3 class="member-title">Bruce Sutton<span>Sales & Marketing Manager</span></h3>
+                            <h3 class="member-title">Bruce Sutton<span>{% trans "Sales & Marketing Manager" %}</span></h3>
                         </div>
                     </div>
                 </div>
@@ -139,11 +135,11 @@
                 <div class="col-md-4">
                     <div class="member member-anim text-center">
                         <figure class="member-media">
-                            <img src="{% static 'images/team/member-3.jpg' %}" alt="member photo">
+                            <img src="{% static 'images/team/member-3.jpg' %}" alt="{% trans "member photo" %}">
                             <figcaption class="member-overlay">
                                 <div class="member-overlay-content">
-                                    <h3 class="member-title">Janet Joy<span>Product Manager</span></h3>
-                                    <p>Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc.</p>
+                                    <h3 class="member-title">Janet Joy<span>{% trans "Product Manager" %}</span></h3>
+                                    <p>{% trans "Sed pretium, ligula sollicitudin viverra, tortor libero sodales leo, eget blandit nunc." %}</p>
                                     <div class="social-icons social-icons-simple">
                                         <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                         <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
@@ -153,20 +149,18 @@
                             </figcaption>
                         </figure>
                         <div class="member-content">
-                            <h3 class="member-title">Janet Joy<span>Product Manager</span></h3>
+                            <h3 class="member-title">Janet Joy<span>{% trans "Product Manager" %}</span></h3>
                         </div>
                     </div>
                 </div>
-                {% endwith %}
             </div>
         </div>
 
         <div class="mb-2"></div>
 
-        <!-- Testimonials -->
         <div class="about-testimonials bg-light-2 pt-6 pb-6">
             <div class="container">
-                <h2 class="title text-center mb-3">What Customers Say About Us</h2>
+                <h2 class="title text-center mb-3">{% trans "What Customers Say About Us" %}</h2>
                 <div class="owl-carousel owl-simple owl-testimonials-photo" data-toggle="owl"
                     data-owl-options='{
                         "nav": false,
@@ -177,13 +171,13 @@
                     }'>
                     <blockquote class="testimonial text-center">
                         <img src="{% static 'images/testimonials/user-1.jpg' %}" alt="user">
-                        <p>" Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. "</p>
-                        <cite>Jenson Gregory<span>Customer</span></cite>
+                        <p>"{% trans "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi." %}"</p>
+                        <cite>Jenson Gregory<span>{% trans "Customer" %}</span></cite>
                     </blockquote>
                     <blockquote class="testimonial text-center">
                         <img src="{% static 'images/testimonials/user-2.jpg' %}" alt="user">
-                        <p>" Impedit, ratione sequi, sunt incidunt magnam et. Delectus obcaecati optio eius error libero perferendis nesciunt. Doloremque quidem error eum quis similique doloribus. "</p>
-                        <cite>Victoria Ventura<span>Customer</span></cite>
+                        <p>"{% trans "Impedit, ratione sequi, sunt incidunt magnam et. Delectus obcaecati optio eius error libero perferendis nesciunt." %}"</p>
+                        <cite>Victoria Ventura<span>{% trans "Customer" %}</span></cite>
                     </blockquote>
                 </div>
             </div>

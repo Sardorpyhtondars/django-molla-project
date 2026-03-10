@@ -1,15 +1,15 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Contact Us - Molla Sport Store{% endblock %}
+{% block title %}{% trans "Contact Us" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block content %}
 <main class="main">
     <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "Contact Us" %}</li>
             </ol>
         </div>
     </nav>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="page-header page-header-big text-center"
              style="background-image: url('{% static 'images/contact-header-bg.jpg' %}')">
-            <h1 class="page-title text-white">Contact Us<span class="text-white">Keep in touch with us</span></h1>
+            <h1 class="page-title text-white">{% trans "Contact Us" %}<span class="text-white">{% trans "Keep in touch with us" %}</span></h1>
         </div>
     </div>
 
@@ -31,18 +31,17 @@
             {% endif %}
 
             <div class="row">
-                <!-- Contact Info -->
                 <div class="col-lg-6 mb-2 mb-lg-0">
-                    <h2 class="title mb-1">Contact Information</h2>
-                    <p class="mb-3">Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+                    <h2 class="title mb-1">{% trans "Contact Information" %}</h2>
+                    <p class="mb-3">{% trans "Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna." %}</p>
                     <div class="row">
                         <div class="col-sm-7">
                             <div class="contact-info">
-                                <h3>The Office</h3>
+                                <h3>{% trans "The Office" %}</h3>
                                 <ul class="contact-list">
                                     <li>
                                         <i class="icon-map-marker"></i>
-                                        70 Washington Square South New York, NY 10012, United States
+                                        {% trans "70 Washington Square South New York, NY 10012, United States" %}
                                     </li>
                                     <li>
                                         <i class="icon-phone"></i>
@@ -57,15 +56,15 @@
                         </div>
                         <div class="col-sm-5">
                             <div class="contact-info">
-                                <h3>Store Hours</h3>
+                                <h3>{% trans "Store Hours" %}</h3>
                                 <ul class="contact-list">
                                     <li>
                                         <i class="icon-clock-o"></i>
-                                        <span class="text-dark">Monday–Saturday</span><br>11am–7pm ET
+                                        <span class="text-dark">{% trans "Monday–Saturday" %}</span><br>{% trans "11am–7pm ET" %}
                                     </li>
                                     <li>
                                         <i class="icon-calendar"></i>
-                                        <span class="text-dark">Sunday</span><br>11am–6pm ET
+                                        <span class="text-dark">{% trans "Sunday" %}</span><br>{% trans "11am–6pm ET" %}
                                     </li>
                                 </ul>
                             </div>
@@ -73,42 +72,41 @@
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="col-lg-6">
-                    <h2 class="title mb-1">Got Any Questions?</h2>
-                    <p class="mb-2">Use the form below to get in touch with the sales team</p>
+                    <h2 class="title mb-1">{% trans "Got Any Questions?" %}</h2>
+                    <p class="mb-2">{% trans "Use the form below to get in touch with the sales team" %}</p>
 
                     <form action="{% url 'shared:contact' %}" method="post" class="contact-form mb-3">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-sm-6">
-                                <label for="cname" class="sr-only">Name</label>
+                                <label for="cname" class="sr-only">{% trans "Name" %}</label>
                                 <input type="text" class="form-control" id="cname" name="full_name"
-                                       placeholder="Name *" required>
+                                       placeholder="{% trans "Name *" %}" required>
                             </div>
                             <div class="col-sm-6">
-                                <label for="cemail" class="sr-only">Email</label>
+                                <label for="cemail" class="sr-only">{% trans "Email" %}</label>
                                 <input type="email" class="form-control" id="cemail" name="email"
-                                       placeholder="Email *" required>
+                                       placeholder="{% trans "Email *" %}" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <label for="cphone" class="sr-only">Phone</label>
+                                <label for="cphone" class="sr-only">{% trans "Phone" %}</label>
                                 <input type="tel" class="form-control" id="cphone" name="phone"
-                                       placeholder="Phone">
+                                       placeholder="{% trans "Phone" %}">
                             </div>
                             <div class="col-sm-6">
-                                <label for="csubject" class="sr-only">Subject</label>
+                                <label for="csubject" class="sr-only">{% trans "Subject" %}</label>
                                 <input type="text" class="form-control" id="csubject" name="subject"
-                                       placeholder="Subject">
+                                       placeholder="{% trans "Subject" %}">
                             </div>
                         </div>
-                        <label for="cmessage" class="sr-only">Message</label>
+                        <label for="cmessage" class="sr-only">{% trans "Message" %}</label>
                         <textarea class="form-control" cols="30" rows="4" id="cmessage" name="message"
-                                  required placeholder="Message *"></textarea>
+                                  required placeholder="{% trans "Message *" %}"></textarea>
                         <button type="submit" class="btn btn-outline-primary-2 btn-minwidth-sm">
-                            <span>SUBMIT</span>
+                            <span>{% trans "SUBMIT" %}</span>
                             <i class="icon-long-arrow-right"></i>
                         </button>
                     </form>
@@ -117,27 +115,26 @@
 
             <hr class="mt-4 mb-5">
 
-            <!-- Our Stores -->
             <div class="stores mb-4 mb-lg-5">
-                <h2 class="title text-center mb-3">Our Stores</h2>
+                <h2 class="title text-center mb-3">{% trans "Our Stores" %}</h2>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="store">
                             <div class="row">
                                 <div class="col-sm-5 col-xl-6">
                                     <figure class="store-media mb-2 mb-lg-0">
-                                        <img src="{% static 'images/stores/img-1.jpg' %}" alt="Store image">
+                                        <img src="{% static 'images/stores/img-1.jpg' %}" alt="{% trans "Store image" %}">
                                     </figure>
                                 </div>
                                 <div class="col-sm-7 col-xl-6">
                                     <div class="store-content">
-                                        <h3 class="store-title">Wall Street Plaza</h3>
-                                        <address>88 Pine St, New York, NY 10005, USA</address>
+                                        <h3 class="store-title">{% trans "Wall Street Plaza" %}</h3>
+                                        <address>{% trans "88 Pine St, New York, NY 10005, USA" %}</address>
                                         <div><a href="tel:+19878766543">+1 987-876-6543</a></div>
-                                        <h4 class="store-subtitle">Store Hours:</h4>
-                                        <div>Monday – Saturday 11am to 7pm</div>
-                                        <div>Sunday 11am to 6pm</div>
-                                        <a href="#" class="btn btn-link" target="_blank"><span>View Map</span><i class="icon-long-arrow-right"></i></a>
+                                        <h4 class="store-subtitle">{% trans "Store Hours:" %}</h4>
+                                        <div>{% trans "Monday – Saturday 11am to 7pm" %}</div>
+                                        <div>{% trans "Sunday 11am to 6pm" %}</div>
+                                        <a href="#" class="btn btn-link" target="_blank"><span>{% trans "View Map" %}</span><i class="icon-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -148,19 +145,19 @@
                             <div class="row">
                                 <div class="col-sm-5 col-xl-6">
                                     <figure class="store-media mb-2 mb-lg-0">
-                                        <img src="{% static 'images/stores/img-2.jpg' %}" alt="Store image">
+                                        <img src="{% static 'images/stores/img-2.jpg' %}" alt="{% trans "Store image" %}">
                                     </figure>
                                 </div>
                                 <div class="col-sm-7 col-xl-6">
                                     <div class="store-content">
-                                        <h3 class="store-title">One New York Plaza</h3>
-                                        <address>88 Pine St, New York, NY 10005, USA</address>
+                                        <h3 class="store-title">{% trans "One New York Plaza" %}</h3>
+                                        <address>{% trans "88 Pine St, New York, NY 10005, USA" %}</address>
                                         <div><a href="tel:+19878766543">+1 987-876-6543</a></div>
-                                        <h4 class="store-subtitle">Store Hours:</h4>
-                                        <div>Monday – Friday 9am to 8pm</div>
-                                        <div>Saturday – 9am to 2pm</div>
-                                        <div>Sunday – Closed</div>
-                                        <a href="#" class="btn btn-link" target="_blank"><span>View Map</span><i class="icon-long-arrow-right"></i></a>
+                                        <h4 class="store-subtitle">{% trans "Store Hours:" %}</h4>
+                                        <div>{% trans "Monday – Friday 9am to 8pm" %}</div>
+                                        <div>{% trans "Saturday – 9am to 2pm" %}</div>
+                                        <div>{% trans "Sunday – Closed" %}</div>
+                                        <a href="#" class="btn btn-link" target="_blank"><span>{% trans "View Map" %}</span><i class="icon-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>

@@ -1,22 +1,22 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}My Account - Molla Sport Store{% endblock %}
+{% block title %}{% trans "My Account" %} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block content %}
 <main class="main">
     <div class="page-header text-center" style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
         <div class="container">
-            <h1 class="page-title">My Account<span>Shop</span></h1>
+            <h1 class="page-title">{% trans "My Account" %}<span>{% trans "Shop" %}</span></h1>
         </div>
     </div>
 
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">Shop</a></li>
-                <li class="breadcrumb-item active" aria-current="page">My Account</li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">{% trans "Shop" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% trans "My Account" %}</li>
             </ol>
         </div>
     </nav>
@@ -26,36 +26,34 @@
             <div class="container">
                 <div class="row">
 
-                    <!-- Sidebar Nav -->
                     <aside class="col-md-4 col-lg-3">
                         <ul class="nav nav-dashboard flex-column mb-3 mb-md-0" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="tab-dashboard-link"
                                    data-toggle="tab" href="#tab-dashboard"
-                                   role="tab" aria-controls="tab-dashboard" aria-selected="true">Dashboard</a>
+                                   role="tab" aria-controls="tab-dashboard" aria-selected="true">{% trans "Dashboard" %}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="tab-orders-link"
                                    data-toggle="tab" href="#tab-orders"
-                                   role="tab" aria-controls="tab-orders" aria-selected="false">Orders</a>
+                                   role="tab" aria-controls="tab-orders" aria-selected="false">{% trans "Orders" %}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="tab-address-link"
                                    data-toggle="tab" href="#tab-address"
-                                   role="tab" aria-controls="tab-address" aria-selected="false">Addresses</a>
+                                   role="tab" aria-controls="tab-address" aria-selected="false">{% trans "Addresses" %}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="tab-account-link"
                                    data-toggle="tab" href="#tab-account"
-                                   role="tab" aria-controls="tab-account" aria-selected="false">Account Details</a>
+                                   role="tab" aria-controls="tab-account" aria-selected="false">{% trans "Account Details" %}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'users:logout' %}">Sign Out</a>
+                                <a class="nav-link" href="{% url 'users:logout' %}">{% trans "Sign Out" %}</a>
                             </li>
                         </ul>
-                    </aside><!-- End .col-lg-3 -->
+                    </aside>
 
-                    <!-- Tab Content -->
                     <div class="col-md-8 col-lg-9">
                         <div class="tab-content">
 
@@ -70,16 +68,16 @@
                                 {% endif %}
 
                                 <p>
-                                    Hello <span class="font-weight-normal text-dark">{{ user.full_name|default:user.username }}</span>
-                                    (not {{ user.full_name|default:user.username }}?
-                                    <a href="{% url 'users:logout' %}">Log out</a>)
+                                    {% trans "Hello" %} <span class="font-weight-normal text-dark">{{ user.full_name|default:user.username }}</span>
+                                    ({% trans "not" %} {{ user.full_name|default:user.username }}?
+                                    <a href="{% url 'users:logout' %}">{% trans "Log out" %}</a>)
                                     <br>
-                                    From your account dashboard you can view your
-                                    <a href="#tab-orders" class="tab-trigger-link link-underline">recent orders</a>,
-                                    manage your
-                                    <a href="#tab-address" class="tab-trigger-link">shipping and billing addresses</a>,
-                                    and
-                                    <a href="#tab-account" class="tab-trigger-link">edit your password and account details</a>.
+                                    {% trans "From your account dashboard you can view your" %}
+                                    <a href="#tab-orders" class="tab-trigger-link link-underline">{% trans "recent orders" %}</a>,
+                                    {% trans "manage your" %}
+                                    <a href="#tab-address" class="tab-trigger-link">{% trans "shipping and billing addresses" %}</a>,
+                                    {% trans "and" %}
+                                    <a href="#tab-account" class="tab-trigger-link">{% trans "edit your password and account details" %}</a>.
                                 </p>
 
                                 <div class="row mt-4">
@@ -97,7 +95,7 @@
                                         <div class="card card-dashboard text-center py-3">
                                             <div class="card-body">
                                                 <i class="icon-phone" style="font-size:2rem;"></i>
-                                                <p class="mt-2 mb-0 font-weight-bold">Phone</p>
+                                                <p class="mt-2 mb-0 font-weight-bold">{% trans "Phone" %}</p>
                                                 <p class="text-muted small">{{ user.phone_number }}</p>
                                             </div>
                                         </div>
@@ -109,26 +107,26 @@
                             <!-- Orders Tab -->
                             <div class="tab-pane fade" id="tab-orders"
                                  role="tabpanel" aria-labelledby="tab-orders-link">
-                                <p>No order has been made yet.</p>
+                                <p>{% trans "No order has been made yet." %}</p>
                                 <a href="{% url 'products:list' %}" class="btn btn-outline-primary-2">
-                                    <span>GO SHOP</span><i class="icon-long-arrow-right"></i>
+                                    <span>{% trans "GO SHOP" %}</span><i class="icon-long-arrow-right"></i>
                                 </a>
-                            </div><!-- End Orders Tab -->
+                            </div>
 
                             <!-- Address Tab -->
                             <div class="tab-pane fade" id="tab-address"
                                  role="tabpanel" aria-labelledby="tab-address-link">
-                                <p>The following addresses will be used on the checkout page by default.</p>
+                                <p>{% trans "The following addresses will be used on the checkout page by default." %}</p>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="card card-dashboard">
                                             <div class="card-body">
-                                                <h3 class="card-title">Billing Address</h3>
+                                                <h3 class="card-title">{% trans "Billing Address" %}</h3>
                                                 <p>
                                                     {{ user.full_name|default:"—" }}<br>
                                                     {{ user.email }}<br>
                                                     {% if user.phone_number %}{{ user.phone_number }}<br>{% endif %}
-                                                    <a href="#tab-account" class="tab-trigger-link">Edit <i class="icon-edit"></i></a>
+                                                    <a href="#tab-account" class="tab-trigger-link">{% trans "Edit" %} <i class="icon-edit"></i></a>
                                                 </p>
                                             </div>
                                         </div>
@@ -136,16 +134,16 @@
                                     <div class="col-lg-6">
                                         <div class="card card-dashboard">
                                             <div class="card-body">
-                                                <h3 class="card-title">Shipping Address</h3>
+                                                <h3 class="card-title">{% trans "Shipping Address" %}</h3>
                                                 <p>
-                                                    You have not set up this type of address yet.<br>
-                                                    <a href="#tab-account" class="tab-trigger-link">Edit <i class="icon-edit"></i></a>
+                                                    {% trans "You have not set up this type of address yet." %}<br>
+                                                    <a href="#tab-account" class="tab-trigger-link">{% trans "Edit" %} <i class="icon-edit"></i></a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div><!-- End Address Tab -->
+                            </div>
 
                             <!-- Account Details Tab -->
                             <div class="tab-pane fade" id="tab-account"
@@ -153,46 +151,45 @@
 
                                 <form action="{% url 'users:account' %}" method="post">
                                     {% csrf_token %}
-
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <label for="acc-full-name">Full Name *</label>
+                                            <label for="acc-full-name">{% trans "Full Name *" %}</label>
                                             <input type="text" class="form-control" id="acc-full-name"
                                                    name="full_name" value="{{ user.full_name|default:'' }}" required>
                                         </div>
                                         <div class="col-sm-6">
-                                            <label for="acc-username">Username *</label>
+                                            <label for="acc-username">{% trans "Username *" %}</label>
                                             <input type="text" class="form-control" id="acc-username"
                                                    name="username" value="{{ user.username }}" required>
                                         </div>
                                     </div>
 
-                                    <label for="acc-email">Email address *</label>
+                                    <label for="acc-email">{% trans "Email address *" %}</label>
                                     <input type="email" class="form-control" id="acc-email"
                                            name="email" value="{{ user.email }}" required>
 
-                                    <label for="acc-phone">Phone number</label>
+                                    <label for="acc-phone">{% trans "Phone number" %}</label>
                                     <input type="text" class="form-control" id="acc-phone"
                                            name="phone_number" value="{{ user.phone_number|default:'' }}">
 
                                     <hr>
-                                    <h3 class="mb-2" style="font-size:1.4rem;">Change Password</h3>
+                                    <h3 class="mb-2" style="font-size:1.4rem;">{% trans "Change Password" %}</h3>
 
-                                    <label for="acc-password">Current password <small>(leave blank to leave unchanged)</small></label>
+                                    <label for="acc-password">{% trans "Current password" %} <small>({% trans "leave blank to leave unchanged" %})</small></label>
                                     <input type="password" class="form-control" id="acc-password" name="current_password">
 
-                                    <label for="acc-new-password">New password <small>(leave blank to leave unchanged)</small></label>
+                                    <label for="acc-new-password">{% trans "New password" %} <small>({% trans "leave blank to leave unchanged" %})</small></label>
                                     <input type="password" class="form-control" id="acc-new-password" name="new_password1">
 
-                                    <label for="acc-confirm-password">Confirm new password</label>
+                                    <label for="acc-confirm-password">{% trans "Confirm new password" %}</label>
                                     <input type="password" class="form-control mb-2" id="acc-confirm-password" name="new_password2">
 
                                     <button type="submit" class="btn btn-outline-primary-2">
-                                        <span>SAVE CHANGES</span>
+                                        <span>{% trans "SAVE CHANGES" %}</span>
                                         <i class="icon-long-arrow-right"></i>
                                     </button>
                                 </form>
-                            </div><!-- End Account Details Tab -->
+                            </div>
 
                         </div><!-- End .tab-content -->
                     </div><!-- End .col-lg-9 -->
@@ -206,7 +203,6 @@
 
 {% block extra_js %}
 <script>
-    // Allow internal tab-trigger-link clicks to switch tabs
     document.querySelectorAll('.tab-trigger-link').forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();

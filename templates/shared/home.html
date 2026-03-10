@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Molla - Extreme Sport Store{% endblock %}
+{% block title %}{% trans "Molla - Extreme Sport Store" %}{% endblock %}
 
 {% block nav_home %}active{% endblock %}
 
@@ -10,14 +10,14 @@
     <div class="slider">
         <div class="intro">
             <div class="title">
-                <h3>Premium Outdoor Gear & Clothing</h3>
+                <h3>{% trans "Premium Outdoor Gear & Clothing" %}</h3>
             </div>
             <div class="content">
-                <h4><i>Our New Collections 2019</i></h4>
-                <h5>Ski & Snowboard</h5>
+                <h4><i>{% trans "Our New Collections 2019" %}</i></h4>
+                <h5>{% trans "Ski & Snowboard" %}</h5>
             </div>
             <div class="action">
-                <a href="{% url 'products:list' %}">discover now</a>
+                <a href="{% url 'products:list' %}">{% trans "discover now" %}</a>
             </div>
         </div>
         <img src="{% static 'images/demos/demo-24/slider/back-2.png' %}">
@@ -32,7 +32,7 @@
         <div class="container">
             <hr class="mb-4">
             <div class="heading">
-                <p class="heading-cat">trending brands</p>
+                <p class="heading-cat">{% trans "trending brands" %}</p>
             </div>
             <div class="owl-carousel mb-5 owl-simple" data-toggle="owl"
                 data-owl-options='{
@@ -48,12 +48,12 @@
                         "1024": {"items":6}
                     }
                 }'>
-                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/1.png' %}" alt="Brand Name"></a>
-                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/2.png' %}" alt="Brand Name"></a>
-                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/3.png' %}" alt="Brand Name"></a>
-                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/4.png' %}" alt="Brand Name"></a>
-                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/5.png' %}" alt="Brand Name"></a>
-                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/6.png' %}" alt="Brand Name"></a>
+                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/1.png' %}" alt="{% trans "Brand Name" %}"></a>
+                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/2.png' %}" alt="{% trans "Brand Name" %}"></a>
+                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/3.png' %}" alt="{% trans "Brand Name" %}"></a>
+                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/4.png' %}" alt="{% trans "Brand Name" %}"></a>
+                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/5.png' %}" alt="{% trans "Brand Name" %}"></a>
+                <a href="#" class="brand"><img src="{% static 'images/demos/demo-24/brands/6.png' %}" alt="{% trans "Brand Name" %}"></a>
             </div>
         </div>
     </section>
@@ -64,24 +64,24 @@
                 <div class="banner col-lg-4 col-md-6 col-sm-6">
                     <img src="{% static 'images/demos/demo-24/banners/banner-1.jpg' %}">
                     <div class="intro">
-                        <div class="title"><h3>Online mega deal</h3></div>
-                        <div class="content"><h4>Camping Gear<br>& Accessories</h4></div>
-                        <div class="action"><a href="{% url 'products:list' %}">Shop Now</a></div>
+                        <div class="title"><h3>{% trans "Online mega deal" %}</h3></div>
+                        <div class="content"><h4>{% trans "Camping Gear & Accessories" %}</h4></div>
+                        <div class="action"><a href="{% url 'products:list' %}">{% trans "Shop Now" %}</a></div>
                     </div>
                 </div>
                 <div class="banner percent col-lg-4 col-md-6 col-sm-6">
                     <img src="{% static 'images/demos/demo-24/banners/banner-2.jpg' %}">
                     <div class="intro">
-                        <div class="title"><h3>Summer</h3><h4>Clearance</h4></div>
-                        <div class="action"><a href="{% url 'products:list' %}">Discover Now</a></div>
+                        <div class="title"><h3>{% trans "Summer" %}</h3><h4>{% trans "Clearance" %}</h4></div>
+                        <div class="action"><a href="{% url 'products:list' %}">{% trans "Discover Now" %}</a></div>
                     </div>
                 </div>
                 <div class="banner col-lg-4 col-md-6 col-sm-6">
                     <img src="{% static 'images/demos/demo-24/banners/banner-3.jpg' %}">
                     <div class="intro">
-                        <div class="title"><h3>Lightning Deals</h3></div>
-                        <div class="content"><h4>Sports &<br>Outdoors</h4></div>
-                        <div class="action"><a href="{% url 'products:list' %}">Shop Now</a></div>
+                        <div class="title"><h3>{% trans "Lightning Deals" %}</h3></div>
+                        <div class="content"><h4>{% trans "Sports & Outdoors" %}</h4></div>
+                        <div class="action"><a href="{% url 'products:list' %}">{% trans "Shop Now" %}</a></div>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,8 @@
     <section class="best-sellers">
         <div class="container">
             <div class="heading">
-                <p class="heading-cat">favourite from every category</p>
-                <h3 class="heading-title">Best Sellers</h3>
+                <p class="heading-cat">{% trans "favourite from every category" %}</p>
+                <h3 class="heading-title">{% trans "Best Sellers" %}</h3>
             </div>
             <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow text-center" data-toggle="owl"
                 data-owl-options='{
@@ -126,20 +126,20 @@
                             <div class="product-price">
                                 {% if product.old_price %}
                                     <span class="new-price">${{ product.price }}</span>
-                                    <span class="old-price">Was ${{ product.old_price }}</span>
+                                    <span class="old-price">{% trans "Was" %} ${{ product.old_price }}</span>
                                 {% else %}
                                     ${{ product.price }}
                                 {% endif %}
                             </div>
                         </div>
                         <div class="product-action">
-                            <a href="{% url 'products:cart' %}" class="btn-cart"><span>add to cart</span></a>
-                            <a href="{% url 'products:wishlist' %}" class="btn-product-icon btn-wishlist"><span>Add to Wishlist</span></a>
+                            <a href="{% url 'products:cart' %}" class="btn-cart"><span>{% trans "add to cart" %}</span></a>
+                            <a href="{% url 'products:wishlist' %}" class="btn-product-icon btn-wishlist"><span>{% trans "Add to Wishlist" %}</span></a>
                         </div>
                     </div>
                 </div>
                 {% empty %}
-                <p class="text-center">No featured products yet. Add some from the admin panel!</p>
+                <p class="text-center">{% trans "No featured products yet. Add some from the admin panel!" %}</p>
                 {% endfor %}
             </div>
         </div>
@@ -148,15 +148,15 @@
     <section class="subscribe">
         <div class="container">
             <div class="heading">
-                <p class="heading-cat">Get The Latest News & Deals</p>
-                <h3 class="heading-title">Stay In The Know</h3>
+                <p class="heading-cat">{% trans "Get The Latest News & Deals" %}</p>
+                <h3 class="heading-title">{% trans "Stay In The Know" %}</h3>
             </div>
             <div class="col-lg-6 subscribe-form">
                 <form action="#">
                     <div class="input-group">
-                        <input type="email" placeholder="Enter your Email Address" aria-label="Email Address" required>
+                        <input type="email" placeholder="{% trans "Enter your Email Address" %}" aria-label="{% trans "Email Address" %}" required>
                         <div class="input-group-append">
-                            <button class="btn btn-subscribe" type="submit"><span>Subscribe</span></button>
+                            <button class="btn btn-subscribe" type="submit"><span>{% trans "Subscribe" %}</span></button>
                         </div>
                     </div>
                 </form>
@@ -167,8 +167,8 @@
     <section class="blog mb-6">
         <div class="container">
             <div class="heading">
-                <p class="heading-cat">Our Fresh News</p>
-                <h3 class="heading-title">New Blog Posts</h3>
+                <p class="heading-cat">{% trans "Our Fresh News" %}</p>
+                <h3 class="heading-title">{% trans "New Blog Posts" %}</h3>
             </div>
             <div class="owl-carousel owl-simple mb-4" data-toggle="owl"
                 data-owl-options='{
@@ -202,12 +202,12 @@
                             <a href="{% url 'blogs:detail' blog.pk %}">{{ blog.title }}</a>
                         </h3>
                         <div class="entry-content">
-                            <a href="{% url 'blogs:detail' blog.pk %}" class="read-more">read more</a>
+                            <a href="{% url 'blogs:detail' blog.pk %}" class="read-more">{% trans "read more" %}</a>
                         </div>
                     </div>
                 </article>
                 {% empty %}
-                <p>No blog posts yet.</p>
+                <p>{% trans "No blog posts yet." %}</p>
                 {% endfor %}
             </div>
         </div>

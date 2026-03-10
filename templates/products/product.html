@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}{{ product.title }} - Molla Sport Store{% endblock %}
+{% block title %}{{ product.title }} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block nav_shop %}active{% endblock %}
 
@@ -14,8 +14,8 @@
     <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
         <div class="container d-flex align-items-center">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">Shop</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'products:list' %}">{% trans "Shop" %}</a></li>
                 {% if product.category %}
                 <li class="breadcrumb-item"><a href="{% url 'products:list' %}?category_id={{ product.category.pk }}">{{ product.category.title }}</a></li>
                 {% endif %}
@@ -77,14 +77,14 @@
                                     <div class="ratings-val" style="width: {% widthratio reviews.count 5 100 %}%;"></div>
                                 </div>
                                 <a class="ratings-text" href="#product-review-tab" id="review-link">
-                                    ( {{ reviews.count }} Review{{ reviews.count|pluralize }} )
+                                    ( {{ reviews.count }} {% trans "Review" %}{{ reviews.count|pluralize }} )
                                 </a>
                             </div>
 
                             <div class="product-price">
                                 {% if product.old_price %}
                                     <span class="new-price">${{ product.price }}</span>
-                                    <span class="old-price">Was ${{ product.old_price }}</span>
+                                    <span class="old-price">{% trans "Was" %} ${{ product.old_price }}</span>
                                 {% else %}
                                     ${{ product.price }}
                                 {% endif %}
@@ -97,7 +97,7 @@
                             {% endif %}
 
                             <div class="details-filter-row details-row-size">
-                                <label for="qty">Qty:</label>
+                                <label for="qty">{% trans "Qty:" %}</label>
                                 <div class="product-details-quantity">
                                     <input type="number" id="qty" class="form-control" value="1" min="1"
                                            max="{{ product.stock }}" step="1" data-decimals="0" required>
@@ -105,21 +105,21 @@
                             </div>
 
                             <div class="product-details-action">
-                                <a href="{% url 'products:cart' %}" class="btn-product btn-cart"><span>add to cart</span></a>
+                                <a href="{% url 'products:cart' %}" class="btn-product btn-cart"><span>{% trans "add to cart" %}</span></a>
                                 <div class="details-action-wrapper">
-                                    <a href="{% url 'products:wishlist' %}" class="btn-product btn-wishlist" title="Wishlist"><span>Add to Wishlist</span></a>
+                                    <a href="{% url 'products:wishlist' %}" class="btn-product btn-wishlist" title="{% trans "Wishlist" %}"><span>{% trans "Add to Wishlist" %}</span></a>
                                 </div>
                             </div>
 
                             <div class="product-details-footer">
                                 {% if product.category %}
                                 <div class="product-cat">
-                                    <span>Category:</span>
+                                    <span>{% trans "Category:" %}</span>
                                     <a href="{% url 'products:list' %}?category_id={{ product.category.pk }}">{{ product.category.title }}</a>
                                 </div>
                                 {% endif %}
                                 <div class="social-icons social-icons-sm">
-                                    <span class="social-label">Share:</span>
+                                    <span class="social-label">{% trans "Share:" %}</span>
                                     <a href="#" class="social-icon" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                     <a href="#" class="social-icon" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
                                     <a href="#" class="social-icon" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
@@ -131,18 +131,18 @@
                 </div>
             </div><!-- End .product-details-top -->
 
-            <!-- Tabs: Description / Reviews -->
+            <!-- Tabs -->
             <div class="product-details-tab">
                 <ul class="nav nav-pills justify-content-center" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="product-desc-link" data-toggle="tab" href="#product-desc-tab" role="tab" aria-selected="true">Description</a>
+                        <a class="nav-link active" id="product-desc-link" data-toggle="tab" href="#product-desc-tab" role="tab" aria-selected="true">{% trans "Description" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="product-shipping-link" data-toggle="tab" href="#product-shipping-tab" role="tab" aria-selected="false">Shipping & Returns</a>
+                        <a class="nav-link" id="product-shipping-link" data-toggle="tab" href="#product-shipping-tab" role="tab" aria-selected="false">{% trans "Shipping & Returns" %}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="product-review-link" data-toggle="tab" href="#product-review-tab" role="tab" aria-selected="false">
-                            Reviews ({{ reviews.count }})
+                            {% trans "Reviews" %} ({{ reviews.count }})
                         </a>
                     </li>
                 </ul>
@@ -150,11 +150,11 @@
                     <!-- Description Tab -->
                     <div class="tab-pane fade show active" id="product-desc-tab" role="tabpanel">
                         <div class="product-desc-content">
-                            <h3>Product Information</h3>
+                            <h3>{% trans "Product Information" %}</h3>
                             {% if product.description %}
                                 <p>{{ product.description }}</p>
                             {% else %}
-                                <p>No description available for this product.</p>
+                                <p>{% trans "No description available for this product." %}</p>
                             {% endif %}
                         </div>
                     </div>
@@ -162,16 +162,16 @@
                     <!-- Shipping Tab -->
                     <div class="tab-pane fade" id="product-shipping-tab" role="tabpanel">
                         <div class="product-desc-content">
-                            <h3>Delivery & Returns</h3>
-                            <p>We deliver to over 100 countries around the world. For full details of the delivery options we offer, please view our <a href="#">Delivery information</a>.<br>
-                            We hope you'll love every purchase, but if you ever need to return an item you can do so within a month of receipt. For full details of how to make a return, please view our <a href="#">Returns information</a>.</p>
+                            <h3>{% trans "Delivery & Returns" %}</h3>
+                            <p>{% trans "We deliver to over 100 countries around the world. For full details of the delivery options we offer, please view our" %} <a href="#">{% trans "Delivery information" %}</a>.<br>
+                            {% trans "We hope you'll love every purchase, but if you ever need to return an item you can do so within a month of receipt. For full details of how to make a return, please view our" %} <a href="#">{% trans "Returns information" %}</a>.</p>
                         </div>
                     </div>
 
                     <!-- Reviews Tab -->
                     <div class="tab-pane fade" id="product-review-tab" role="tabpanel">
                         <div class="reviews">
-                            <h3>Reviews ({{ reviews.count }})</h3>
+                            <h3>{% trans "Reviews" %} ({{ reviews.count }})</h3>
 
                             {% for review in reviews %}
                             <div class="review">
@@ -193,39 +193,39 @@
                                 </div>
                             </div>
                             {% empty %}
-                            <p>No reviews yet. Be the first to review this product!</p>
+                            <p>{% trans "No reviews yet. Be the first to review this product!" %}</p>
                             {% endfor %}
 
                             <!-- Add Review Form -->
                             <div class="review-form-wrapper">
-                                <h3>Add a Review</h3>
+                                <h3>{% trans "Add a Review" %}</h3>
                                 <form action="" method="post" class="review-form">
                                     {% csrf_token %}
                                     <div class="rating-form">
-                                        <label for="rating">Your rating:</label>
+                                        <label for="rating">{% trans "Your rating:" %}</label>
                                         <select name="rating" id="rating" class="form-control">
-                                            <option value="1">1 Star</option>
-                                            <option value="2">2 Stars</option>
-                                            <option value="3" selected>3 Stars</option>
-                                            <option value="4">4 Stars</option>
-                                            <option value="5">5 Stars</option>
+                                            <option value="1">{% trans "1 Star" %}</option>
+                                            <option value="2">{% trans "2 Stars" %}</option>
+                                            <option value="3" selected>{% trans "3 Stars" %}</option>
+                                            <option value="4">{% trans "4 Stars" %}</option>
+                                            <option value="5">{% trans "5 Stars" %}</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="author_name">Name *</label>
+                                        <label for="author_name">{% trans "Name *" %}</label>
                                         <input type="text" class="form-control" name="author_name" id="author_name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Email *</label>
+                                        <label for="email">{% trans "Email *" %}</label>
                                         <input type="email" class="form-control" name="email" id="email" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="comment">Your Review *</label>
+                                        <label for="comment">{% trans "Your Review *" %}</label>
                                         <textarea class="form-control" name="comment" id="comment" rows="5" required></textarea>
                                     </div>
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-outline-primary-2">
-                                            <span>SUBMIT</span>
+                                            <span>{% trans "SUBMIT" %}</span>
                                             <i class="icon-long-arrow-right"></i>
                                         </button>
                                     </div>
@@ -238,7 +238,7 @@
 
             <!-- Related Products -->
             {% if related_products %}
-            <h2 class="title text-center mb-4">You May Also Like</h2>
+            <h2 class="title text-center mb-4">{% trans "You May Also Like" %}</h2>
             <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow" data-toggle="owl"
                 data-owl-options='{
                     "nav": false,
@@ -256,7 +256,7 @@
                 {% for rp in related_products %}
                 <div class="product product-7 text-center">
                     <figure class="product-media">
-                        {% if not rp.stock %}<span class="product-label label-out">Out of Stock</span>{% endif %}
+                        {% if not rp.stock %}<span class="product-label label-out">{% trans "Out of Stock" %}</span>{% endif %}
                         <a href="{% url 'products:detail' rp.pk %}">
                             {% if rp.image %}
                                 <img src="{{ rp.image.url }}" alt="{{ rp.title }}" class="product-image">
@@ -265,10 +265,10 @@
                             {% endif %}
                         </a>
                         <div class="product-action-vertical">
-                            <a href="{% url 'products:wishlist' %}" class="btn-product-icon btn-wishlist btn-expandable"><span>add to wishlist</span></a>
+                            <a href="{% url 'products:wishlist' %}" class="btn-product-icon btn-wishlist btn-expandable"><span>{% trans "add to wishlist" %}</span></a>
                         </div>
                         <div class="product-action">
-                            <a href="{% url 'products:cart' %}" class="btn-product btn-cart"><span>add to cart</span></a>
+                            <a href="{% url 'products:cart' %}" class="btn-product btn-cart"><span>{% trans "add to cart" %}</span></a>
                         </div>
                     </figure>
                     <div class="product-body">
@@ -281,7 +281,7 @@
                         <div class="product-price">
                             {% if rp.old_price %}
                                 <span class="new-price">${{ rp.price }}</span>
-                                <span class="old-price">Was ${{ rp.old_price }}</span>
+                                <span class="old-price">{% trans "Was" %} ${{ rp.old_price }}</span>
                             {% elif not rp.stock %}
                                 <span class="out-price">${{ rp.price }}</span>
                             {% else %}
@@ -292,7 +292,7 @@
                             <div class="ratings">
                                 <div class="ratings-val" style="width: 0%;"></div>
                             </div>
-                            <span class="ratings-text">( {{ rp.review_set.count }} Reviews )</span>
+                            <span class="ratings-text">( {{ rp.review_set.count }} {% trans "Reviews" %} )</span>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %}
-{% load static %}
+{% load static i18n %}
 
-{% block title %}{{ blog.title }} - Molla Sport Store{% endblock %}
+{% block title %}{{ blog.title }} - {% trans "Molla Sport Store" %}{% endblock %}
 
 {% block nav_blog %}active{% endblock %}
 
@@ -9,15 +9,15 @@
 <main class="main">
     <div class="page-header text-center" style="background-image: url('{% static 'images/page-header-bg.jpg' %}')">
         <div class="container">
-            <h1 class="page-title">{{ blog.title }}<span>Single Post</span></h1>
+            <h1 class="page-title">{{ blog.title }}<span>{% trans "Single Post" %}</span></h1>
         </div>
     </div>
 
     <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">Home</a></li>
-                <li class="breadcrumb-item"><a href="{% url 'blogs:list' %}">Blog</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'shared:home' %}">{% trans "Home" %}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'blogs:list' %}">{% trans "Blog" %}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ blog.title }}</li>
             </ol>
         </div>
@@ -38,7 +38,7 @@
                         <div class="entry-body">
                             <div class="entry-meta">
                                 {% for author in blog.authors.all %}
-                                <span class="entry-author">by <a href="#">{{ author.full_name }}</a></span>
+                                <span class="entry-author">{% trans "by" %} <a href="#">{{ author.full_name }}</a></span>
                                 <span class="meta-separator">|</span>
                                 {% endfor %}
                                 <a href="#">{{ blog.created_at|date:"M d, Y" }}</a>
@@ -54,7 +54,7 @@
 
                             {% if blog.tags.exists %}
                             <div class="entry-cats">
-                                in
+                                {% trans "in" %}
                                 {% for tag in blog.tags.all %}
                                     <a href="{% url 'blogs:list' %}?tag={{ tag.pk }}">{{ tag.title }}</a>{% if not forloop.last %}, {% endif %}
                                 {% endfor %}
@@ -65,21 +65,20 @@
                                 {{ blog.long_description|safe }}
                             </div>
 
-                            <!-- Footer: tags + share -->
                             <div class="entry-footer row no-gutters flex-column flex-md-row">
                                 {% if blog.tags.exists %}
                                 <div class="col-md">
                                     <div class="entry-tags">
-                                        <span>Tags:</span>
+                                        <span>{% trans "Tags:" %}</span>
                                         {% for tag in blog.tags.all %}
-                                            <a href="{% url 'blogs:list' %}?tag={{ tag.pk }}">{{ tag.title }}</a>
+                                            <a href="{% url 'blogs:list' %}?tag={{ tag.pk %}">{{ tag.title }}</a>
                                         {% endfor %}
                                     </div>
                                 </div>
                                 {% endif %}
                                 <div class="col-md-auto mt-2 mt-md-0">
                                     <div class="social-icons social-icons-color">
-                                        <span class="social-label">Share this post:</span>
+                                        <span class="social-label">{% trans "Share this post:" %}</span>
                                         <a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
                                         <a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
                                         <a href="#" class="social-icon social-pinterest" title="Pinterest" target="_blank"><i class="icon-pinterest"></i></a>
@@ -126,13 +125,13 @@
                     <nav class="pager-nav" aria-label="Page navigation">
                         {% if blog.get_previous_by_created_at %}
                         <a class="pager-link pager-link-prev" href="{% url 'blogs:detail' blog.get_previous_by_created_at.pk %}" aria-label="Previous">
-                            Previous Post
+                            {% trans "Previous Post" %}
                             <span class="pager-link-title">{{ blog.get_previous_by_created_at.title }}</span>
                         </a>
                         {% endif %}
                         {% if blog.get_next_by_created_at %}
                         <a class="pager-link pager-link-next" href="{% url 'blogs:detail' blog.get_next_by_created_at.pk %}" aria-label="Next">
-                            Next Post
+                            {% trans "Next Post" %}
                             <span class="pager-link-title">{{ blog.get_next_by_created_at.title }}</span>
                         </a>
                         {% endif %}
@@ -141,7 +140,7 @@
                     <!-- Related Posts -->
                     {% if recent_posts %}
                     <div class="related-posts">
-                        <h3 class="title">Related Posts</h3>
+                        <h3 class="title">{% trans "Related Posts" %}</h3>
                         <div class="owl-carousel owl-simple" data-toggle="owl"
                             data-owl-options='{
                                 "nav": false,
@@ -172,7 +171,7 @@
                                     </h2>
                                     {% if post.categories.exists %}
                                     <div class="entry-cats">
-                                        in
+                                        {% trans "in" %}
                                         {% for cat in post.categories.all %}
                                             <a href="{% url 'blogs:list' %}?category={{ cat.pk }}">{{ cat.title }}</a>{% if not forloop.last %}, {% endif %}
                                         {% endfor %}
@@ -188,25 +187,25 @@
                     <!-- Leave a Reply -->
                     <div class="reply">
                         <div class="heading">
-                            <h3 class="title">Leave A Reply</h3>
-                            <p class="title-desc">Your email address will not be published. Required fields are marked *</p>
+                            <h3 class="title">{% trans "Leave A Reply" %}</h3>
+                            <p class="title-desc">{% trans "Your email address will not be published. Required fields are marked *" %}</p>
                         </div>
                         <form action="" method="post">
                             {% csrf_token %}
-                            <label for="reply-message" class="sr-only">Comment</label>
-                            <textarea name="comment" id="reply-message" cols="30" rows="4" class="form-control" required placeholder="Comment *"></textarea>
+                            <label for="reply-message" class="sr-only">{% trans "Comment" %}</label>
+                            <textarea name="comment" id="reply-message" cols="30" rows="4" class="form-control" required placeholder="{% trans "Comment *" %}"></textarea>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="reply-name" class="sr-only">Name</label>
-                                    <input type="text" class="form-control" id="reply-name" name="name" required placeholder="Name *">
+                                    <label for="reply-name" class="sr-only">{% trans "Name" %}</label>
+                                    <input type="text" class="form-control" id="reply-name" name="name" required placeholder="{% trans "Name *" %}">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="reply-email" class="sr-only">Email</label>
-                                    <input type="email" class="form-control" id="reply-email" name="email" required placeholder="Email *">
+                                    <label for="reply-email" class="sr-only">{% trans "Email" %}</label>
+                                    <input type="email" class="form-control" id="reply-email" name="email" required placeholder="{% trans "Email *" %}">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-outline-primary-2">
-                                <span>POST COMMENT</span>
+                                <span>{% trans "POST COMMENT" %}</span>
                                 <i class="icon-long-arrow-right"></i>
                             </button>
                         </form>
@@ -216,22 +215,20 @@
                 <!-- Sidebar -->
                 <aside class="col-lg-3">
                     <div class="sidebar">
-                        <!-- Search -->
                         <div class="widget widget-search">
-                            <h3 class="widget-title">Search</h3>
+                            <h3 class="widget-title">{% trans "Search" %}</h3>
                             <form action="{% url 'blogs:list' %}" method="get">
-                                <label for="ws" class="sr-only">Search in blog</label>
+                                <label for="ws" class="sr-only">{% trans "Search in blog" %}</label>
                                 <input type="search" class="form-control" name="q" id="ws"
-                                       placeholder="Search in blog" required>
+                                       placeholder="{% trans "Search in blog" %}" required>
                                 <button type="submit" class="btn">
-                                    <i class="icon-search"></i><span class="sr-only">Search</span>
+                                    <i class="icon-search"></i><span class="sr-only">{% trans "Search" %}</span>
                                 </button>
                             </form>
                         </div>
 
-                        <!-- Categories -->
                         <div class="widget widget-cats">
-                            <h3 class="widget-title">Categories</h3>
+                            <h3 class="widget-title">{% trans "Categories" %}</h3>
                             <ul>
                                 {% for cat in blog_categories %}
                                 <li>
@@ -240,14 +237,13 @@
                                     </a>
                                 </li>
                                 {% empty %}
-                                <li><a href="{% url 'blogs:list' %}">All Posts</a></li>
+                                <li><a href="{% url 'blogs:list' %}">{% trans "All Posts" %}</a></li>
                                 {% endfor %}
                             </ul>
                         </div>
 
-                        <!-- Popular Posts -->
                         <div class="widget">
-                            <h3 class="widget-title">Popular Posts</h3>
+                            <h3 class="widget-title">{% trans "Popular Posts" %}</h3>
                             <ul class="posts-list">
                                 {% for post in recent_posts %}
                                 <li>
@@ -269,25 +265,23 @@
                             </ul>
                         </div>
 
-                        <!-- Tags -->
                         <div class="widget">
-                            <h3 class="widget-title">Browse Tags</h3>
+                            <h3 class="widget-title">{% trans "Browse Tags" %}</h3>
                             <div class="tagcloud">
                                 {% for tag in blog_tags %}
                                 <a href="{% url 'blogs:list' %}?tag={{ tag.pk }}">{{ tag.title }}</a>
                                 {% empty %}
-                                <a href="#">sport</a>
-                                <a href="#">outdoor</a>
-                                <a href="#">gear</a>
+                                <a href="#">{% trans "sport" %}</a>
+                                <a href="#">{% trans "outdoor" %}</a>
+                                <a href="#">{% trans "gear" %}</a>
                                 {% endfor %}
                             </div>
                         </div>
 
-                        <!-- About -->
                         <div class="widget widget-text">
-                            <h3 class="widget-title">About Blog</h3>
+                            <h3 class="widget-title">{% trans "About Blog" %}</h3>
                             <div class="widget-text-content">
-                                <p>Stay up to date with the latest news, gear reviews, and tips from the world of extreme sports.</p>
+                                <p>{% trans "Stay up to date with the latest news, gear reviews, and tips from the world of extreme sports." %}</p>
                             </div>
                         </div>
                     </div>
