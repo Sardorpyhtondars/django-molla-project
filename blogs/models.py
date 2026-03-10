@@ -30,7 +30,7 @@ class Category(BaseModel):
         return self.title
 
     class Meta:
-        db_table = 'category'
+        db_table = 'blog_category'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 

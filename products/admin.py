@@ -20,10 +20,3 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ['title', 'description']
     list_filter = ['category', 'is_featured', 'created_at']
     inlines = [ProductImageInline]
-
-
-@admin.register(Review)
-class ReviewAdmin(admin.ModelAdmin):
-    list_display = ['id', 'product', 'author_name', 'rating', 'created_at']
-    search_fields = ['author_name', 'email', 'comment']
-    list_filter = ['rating', 'created_at']

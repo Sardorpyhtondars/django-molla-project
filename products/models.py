@@ -13,7 +13,7 @@ class Category(BaseModel):
         return self.title
 
     class Meta:
-        db_table = 'category'
+        db_table = 'product_categories'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
