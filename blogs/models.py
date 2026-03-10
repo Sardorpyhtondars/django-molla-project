@@ -3,10 +3,10 @@ from shared.models import BaseModel
 
 
 class Author(BaseModel):
-    full_name = models.CharField(max_length=200)
+    full_name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='authors/', null=True, blank=True)
     about = models.TextField(blank=True)
-    professions = models.CharField(max_length=200, blank=True)
+    professions = models.CharField(max_length=255, blank=True)
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
@@ -19,10 +19,10 @@ class Author(BaseModel):
 
 
 class Category(BaseModel):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=255)
     parent = models.ForeignKey(
         'self', null=True, blank=True,
-        on_delete=models.SET_NULL,
+        on_delete=models.PROTECT,
         related_name='children'
     )
 
@@ -36,7 +36,7 @@ class Category(BaseModel):
 
 
 class Tag(BaseModel):
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=255)
 
     def __str__(self):
         return self.title
@@ -52,7 +52,7 @@ class Blog(BaseModel):
         PUBLISHED = 'published', 'Published'
         DRAFT = 'draft', 'Draft'
 
-    title = models.CharField(max_length=300)
+    title = models.CharField(max_length=255)
     short_description = models.TextField(blank=True)
     image = models.ImageField(upload_to='blogs/', null=True, blank=True)
     long_description = models.TextField(blank=True)

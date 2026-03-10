@@ -9,9 +9,9 @@ class BaseModel(models.Model):
 
 
 class Contact(BaseModel):
-    full_name = models.CharField(max_length=200)
+    full_name = models.CharField(max_length=255)
     email = models.EmailField()
-    subject = models.CharField(max_length=300, blank=True)
+    subject = models.CharField(max_length=255, blank=True)
     message = models.TextField()
     is_read = models.BooleanField(default=False)
 

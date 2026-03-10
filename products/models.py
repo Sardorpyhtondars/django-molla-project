@@ -1,9 +1,8 @@
 from django.db import models
 from shared.models import BaseModel
-from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Category(BaseModel):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=255)
     parent = models.ForeignKey(
         'self', null=True, blank=True,
         on_delete=models.SET_NULL,
@@ -20,7 +19,7 @@ class Category(BaseModel):
 
 
 class Product(BaseModel):
-    title = models.CharField(max_length=300)
+    title = models.CharField(max_length=255)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     old_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
@@ -43,7 +42,7 @@ class Product(BaseModel):
         return 0
 
     class Meta:
-        ordering = ['-created_at']
+        db_table = 'product'
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
 
@@ -59,6 +58,7 @@ class ProductImage(BaseModel):
         return f"Image for {self.product.title}"
 
     class Meta:
+        db_table = 'product_image'
         verbose_name = 'Product Image'
         verbose_name_plural = 'Product Images'
 
@@ -68,17 +68,14 @@ class Review(BaseModel):
         Product, on_delete=models.CASCADE,
         related_name='reviews'
     )
-    author_name = models.CharField(max_length=200)
+    author_name = models.CharField(max_length=255)
     email = models.EmailField()
-    rating = models.PositiveSmallIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(5)]
-    )
     comment = models.TextField()
 
     def __str__(self):
-        return f"{self.author_name} — {self.product.title} ({self.rating}★)"
+        return f"{self.author_name} — {self.product.title}"
 
     class Meta:
-        ordering = ['-created_at']
+        db_table = 'review'
         verbose_name = 'Review'
         verbose_name_plural = 'Reviews'
